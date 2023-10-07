@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un compte
+{% endblock %}
+
+{% block stylesheets %}
+	<link href="assets/css/style_register.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<body>
+		<div class="wrapper_page_creation_compte">
+			<h1 class="H1_creer_compte">Créer un compte</h1>
+
+
+			{{ form_errors(registrationForm) }}
+
+			{{ form_start(registrationForm) }}
+
+
+			<!-- NOM/PRENOM<!-->
+
+			<div class="input-box">
+				<div class="input-field">
+					{{ form_row(registrationForm.nom_user) }}
+					<i class='bx bxs-user'></i>
+				</div>
+
+				<div class="input-field">
+					{{ form_row(registrationForm.prenom_user) }}
+					<i class='bx bxs-user'></i>
+				</div>
+			</div>
+
+
+			<!-- MAIL/NUM TEL<!-->
+
+			<div class="input-box">
+				<div class="input-field">
+					{{ form_row(registrationForm.email) }}
+					<i class='bx bxs-envelope'></i>
+				</div>
+				<div class="input-field">
+					{{ form_row(registrationForm.telephone_user) }}
+					<i class='bx bxs-phone'></i>
+				</div>
+			</div>
+
+
+			<!-- ADRESSE/VILLE/CP/GENRE<!-->
+
+			<div class="input-box">
+				<div class="input-field">
+					{{ form_row(registrationForm.adresse_user) }}
+					<i class='bx bx-street-view'></i>
+				</div>
+				<div class="input-field">
+					{{ form_row(registrationForm.ville_user) }}
+					<i class='bx bx-street-view'></i>
+				</div>
+				<div class="input-field">
+					{{ form_row(registrationForm.cp_user) }}
+					<i class='bx bx-street-view'></i>
+				</div>
+				<div class="input-field">
+					{{ form_row(registrationForm.genre_user) }}
+					<i class='bx bx-street-view'></i>
+				</div>
+			</div>
+
+
+			<!-- MDP<!-->
+
+			<div class="input-box">
+				<div class="input-field" minlength="12">
+					{{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+				<div class="input-field">
+					<input type="password" placeholder="Confirmation Mot de Passe" required>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+			</div>
+
+
+			{{ form_row(registrationForm.RGPDConsent) }}
+
+			<button type="submit" class="btn_crer_compte">Créer un compte</button>
+
+
+			<div class="btn_retour">
+				<p>Vous avez déjà un compte ?</p>
+				<a href="{{ path('app_login') }}">Connexion</a>
+			</div>
+
+		</div>
+	</body>
+	{{ form_end(registrationForm) }}
+{% endblock %}

@@ -8,11 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CPrincipalController extends AbstractController
 {
-    #[Route('/c/principal', name: 'app_c_principal')]
+    #[Route('/home', name: 'app_c_principal')]
     public function index(): Response
     {
-        return $this->render('c_principal/index.html.twig', [
-            'controller_name' => 'CPrincipalController',
-        ]);
+        return $this->render('c_principal/index.html.twig', );
     }
 }
