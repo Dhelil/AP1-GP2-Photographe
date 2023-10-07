@@ -21,51 +21,59 @@ class RegistrationFormType extends AbstractType
         $builder
             ->add('email', EmailType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'E-Mail'
                 ],
-                'label' => 'E-mail'
+                'label' => false
             ])
             ->add('nom_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Nom'
                 ],
-                'label' => 'Nom'
+                'label' => false
             ])
             ->add('prenom_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Prénom'
                 ],
-                'label' => 'Prénom'
+                'label' => false
             ])
             ->add('adresse_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Adresse'
                 ],
-                'label' => 'Adresse'
+                'label' => false
             ])
             ->add('cp_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Code Postal'
                 ],
-                'label' => 'Code Postal'
+                'label' => false
             ])
             ->add('ville_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Ville'
                 ],
-                'label' => 'Ville'
+                'label' => false
             ])
             ->add('genre_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Genre'
                 ],
-                'label' => 'Genre'
+                'label' => false
             ])
             ->add('telephone_user', TextType::class, [
                 'attr' => [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Numéro de téléphone'
                 ],
-                'label' => 'Numéro de téléphone'
+                'label' => false
             ])
             ->add('RGPDConsent', CheckboxType::class, [
                 'mapped' => false,
@@ -82,7 +90,8 @@ class RegistrationFormType extends AbstractType
                 'mapped' => false,
                 'attr' => [
                     'autocomplete' => 'new-password',
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'placeholder' => 'Mot de passe'
                 ],
                 'constraints' => [
                     new NotBlank([
@@ -95,6 +104,7 @@ class RegistrationFormType extends AbstractType
                         'max' => 4096,
                     ]),
                 ],
+                'label' => false,
             ])
         ;
     }
