@@ -94,6 +94,15 @@
 				<a href="{{ path('app_login') }}">Connexion</a>
 			</div>
 
+
+			{% if app.user %}
+				<div class="mb-3">
+					Vous êtes connecté(e) comme
+					{{ app.user.userIdentifier }},
+					<a href="{{ path('app_logout') }}">Déconnexion</a>
+				</div>
+			{% endif %}
+
 		</div>
 	</body>
 	{{ form_end(registrationForm) }}
