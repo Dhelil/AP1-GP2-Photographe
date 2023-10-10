@@ -1,14 +1,38 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+{% block title %}{% endblock %}
 
-{% block title %}Accueil
-{% endblock %}
+     
+{% block stylesheet %}<link rel="stylesheet" href="assets/css/style_accueil.css"> {% endblock %}
+
+
+</head>
 
 {% block body %}
-	<p>Accueil</p>
 
+<body class="accueil-login grid-content">
+    <nav>
+        <ul class="nav-items grid-nav">
+            <li><a href="index.php">Acceuil</a></li>
+            <li><a href="inscription.php">Présentations</a></li>
+            <li><a href="connexion.php">Préstations</a></li>
+            <li><a href="profil.php">Avis</a></li>
+            <li><a href="admin.php">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="titile-acueille grid-title">AlexCaptures</h1>
 
-	<button>
-		<a href="/connexion">Se connecter</button>
-		<button>
-			<a href="/inscription">Créer un compte</button>
-		{% endblock %}
+    <section class="login-choice grid-login">
+        <button class="btn-login"> <a href="/connexion">Se connecter </a></button>
+        <p class="txt-login">ou</p>
+        <button class="btn-login"><a href="/inscription">Créer un compte </a></button>
+    </section>
+
+    <section>
+    
+    </section>
+</body>
+{% endblock %}
+</html>
