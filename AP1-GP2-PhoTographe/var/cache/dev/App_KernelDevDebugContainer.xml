@@ -281,6 +281,13 @@
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\CPrincipalController"/>
       </call>
     </service>
+    <service id="App\Controller\PresentationController" class="App\Controller\PresentationController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\PresentationController"/>
+      </call>
+    </service>
     <service id="App\Controller\RegistrationController" class="App\Controller\RegistrationController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -4331,10 +4338,10 @@
       <argument>null</argument>
       <argument type="collection">
         <argument key="path">app_logout</argument>
+        <argument key="target">app_login</argument>
         <argument key="enable_csrf">null</argument>
         <argument key="csrf_token_id">logout</argument>
         <argument key="csrf_parameter">_csrf_token</argument>
-        <argument key="target">/</argument>
         <argument key="invalidate_session">true</argument>
         <argument key="clear_site_data" type="collection"/>
         <argument key="delete_cookies" type="collection"/>
@@ -4380,7 +4387,7 @@
     <service id="security.logout.listener.default.main" class="Symfony\Component\Security\Http\EventListener\DefaultLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="debug.security.event_dispatcher.main"/>
       <argument type="service" id="security.http_utils"/>
-      <argument>/</argument>
+      <argument>app_login</argument>
     </service>
     <service id="security.logout.listener.session.main" class="Symfony\Component\Security\Http\EventListener\SessionLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="debug.security.event_dispatcher.main"/>
@@ -4516,6 +4523,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5204,6 +5214,12 @@
     <service id=".service_locator.O2p6Lk7.App\Controller\CPrincipalController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\CPrincipalController"/>
       <argument>App\Controller\CPrincipalController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\PresentationController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PresentationController"/>
+      <argument>App\Controller\PresentationController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.O2p6Lk7" method="withContext"/>
     </service>

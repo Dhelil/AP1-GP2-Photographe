@@ -238,7 +238,7 @@ class __TwigTemplate_d1c019191ee5cdeed183c15174f4ecc6 extends Template
         // line 98
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 98, $this->source); })()), "user", [], "any", false, false, false, 98)) {
             // line 99
-            echo "\t\t\t\t<div class=\"mb-3\">
+            echo "\t\t\t\t<div class=\"btn_retour\">
 \t\t\t\t\tVous êtes connecté(e) comme
 \t\t\t\t\t";
             // line 101
@@ -383,7 +383,7 @@ class __TwigTemplate_d1c019191ee5cdeed183c15174f4ecc6 extends Template
 
 
 \t\t\t{% if app.user %}
-\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t<div class=\"btn_retour\">
 \t\t\t\t\tVous êtes connecté(e) comme
 \t\t\t\t\t{{ app.user.userIdentifier }},
 \t\t\t\t\t<a href=\"{{ path('app_logout') }}\">Déconnexion</a>

@@ -11,4 +11,17 @@
 		<a href="/connexion">Se connecter</button>
 		<button>
 			<a href="/inscription">Créer un compte</button>
+			<button>
+				<a href="{{ path('app_logout') }}">Déconnexion</a>
+			</button>
+
+
+			{% if app.user %}
+				{% if is_granted('ROLE_ADMIN') %}
+					<div class="create_account">
+						Vous êtes connecté(e) en tant qu'ADMIN
+					</div>
+				{% endif %}
+			{% endif %}
+
 		{% endblock %}
