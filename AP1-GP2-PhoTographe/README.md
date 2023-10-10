@@ -1,8 +1,10 @@
-# AP1-GP2-Photographe
+# Titre du projet
 
-[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDIuNjMyODI3NzU4Nzg5MDYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDIuNjMyODI3NzU4Nzg5MDYgMzUiPjxyZWN0IHdpZHRoPSIxMDkuMzEyNTA3NjI5Mzk0NTMiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCB4PSIxMDkuMzEyNTA3NjI5Mzk0NTMiIHdpZHRoPSI5My4zMjAzMjAxMjkzOTQ1MyIgaGVpZ2h0PSIzNSIgZmlsbD0iIzM4OUFENSIvPjx0ZXh0IHg9IjU0LjY1NjI1MzgxNDY5NzI2NiIgeT0iMTcuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidSb2JvdG8nLCBzYW5zLXNlcmlmIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPkJVSUxEIFdJVEg8L3RleHQ+PHRleHQgeD0iMTU1Ljk3MjY2NzY5NDA5MTgiIHk9IjE3LjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInTW9udHNlcnJhdCcsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI5MDAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+U1lNRk9OWTwvdGV4dD48L3N2Zz4=)](https://forthebadge.com)
+_(juste en dessous des badges sympatiques à placer)_
 
-AlexCaptures : L'art de la photographie, figé en un instant. Explorez des moments magiques et des histoires visuelles captivantes.
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
+
+Une petite description du projet
 
 ## Pour commencer
 
