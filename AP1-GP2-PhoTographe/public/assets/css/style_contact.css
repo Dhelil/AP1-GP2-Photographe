@@ -1,0 +1,12 @@
+.menu-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.titre-contact{
+    text-align: center;
+}
+
+.contact-titre{
+    width: 100%;
+}

@@ -7,8 +7,25 @@
 			{% endblock %}
 		</title>
 		<link rel="icon" href="assets/images/cameraicon.png"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		<link href="assets/css/style_nav.css" rel="stylesheet">
 		</head>
 		<body>
+
+			<div class="navbar-div">
+            <nav class="navbar">
+            <div>
+            </div>
+                <ul class="bouttons-nav">
+                    <li class="boutton-nav"><a class="boutton-text-nav" href="#">Accueil</a></li>
+                    <li class="boutton-nav"><a class="boutton-text-nav" href="#">Présentation</a></li>
+                    <li class="boutton-nav"><a class="boutton-text-nav" href="#">Prestations</a></li>
+                    <li class="boutton-nav"><a class="boutton-text-nav" href="/avis">Avis</a></li>
+                    <li class="boutton-nav"><a class="boutton-text-nav" href="#">Contact</a></li>
+                </ul>
+                	<img class="logo-nav" src="assets/images/Logo.png" alt="logo navbar" width="120px" height="50px">
+            	</nav>
+        	</div>
+
 			{% block body %}{% endblock %}
 		</body>
 	</html>
