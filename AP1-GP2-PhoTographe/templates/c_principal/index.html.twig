@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-{% block title %}{% endblock %}
+{% extends 'base.html.twig' %}
+
+{% block title %} <title>Accueil </title>{% endblock %}
 
      
-{% block stylesheet %}<link rel="stylesheet" href="assets/css/style_accueil.css"> {% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="assets/css/style_accueil.css"> {% endblock %}
 
 
-</head>
 
 {% block body %}
 
 <body class="accueil-login grid-content">
-    <nav>
-        <ul class="nav-items grid-nav">
+    <nav class="grid-nav">
+        <ul class="nav-items">
             <li><a href="index.php">Acceuil</a></li>
             <li><a href="inscription.php">Présentations</a></li>
-            <li><a href="connexion.php">Préstations</a></li>
+            <li><a href="connexion.php">Prestations</a></li>
             <li><a href="profil.php">Avis</a></li>
             <li><a href="admin.php">Contact</a></li>
         </ul>
@@ -30,9 +27,9 @@
         <button class="btn-login"><a href="/inscription">Créer un compte </a></button>
     </section>
 
-    <section>
-    
+    <section class="grid-presentation">
+    Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
     </section>
+        
 </body>
 {% endblock %}
-</html>
