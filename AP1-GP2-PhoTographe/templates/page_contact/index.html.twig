@@ -1,29 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PageContactController!{% endblock %}
-
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<div class="example-wrapper">
+		<div class="menu-contact">
+			<div class="contact-titre">
+				<h1 class="titre-contact">Contact</h1>
+			</div>
+			<div class="" contact-barre>
+				<hr>
+			</div>
+			<form>
+				<div class="contact-infosa">
+					<input class="input-email" type="text" placeholder="E-mail..." required>
+					<input class="input-objet" type="text" placeholder="Objet..." required>
+				</div>
+				<div class="contact-infosb">
+					<input class="input-telephone" type="text" placeholder="Telephone..." required>
+					<input class="input-nom" type="text" placeholder="Nom..." required>
+				</div>
+				<div class="contact-commentaire">
+					<p>Commentaire</P>
+				</div>
+				<div class="contact-infosc">
+					<textarea class="textarea-commentaire" id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
+				</div>
+			</form>
+		</div>
+	</div>
 
-    This friendly message is coming from:
-    <ul>
-        <div class="menu-contact">
-            <div class="contact-titre">
-                <h1 class="titre-contact">Contact</h1>
-            </div>
-            <div class=""contact-barre>
 
-            </div>
-            <div class="contact-infos">
-
-            </div>
-        </div>
-    </ul>
-</div>
 {% endblock %}

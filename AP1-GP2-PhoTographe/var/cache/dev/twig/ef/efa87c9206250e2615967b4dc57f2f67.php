@@ -57,30 +57,40 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
         $this->displayBlock('javascripts', $context, $blocks);
         // line 10
         echo "\t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
-\t\t</head>
-\t\t<body>
+\t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
+\t</head>
+\t<body>
 
-\t\t\t<div class=\"navbar-div\">
-            <nav class=\"navbar\">
-            <div>
-            </div>
-                <ul class=\"bouttons-nav\">
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Accueil</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Présentation</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Prestations</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"/avis\">Avis</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Contact</a></li>
-                </ul>
-                \t<img class=\"logo-nav\" src=\"assets/images/Logo.png\" alt=\"logo navbar\" width=\"120px\" height=\"50px\">
-            \t</nav>
-        \t</div>
+\t\t<div class=\"navbar-div\">
+\t\t\t<nav class=\"navbar\">
+\t\t\t\t<div></div>
+\t\t\t\t<ul class=\"bouttons-nav\">
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/\">Accueil</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"#\">Présentation</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"#\">Prestations</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/avis\">Avis</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/contact\">Contact</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t\t<img class=\"logo-nav\" src=\"assets/images/Logo.png\" alt=\"logo navbar\" width=\"120px\" height=\"50px\">
+\t\t\t</nav>
+\t\t</div>
 
-\t\t\t";
-        // line 29
+\t\t";
+        // line 39
         $this->displayBlock('body', $context, $blocks);
-        // line 30
-        echo "\t\t</body>
-\t</html>
+        // line 40
+        echo "\t</body>
+</html>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -124,7 +134,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     }
 
-    // line 29
+    // line 39
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -143,7 +153,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  128 => 29,  105 => 9,  91 => 6,  82 => 30,  80 => 29,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
+        return array (  138 => 39,  115 => 9,  101 => 6,  92 => 40,  90 => 39,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -158,27 +168,37 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t</title>
 \t\t<link rel=\"icon\" href=\"assets/images/cameraicon.png\"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
 \t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
-\t\t</head>
-\t\t<body>
+\t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
+\t</head>
+\t<body>
 
-\t\t\t<div class=\"navbar-div\">
-            <nav class=\"navbar\">
-            <div>
-            </div>
-                <ul class=\"bouttons-nav\">
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Accueil</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Présentation</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Prestations</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"/avis\">Avis</a></li>
-                    <li class=\"boutton-nav\"><a class=\"boutton-text-nav\" href=\"#\">Contact</a></li>
-                </ul>
-                \t<img class=\"logo-nav\" src=\"assets/images/Logo.png\" alt=\"logo navbar\" width=\"120px\" height=\"50px\">
-            \t</nav>
-        \t</div>
+\t\t<div class=\"navbar-div\">
+\t\t\t<nav class=\"navbar\">
+\t\t\t\t<div></div>
+\t\t\t\t<ul class=\"bouttons-nav\">
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/\">Accueil</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"#\">Présentation</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"#\">Prestations</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/avis\">Avis</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"boutton-nav\">
+\t\t\t\t\t\t<a class=\"boutton-text-nav\" href=\"/contact\">Contact</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t\t<img class=\"logo-nav\" src=\"assets/images/Logo.png\" alt=\"logo navbar\" width=\"120px\" height=\"50px\">
+\t\t\t</nav>
+\t\t</div>
 
-\t\t\t{% block body %}{% endblock %}
-\t\t</body>
-\t</html>
-", "base.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
+\t\t{% block body %}{% endblock %}
+\t</body>
+</html>
+", "base.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
     }
 }

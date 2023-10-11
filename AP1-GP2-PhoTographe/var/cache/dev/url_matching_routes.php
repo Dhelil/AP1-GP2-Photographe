@@ -9,6 +9,7 @@ return [
     false, // $matchHost
     [ // $staticRoutes
         '/home' => [[['_route' => 'app_c_principal', '_controller' => 'App\\Controller\\CPrincipalController::index'], null, null, null, false, false, null]],
+        '/avis' => [[['_route' => 'app_page_avis', '_controller' => 'App\\Controller\\PageAvisController::index'], null, null, null, false, false, null]],
         '/contact' => [[['_route' => 'app_page_contact', '_controller' => 'App\\Controller\\PageContactController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
