@@ -1,35 +1,37 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} <title>Accueil </title>{% endblock %}
+{% block title %} Accueil{% endblock %}
 
-     
-{% block stylesheets %}<link rel="stylesheet" href="assets/css/style_accueil.css"> {% endblock %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="assets/css/style_accueil.css">
+ {% endblock %}
+
 
 
 
 {% block body %}
-
-<body class="accueil-login grid-content">
-    <nav class="grid-nav">
-        <ul class="nav-items">
-            <li><a href="index.php">Acceuil</a></li>
-            <li><a href="inscription.php">Présentations</a></li>
-            <li><a href="connexion.php">Prestations</a></li>
-            <li><a href="profil.php">Avis</a></li>
-            <li><a href="admin.php">Contact</a></li>
-        </ul>
-    </nav>
+<body class="accueil-login">
+<div class="grid-content">
+  
     <h1 class="titile-acueille grid-title">AlexCaptures</h1>
-
-    <section class="login-choice grid-login">
+        </div>
+ 
+    </section>
+       <section class="login-choice">
         <button class="btn-login"> <a href="/connexion">Se connecter </a></button>
         <p class="txt-login">ou</p>
         <button class="btn-login"><a href="/inscription">Créer un compte </a></button>
     </section>
-
-    <section class="grid-presentation">
-    Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
+    <section class="presentation">
+    Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
+    Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
     </section>
-        
+
 </body>
 {% endblock %}
+
+
+
+

@@ -3,12 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome!
-			{% endblock %}
+			{% block title %}Welcome!{% endblock %}
 		</title>
-		<link rel="icon" href="assets/images/cameraicon.png"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
-		</head>
-		<body>
-			{% block body %}{% endblock %}
-		</body>
-	</html>
+		{% block stylesheets %}
+		{% endblock %}
+		{% block headerFooter %}
+			<link rel="stylesheet" href="/assets/css/style_header.css"> 
+			<link rel="stylesheet" href="/assets/css/style_footer.css">
+		{% endblock %}
+		{% block icon %}
+		 {# <link rel="icon" href="assets/images/cameraicon.png">  #}
+		 {% endblock %}
+		{% block javascripts %}{% endblock %}
+	</head>		
+	<body>
+	{# header template #}
+		{% block header %}
+			{% include 'partials/_header.html.twig' %}
+		{% endblock %}
+	{# body template #}
+		{% block body %}{% endblock %}
+	</body>
+	{# footer template #}
+		{% block footer %}
+			{% include 'partials/_footer.html.twig' %}
+		{% endblock %}	
+</html>
