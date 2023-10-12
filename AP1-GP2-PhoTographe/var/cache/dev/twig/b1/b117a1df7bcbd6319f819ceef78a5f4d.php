@@ -119,42 +119,40 @@ class __TwigTemplate_a561e1322c8add41763ba3cc9de9e5d5 extends Template
 \t<div class=\"Paragraphe_Expertise\">
 \t\t<h2 class=\"Mon_Expertise\">
 \t\t\tMon Expertise</h2>
-\t\t<p class=\"Texte_Expertise\">
-\t\t\tMon expérience et mon expertise dans le domaine de la photographie me permettent de saisir l'essence même de chaque instant. Que ce soit un mariage, une séance photo en famille, une célébration d'entreprise ou n'importe quel autre événement spécial, je mets en œuvre mon savoir-faire pour capturer chaque détail, chaque émotion et chaque sourire.
-\t\t</p>
-\t</div>
+\t\t<img src=\"assets/images/expertise.png\" class=\"image_expertise\"></img>
+\t<p class=\"Texte_Expertise\">
+\t\tMon expérience et mon expertise dans le domaine de la photographie me permettent de saisir l'essence même de chaque instant. Que ce soit un mariage, une séance photo en famille, une célébration d'entreprise ou n'importe quel autre événement spécial, je mets en œuvre mon savoir-faire pour capturer chaque détail, chaque émotion et chaque sourire.
+\t</p>
+</div>
 
 
-\t<div class=\"Paragraphe_Creativite\">
-\t\t<h2 class=\"Ma_Creativite\">
-\t\t\tMa Créativité
-\t\t</h2>
-\t\t<p class=\"Texte_Creativite\">
-\t\t\tCe qui me distingue, c'est ma créativité. Je cherche toujours à repousser les limites de la photographie pour créer des images uniques et mémorables. J'aime jouer avec la lumière, les couleurs et les angles pour obtenir des résultats qui sortent de l'ordinaire. Mon approche artistique donne vie à vos moments spéciaux de manière extraordinaire.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Creativite\">
+\t<h2 class=\"Ma_Creativite\">
+\t\tMa Créativité
+\t</h2>
+\t<p class=\"Texte_Creativite\">
+\t\tCe qui me distingue, c'est ma créativité. Je cherche toujours à repousser les limites de la photographie pour créer des images uniques et mémorables. J'aime jouer avec la lumière, les couleurs et les angles pour obtenir des résultats qui sortent de l'ordinaire. Mon approche artistique donne vie à vos moments spéciaux de manière extraordinaire.
+\t</p>
+</div>
 
-\t<div class=\"Paragraphe_Objectif\">
-\t\t<h2 class=\"Mon_Objectif\">
-\t\t\tMon objectif
-\t\t</h2>
-\t\t<p class=\"Texte_Objectif\">
-\t\t\tMon objectif ultime est de vous fournir des souvenirs durables. Les photographies que je crée deviendront des trésors que vous chérirez pour les années à venir. Chaque cliché raconte une histoire, et je m'efforce de faire en sorte que ces histoires restent vivantes à travers mes images.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Objectif\">
+\t<h2 class=\"Mon_Objectif\">
+\t\tMon objectif
+\t</h2>
+\t<p class=\"Texte_Objectif\">
+\t\tMon objectif ultime est de vous fournir des souvenirs durables. Les photographies que je crée deviendront des trésors que vous chérirez pour les années à venir. Chaque cliché raconte une histoire, et je m'efforce de faire en sorte que ces histoires restent vivantes à travers mes images.
+\t</p>
+</div>
 
-\t<div class=\"Paragraphe_Fin\">
-\t\t<p>
-\t\t\tN'hésitez pas à me contacter pour discuter de vos besoins photographiques. Ensemble, nous pouvons transformer vos moments spéciaux en souvenirs inestimables.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Fin\">
+\t<p>
+\t\tN'hésitez pas à me contacter pour discuter de vos besoins photographiques. Ensemble, nous pouvons transformer vos moments spéciaux en souvenirs inestimables.
+\t</p>
+</div>
 
-\tLa Transformation en Souvenirs Durables
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQue vous souhaitiez immortaliser un événement important ou simplement avoir des photos professionnelles de vous-même ou de votre famille, je suis là pour vous. Mon dévouement envers la photographie et ma passion pour créer des images inoubliables se reflètent dans chaque photo que je prends.
-
-
-";
+La Transformation en Souvenirs Durables
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\tQue vous souhaitiez immortaliser un événement important ou simplement avoir des photos professionnelles de vous-même ou de votre famille, je suis là pour vous. Mon dévouement envers la photographie et ma passion pour créer des images inoubliables se reflètent dans chaque photo que je prends.";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -203,42 +201,40 @@ class __TwigTemplate_a561e1322c8add41763ba3cc9de9e5d5 extends Template
 \t<div class=\"Paragraphe_Expertise\">
 \t\t<h2 class=\"Mon_Expertise\">
 \t\t\tMon Expertise</h2>
-\t\t<p class=\"Texte_Expertise\">
-\t\t\tMon expérience et mon expertise dans le domaine de la photographie me permettent de saisir l'essence même de chaque instant. Que ce soit un mariage, une séance photo en famille, une célébration d'entreprise ou n'importe quel autre événement spécial, je mets en œuvre mon savoir-faire pour capturer chaque détail, chaque émotion et chaque sourire.
-\t\t</p>
-\t</div>
+\t\t<img src=\"assets/images/expertise.png\" class=\"image_expertise\"></img>
+\t<p class=\"Texte_Expertise\">
+\t\tMon expérience et mon expertise dans le domaine de la photographie me permettent de saisir l'essence même de chaque instant. Que ce soit un mariage, une séance photo en famille, une célébration d'entreprise ou n'importe quel autre événement spécial, je mets en œuvre mon savoir-faire pour capturer chaque détail, chaque émotion et chaque sourire.
+\t</p>
+</div>
 
 
-\t<div class=\"Paragraphe_Creativite\">
-\t\t<h2 class=\"Ma_Creativite\">
-\t\t\tMa Créativité
-\t\t</h2>
-\t\t<p class=\"Texte_Creativite\">
-\t\t\tCe qui me distingue, c'est ma créativité. Je cherche toujours à repousser les limites de la photographie pour créer des images uniques et mémorables. J'aime jouer avec la lumière, les couleurs et les angles pour obtenir des résultats qui sortent de l'ordinaire. Mon approche artistique donne vie à vos moments spéciaux de manière extraordinaire.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Creativite\">
+\t<h2 class=\"Ma_Creativite\">
+\t\tMa Créativité
+\t</h2>
+\t<p class=\"Texte_Creativite\">
+\t\tCe qui me distingue, c'est ma créativité. Je cherche toujours à repousser les limites de la photographie pour créer des images uniques et mémorables. J'aime jouer avec la lumière, les couleurs et les angles pour obtenir des résultats qui sortent de l'ordinaire. Mon approche artistique donne vie à vos moments spéciaux de manière extraordinaire.
+\t</p>
+</div>
 
-\t<div class=\"Paragraphe_Objectif\">
-\t\t<h2 class=\"Mon_Objectif\">
-\t\t\tMon objectif
-\t\t</h2>
-\t\t<p class=\"Texte_Objectif\">
-\t\t\tMon objectif ultime est de vous fournir des souvenirs durables. Les photographies que je crée deviendront des trésors que vous chérirez pour les années à venir. Chaque cliché raconte une histoire, et je m'efforce de faire en sorte que ces histoires restent vivantes à travers mes images.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Objectif\">
+\t<h2 class=\"Mon_Objectif\">
+\t\tMon objectif
+\t</h2>
+\t<p class=\"Texte_Objectif\">
+\t\tMon objectif ultime est de vous fournir des souvenirs durables. Les photographies que je crée deviendront des trésors que vous chérirez pour les années à venir. Chaque cliché raconte une histoire, et je m'efforce de faire en sorte que ces histoires restent vivantes à travers mes images.
+\t</p>
+</div>
 
-\t<div class=\"Paragraphe_Fin\">
-\t\t<p>
-\t\t\tN'hésitez pas à me contacter pour discuter de vos besoins photographiques. Ensemble, nous pouvons transformer vos moments spéciaux en souvenirs inestimables.
-\t\t</p>
-\t</div>
+<div class=\"Paragraphe_Fin\">
+\t<p>
+\t\tN'hésitez pas à me contacter pour discuter de vos besoins photographiques. Ensemble, nous pouvons transformer vos moments spéciaux en souvenirs inestimables.
+\t</p>
+</div>
 
-\tLa Transformation en Souvenirs Durables
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQue vous souhaitiez immortaliser un événement important ou simplement avoir des photos professionnelles de vous-même ou de votre famille, je suis là pour vous. Mon dévouement envers la photographie et ma passion pour créer des images inoubliables se reflètent dans chaque photo que je prends.
-
-
-{% endblock %}
+La Transformation en Souvenirs Durables
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\tQue vous souhaitiez immortaliser un événement important ou simplement avoir des photos professionnelles de vous-même ou de votre famille, je suis là pour vous. Mon dévouement envers la photographie et ma passion pour créer des images inoubliables se reflètent dans chaque photo que je prends.{% endblock %}
 ", "presentation/index.html.twig", "/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates/presentation/index.html.twig");
     }
 }
