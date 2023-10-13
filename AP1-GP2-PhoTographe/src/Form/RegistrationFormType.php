@@ -14,6 +14,8 @@ use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Regex;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+
 
 
 class RegistrationFormType extends AbstractType
@@ -137,32 +139,42 @@ class RegistrationFormType extends AbstractType
                 'label' => 'En m\'inscrivant, j\'accepte les conditions d\'utilisateurs'
             ])
 
-            ->add('plainPassword', PasswordType::class, [
-                // instead of being set onto the object directly,
-                // this is read and encoded in the controller
-                'mapped' => false,
-                'attr' => [
-                    'autocomplete' => 'new-password',
-                    'class' => 'form-control',
-                    'placeholder' => 'Mot de passe'
+            ->add('plainPassword', RepeatedType::class, [
+                'type' => PasswordType::class,
+                'invalid_message' => 'Les mots de passe doivent correspondre.',
+                'required' => true,
+                'first_options' => [
+                    'label' => 'Mot de passe',
+                    'attr' => [
+                        'autocomplete' => 'new-password',
+                        'class' => 'form-control',
+                        'placeholder' => 'Mot de passe',
+                    ],
+                ],
+                'second_options' => [
+                    'label' => 'Confirmez le mot de passe',
+                    'attr' => [
+                        'autocomplete' => 'new-password',
+                        'class' => 'form-control',
+                        'placeholder' => 'Confirmez le mot de passe',
+                    ],
                 ],
                 'constraints' => [
-                    // MDP doit pas être vide
                     new NotBlank([
-                        'message' => 'Veuillez entrez un mot de passe',
+                        'message' => 'Veuillez entrer un mot de passe',
                     ]),
-
-                    // Taille MDP
                     new Length([
                         'min' => 12,
                         'max' => 4096,
                     ]),
-                   // Regex MDP
-                    new Regex('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$)/', 
-                    "Le mot de passe doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, un caractère spécial et avoir une longueur minimale de 8 caractères.")
+                    new Regex([
+                        'pattern' => '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$)',
+                        'message' => 'Le mot de passe doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, un caractère spécial et avoir une longueur minimale de 12 caractères.',
+                    ]),
                 ],
-                'label' => false,
-            ])
+            ]);
+            
+            
 
 
         ;
