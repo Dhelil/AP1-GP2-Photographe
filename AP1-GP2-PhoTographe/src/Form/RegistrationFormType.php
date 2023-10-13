@@ -147,7 +147,6 @@ class RegistrationFormType extends AbstractType
                     'placeholder' => 'Mot de passe'
                 ],
                 'constraints' => [
-
                     // MDP doit pas être vide
                     new NotBlank([
                         'message' => 'Veuillez entrez un mot de passe',
@@ -158,8 +157,6 @@ class RegistrationFormType extends AbstractType
                         'min' => 12,
                         'max' => 4096,
                     ]),
-
-                    // Regex MDP
                    // Regex MDP
                     new Regex('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$)/', 
                     "Le mot de passe doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, un caractère spécial et avoir une longueur minimale de 8 caractères.")
