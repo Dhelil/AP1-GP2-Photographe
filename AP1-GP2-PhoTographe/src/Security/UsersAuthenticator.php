@@ -27,13 +27,22 @@ class UsersAuthenticator extends AbstractLoginFormAuthenticator
         $this->urlGenerator = $urlGenerator;
     }
 
+    // Méthode authenticate -> retourne un passport
+    // Permet de gérer l'authentification des utilisateurs
+
     public function authenticate(Request $request): Passport
     {
-        // On récupèr le mail
+        // On récupère le mail
         $email = $request->request->get('email', '');
 
+        // Ds la session on insère le dernier utilisateur qui a été tapé
         $request->getSession()->set(SecurityRequestAttributes::LAST_USERNAME, $email);
 
+        // On retourne le passport qui prend en paramètre
+        // un userbadge qui est le mail
+        // un credentials qui est le MDP
+        // un tableau avec le badge correspondant au csrfToken qui est un jeton de sécurité qui permet de vérifier que notre formulaire vient
+        // bien de notre site
         return new Passport(
             new UserBadge($email),
             new PasswordCredentials($request->request->get('password', '')),
@@ -42,6 +51,10 @@ class UsersAuthenticator extends AbstractLoginFormAuthenticator
         );
     }
 
+
+    // Si l'authentification fonctionne, on a cette méthode là
+    // où on a le targetPath qui est le chemin de retour si on veut que l'utilisateur revienne sur la page co une fois qu'il est co
+    
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
     {
         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
