@@ -1,76 +1,110 @@
-{% extends 'base.html.twig' %}
+    {% extends 'base.html.twig' %}
 
-{% block title %} Prestations {% endblock %}
+    {% block title %} Prestations {% endblock %}
 
-     
-{% block stylesheets %}<link rel="stylesheet" href="assets/css/style_prestations.css"> {% endblock %}
-			{% block body %}
-            <body>
-              <header>
-        <h1>Mes Prestations</h1>
-        <div class="card">
+        
+    {% block stylesheets %}<link rel="stylesheet" href="assets/css/style_prestations.css"> {% endblock %}
+                {% block body %}
+                <body>
+                <header>
+            <h1>Mes Prestations</h1>
+            <div class="card">
+            </div>  {# {% for prestation in prestations %}
+        <li>{{ prestation.libelle_prestation }}</li>
+    {% endfor %}
+    </ul>
+        </header>
+    <ul>
+    #}
+        <div class="container">
+            <div class="pricing">
+                <div class="package">
+                    <h2>Forfait Économique</h2>
+                    <p>À partir de <span class="highlight">350€</span></p>
+                    <p>30 minutes de séance photo en studio</p>
+                    <p><span class="highlight">5 photos</span> retouchées incluses</p>
+                    <p>Option de photos supplémentaires disponible</p>
+                                {% if app.user %}
+                                {% if  is_granted('ROLE_ADMIN') %}
+                    <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
+                    <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
+                    {% endif %}
+                    {% endif %}
+
+                </div>
+
+                <div class="package">
+                    <h2>Forfait Standard</h2>
+                    <p>À partir de <span class="highlight">500€</span></p>
+                    <p>1 heure de séance photo en extérieur ou en studio</p>
+                    <p><span class="highlight">10 photos</span> soigneusement retouchées</p>
+                    <p>Remise des photos en format numérique</p>
+                        {% if app.user %}
+                                {% if  is_granted('ROLE_ADMIN') %}
+                    <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
+                    <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+
+                <div class="package">
+                    <h2>Forfait Premium</h2>
+                    <p>À partir de <span class="highlight">800€</span></p>
+                    <p>2 heures de séance photo dans un lieu de votre choix</p>
+                    <p><span class="highlight">20 photos</span> magnifiquement retouchées</p>
+                    <p>Livraison des photos sur une galerie privée en ligne</p>
+                        {% if app.user %}
+                                {% if  is_granted('ROLE_ADMIN') %}
+                    <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
+                    <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+
+                <div class="package">
+                    <h2>Forfait Premium Plus</h2>
+                    <p>À partir de <span class="highlight">1200€</span></p>
+                    <p>3 heures de séance photo en extérieur</p>
+                    <p><span class="highlight">30 photos</span> magnifiquement retouchées</p>
+                    <p>Livraison des photos sur une galerie privée en ligne</p>
+                    {% if app.user %}
+                                {% if  is_granted('ROLE_ADMIN') %}
+                    <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
+                    <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+
+                <div class="package">
+                    <h2>Forfait Mariage de Luxe</h2>
+                    <p>À partir de <span class="highlight">2500€</span></p>
+                    <p>Reportage complet de votre journée de mariage</p>
+                    <p>Toutes les photos du mariage <span class="highlight">retouchées</span></p>
+                    <p>Livraison d'un <span class="highlight">album photo</span> personnalisé</p>
+                        {% if app.user %}
+                                {% if  is_granted('ROLE_ADMIN') %}
+                    <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
+                    <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+    {% if app.user %}
+        {% if  is_granted('ROLE_ADMIN') %}
+                <div class="package"   style="display:flex; align-items:center; justify-content:center"> 
+                <button class="edit-button">Ajouter</button>
+                </div>
+    {% endif %}
+        {% endif %}
+            </div>
+
         </div>
-    </header>
 
-    <div class="container">
-        <div class="pricing">
-            <div class="package">
-                <h2>Forfait Économique</h2>
-                <p>À partir de <span class="highlight">350€</span></p>
-                <p>30 minutes de séance photo en studio</p>
-                <p><span class="highlight">5 photos</span> retouchées incluses</p>
-                <p>Option de photos supplémentaires disponible</p>
-                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-            </div>
+    {# {% extends 'partials/footer.html.twig' %} #}
+    </body>
 
-            <div class="package">
-                <h2>Forfait Standard</h2>
-                <p>À partir de <span class="highlight">500€</span></p>
-                <p>1 heure de séance photo en extérieur ou en studio</p>
-                <p><span class="highlight">10 photos</span> soigneusement retouchées</p>
-                <p>Remise des photos en format numérique</p>
-                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-            </div>
+                {% endblock %}
 
-            <div class="package">
-                <h2>Forfait Premium</h2>
-                <p>À partir de <span class="highlight">800€</span></p>
-                <p>2 heures de séance photo dans un lieu de votre choix</p>
-                <p><span class="highlight">20 photos</span> magnifiquement retouchées</p>
-                <p>Livraison des photos sur une galerie privée en ligne</p>
-                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-            </div>
 
-            <div class="package">
-                <h2>Forfait Premium Plus</h2>
-                <p>À partir de <span class="highlight">1200€</span></p>
-                <p>3 heures de séance photo en extérieur</p>
-                <p><span class="highlight">30 photos</span> magnifiquement retouchées</p>
-                <p>Livraison des photos sur une galerie privée en ligne</p>
-                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-            </div>
-
-            <div class="package">
-                <h2>Forfait Mariage de Luxe</h2>
-                <p>À partir de <span class="highlight">2500€</span></p>
-                <p>Reportage complet de votre journée de mariage</p>
-                <p>Toutes les photos du mariage <span class="highlight">retouchées</span></p>
-                <p>Livraison d'un <span class="highlight">album photo</span> personnalisé</p>
-                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-            </div>
-            <div class="package"   style="display:flex; align-items:center; justify-content:center"> 
-            <button class="edit-button">Ajouter</button>
-            </div>
-        </div>
-
-    </div>
-
- {# {% extends 'partials/footer.html.twig' %} #}
-</body>
-
-            {% endblock %}
+        
+                
+    
