@@ -46,9 +46,10 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
             <li><a href=\"/\">Acceuil</a></li>
             <li><a href=\"/presentations\">Presentations</a></li>
             <li><a href=\"/prestations\">Prestations</a></li>
-            <li><a href=\"/avis\">Avis</a></li>
-            <li><a href=\"/contact\">Contact</a></li>
+            <li><a href=\"#\">Avis</a></li>
+            <li><a href=\"#\">Contact</a></li>
         </ul>
+        <button>Deconexion</button>
     </nav>
 </div>
 ";
@@ -78,9 +79,10 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
             <li><a href=\"/\">Acceuil</a></li>
             <li><a href=\"/presentations\">Presentations</a></li>
             <li><a href=\"/prestations\">Prestations</a></li>
-            <li><a href=\"/avis\">Avis</a></li>
-            <li><a href=\"/contact\">Contact</a></li>
+            <li><a href=\"#\">Avis</a></li>
+            <li><a href=\"#\">Contact</a></li>
         </ul>
+        <button>Deconexion</button>
     </nav>
 </div>
 ", "partials/_header.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_header.html.twig");
