@@ -118,7 +118,28 @@ class __TwigTemplate_c12714ebc8f009dbb8440b88239eee50 extends Template
         }
         // line 26
         echo "
-\t\t";
+
+\t\t\t";
+        // line 28
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 28, $this->source); })()), "user", [], "any", false, false, false, 28)) {
+            // line 29
+            echo "\t\t\t\t";
+            if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+                // line 30
+                echo "\t\t\t\t\t<div class=\"btn_retour\">
+\t\t\t\t\t\tVous êtes connecté(e) en tant
+\t\t\t\t\t\t";
+                // line 32
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 32, $this->source); })()), "user", [], "any", false, false, false, 32), "userIdentifier", [], "any", false, false, false, 32), "html", null, true);
+                echo "
+\t\t\t\t\t</div>
+\t\t\t\t";
+            }
+            // line 35
+            echo "\t\t\t";
+        }
+        // line 36
+        echo "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -139,7 +160,7 @@ class __TwigTemplate_c12714ebc8f009dbb8440b88239eee50 extends Template
 
     public function getDebugInfo()
     {
-        return array (  120 => 26,  117 => 25,  111 => 21,  108 => 20,  106 => 19,  99 => 15,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  142 => 36,  139 => 35,  133 => 32,  129 => 30,  126 => 29,  124 => 28,  120 => 26,  117 => 25,  111 => 21,  108 => 20,  106 => 19,  99 => 15,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -170,6 +191,15 @@ class __TwigTemplate_c12714ebc8f009dbb8440b88239eee50 extends Template
 \t\t\t\t{% endif %}
 \t\t\t{% endif %}
 
+
+\t\t\t{% if app.user %}
+\t\t\t\t{% if is_granted('ROLE_ADMIN') %}
+\t\t\t\t\t<div class=\"btn_retour\">
+\t\t\t\t\t\tVous êtes connecté(e) en tant
+\t\t\t\t\t\t{{ app.user.userIdentifier }}
+\t\t\t\t\t</div>
+\t\t\t\t{% endif %}
+\t\t\t{% endif %}
 \t\t{% endblock %}
 ", "c_principal/index.html.twig", "/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates/c_principal/index.html.twig");
     }

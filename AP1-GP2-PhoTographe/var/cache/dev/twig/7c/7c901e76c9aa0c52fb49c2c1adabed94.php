@@ -86,7 +86,7 @@ class __TwigTemplate_7687d1c627683016fcb0ffbbb8a57199 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!
+        echo "AlexCaptures
 \t\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -166,7 +166,7 @@ class __TwigTemplate_7687d1c627683016fcb0ffbbb8a57199 extends Template
 \t<head>
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
-\t\t\t{% block title %}Welcome!
+\t\t\t{% block title %}AlexCaptures
 \t\t\t{% endblock %}
 \t\t</title>
 \t\t<link rel=\"icon\" href=\"assets/images/cameraicon.png\"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}

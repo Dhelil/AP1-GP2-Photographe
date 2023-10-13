@@ -24,4 +24,13 @@
 				{% endif %}
 			{% endif %}
 
+
+			{% if app.user %}
+				{% if is_granted('ROLE_ADMIN') %}
+					<div class="btn_retour">
+						Vous êtes connecté(e) en tant
+						{{ app.user.userIdentifier }}
+					</div>
+				{% endif %}
+			{% endif %}
 		{% endblock %}

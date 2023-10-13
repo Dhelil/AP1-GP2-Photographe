@@ -19,14 +19,17 @@ class UsersAuthenticator extends AbstractLoginFormAuthenticator
 {
     use TargetPathTrait;
 
+    // constante "LOGIN_ROUTE" qui a la valeur du chemin de la page de connexion
     public const LOGIN_ROUTE = 'app_login';
 
     public function __construct(private UrlGeneratorInterface $urlGenerator)
     {
+        $this->urlGenerator = $urlGenerator;
     }
 
     public function authenticate(Request $request): Passport
     {
+        // On récupèr le mail
         $email = $request->request->get('email', '');
 
         $request->getSession()->set(SecurityRequestAttributes::LAST_USERNAME, $email);

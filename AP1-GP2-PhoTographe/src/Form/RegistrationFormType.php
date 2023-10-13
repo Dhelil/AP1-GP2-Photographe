@@ -101,7 +101,7 @@ class RegistrationFormType extends AbstractType
                 ],
                 'constraints' => [
                     // Regex du genre
-                    //new Regex('^[a-zA-Z]+$/', 
+                    //new Regex('/^[a-zA-Z]+$)/', 
                     //"Veuillez entrer un genre valide. Le genre doit contenir uniquement des caractères alphabétiques (lettres).")
                 ],
                 'label' => false
@@ -121,7 +121,7 @@ class RegistrationFormType extends AbstractType
                     ]),
 
                     // Regex du num de tel
-                    //new Regex('^(01|06|07)\d{8}$/', 
+                    //new Regex('/^(01|06|07)\d{8}$)/', 
                     //"Veuillez entrer un numéro de téléphone valide. Le numéro de téléphone doit commencer par '01', '06' ou '07' et doit comporter exactement 10 chiffres.")
                 ],
                 'label' => false
@@ -160,11 +160,14 @@ class RegistrationFormType extends AbstractType
                     ]),
 
                     // Regex MDP
-                    new Regex('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$) 
-                    /', "Le mot de passe doit être de 12 caractères et doit contenir 1 minuscule, 1 majuscule, 1 chiffre et 1 caractère spécial")
+                   // Regex MDP
+                    new Regex('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$)/', 
+                    "Le mot de passe doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, un caractère spécial et avoir une longueur minimale de 8 caractères.")
                 ],
                 'label' => false,
             ])
+
+
         ;
     }
 
