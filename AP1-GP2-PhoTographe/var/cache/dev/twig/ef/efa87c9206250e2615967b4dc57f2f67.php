@@ -58,6 +58,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
         // line 10
         echo "\t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
 \t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
+\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
 \t</head>
 \t<body>
 
@@ -86,9 +87,9 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t</div>
 
 \t\t";
-        // line 39
-        $this->displayBlock('body', $context, $blocks);
         // line 40
+        $this->displayBlock('body', $context, $blocks);
+        // line 41
         echo "\t</body>
 </html>
 ";
@@ -134,7 +135,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     }
 
-    // line 39
+    // line 40
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -153,7 +154,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  138 => 39,  115 => 9,  101 => 6,  92 => 40,  90 => 39,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
+        return array (  139 => 40,  116 => 9,  102 => 6,  93 => 41,  91 => 40,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -169,6 +170,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t<link rel=\"icon\" href=\"assets/images/cameraicon.png\"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
 \t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
 \t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
+\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
 \t</head>
 \t<body>
 
@@ -199,6 +201,6 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t{% block body %}{% endblock %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
     }
 }

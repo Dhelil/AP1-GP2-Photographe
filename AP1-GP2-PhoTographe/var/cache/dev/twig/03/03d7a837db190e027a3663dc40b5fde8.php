@@ -77,7 +77,10 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t<div class=\"\" contact-barre>
 \t\t\t\t<hr>
 \t\t\t</div>
-\t\t\t<form>
+\t\t\t<form action=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page_contact");
+        echo "\" method=\"post\">
 \t\t\t\t<div class=\"contact-infosa\">
 \t\t\t\t\t<input class=\"input-email\" type=\"text\" placeholder=\"E-mail...\" required>
 \t\t\t\t\t<input class=\"input-objet\" type=\"text\" placeholder=\"Objet...\" required>
@@ -92,6 +95,9 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t\t<div class=\"contact-infosc\">
 \t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Entrez du texte ici...\" required></textarea>
 \t\t\t\t</div>
+\t\t\t\t<div class=\"contact-bouton\">
+\t\t\t\t\t<input type=\"submit\">
+\t\t\t\t<div>
 \t\t\t</form>
 \t\t</div>
 \t</div>
@@ -115,7 +121,7 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 
     public function getDebugInfo()
     {
-        return array (  59 => 4,  52 => 3,  35 => 1,);
+        return array (  82 => 25,  59 => 4,  52 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -144,7 +150,7 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t<div class=\"\" contact-barre>
 \t\t\t\t<hr>
 \t\t\t</div>
-\t\t\t<form>
+\t\t\t<form action=\"{{ path('app_page_contact') }}\" method=\"post\">
 \t\t\t\t<div class=\"contact-infosa\">
 \t\t\t\t\t<input class=\"input-email\" type=\"text\" placeholder=\"E-mail...\" required>
 \t\t\t\t\t<input class=\"input-objet\" type=\"text\" placeholder=\"Objet...\" required>
@@ -159,12 +165,15 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t\t<div class=\"contact-infosc\">
 \t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Entrez du texte ici...\" required></textarea>
 \t\t\t\t</div>
+\t\t\t\t<div class=\"contact-bouton\">
+\t\t\t\t\t<input type=\"submit\">
+\t\t\t\t<div>
 \t\t\t</form>
 \t\t</div>
 \t</div>
 
 
 {% endblock %}
-", "page_contact/index.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_contact\\index.html.twig");
+", "page_contact/index.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_contact\\index.html.twig");
     }
 }

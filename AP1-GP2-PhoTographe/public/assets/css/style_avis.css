@@ -1,0 +1,15 @@
+.date{
+    font-size: 12px;
+}
+
+.description{
+    font-size: 17px;
+}
+
+.avis{
+    border-bottom: 1px solid black;
+}
+
+.headerdavis{
+    display: flex;
+}

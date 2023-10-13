@@ -22,7 +22,7 @@
 			<div class="" contact-barre>
 				<hr>
 			</div>
-			<form>
+			<form action="{{ path('app_page_contact') }}" method="post">
 				<div class="contact-infosa">
 					<input class="input-email" type="text" placeholder="E-mail..." required>
 					<input class="input-objet" type="text" placeholder="Objet..." required>
@@ -37,6 +37,9 @@
 				<div class="contact-infosc">
 					<textarea class="textarea-commentaire" id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
 				</div>
+				<div class="contact-bouton">
+					<input type="submit">
+				<div>
 			</form>
 		</div>
 	</div>
