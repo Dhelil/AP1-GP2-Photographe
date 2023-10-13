@@ -5,6 +5,13 @@
 
 {% block body %}
 <body>
+
+<ul>
+  {% for presentations in presentations %}
+    <li style="color:#fff">{{ presentations.libellePresentation}}</li>
+  {% endfor %}
+</ul>
+
     <div class="header">
         <h1>Présentation d'Alex, Photographe Passionné</h1>
     </div>

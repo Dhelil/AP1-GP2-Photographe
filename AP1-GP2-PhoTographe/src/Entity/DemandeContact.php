@@ -2,158 +2,62 @@
 
 namespace App\Entity;
 
-use App\Repository\DemandeContactRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
-use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: DemandeContactRepository::class)]
+/**
+ * DemandeContact
+ *
+ * @ORM\Table(name="demande_contact", indexes={@ORM\Index(name="IDX_7C955D977EC7ABB2", columns={"id_demande_user_id"})})
+ * @ORM\Entity
+ */
 class DemandeContact
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
-
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $descriptionDemande = null;
-
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $objetDemande = null;
-
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $dateDemande = null;
-
-    #[ORM\OneToMany(mappedBy: 'idDemandeUser', targetEntity: User::class)]
-    private Collection $parent;
-
-    #[ORM\Column]
-    private ?int $enfant = null;
-
-    #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'idDemandeUser')]
-    private ?self $idDemandeUser = null;
-
-    public function __construct()
-    {
-        $this->parent = new ArrayCollection();
-        $this->idDemandeUser = new ArrayCollection();
-    }
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
-    public function getDescriptionDemande(): ?string
-    {
-        return $this->descriptionDemande;
-    }
-
-    public function setDescriptionDemande(string $descriptionDemande): static
-    {
-        $this->descriptionDemande = $descriptionDemande;
-
-        return $this;
-    }
-
-    public function getObjetDemande(): ?string
-    {
-        return $this->objetDemande;
-    }
-
-    public function setObjetDemande(string $objetDemande): static
-    {
-        $this->objetDemande = $objetDemande;
-
-        return $this;
-    }
-
-    public function getDateDemande(): ?\DateTimeInterface
-    {
-        return $this->dateDemande;
-    }
-
-    public function setDateDemande(\DateTimeInterface $dateDemande): static
-    {
-        $this->dateDemande = $dateDemande;
-
-        return $this;
-    }
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
 
     /**
-     * @return Collection<int, User>
+     * @var string
+     *
+     * @ORM\Column(name="description_demande", type="text", length=0, nullable=false)
      */
-    public function getParent(): Collection
-    {
-        return $this->parent;
-    }
+    private $descriptionDemande;
 
-    public function addParent(User $parent): static
-    {
-        if (!$this->parent->contains($parent)) {
-            $this->parent->add($parent);
-            $parent->setIdDemandeUser($this);
-        }
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="objet_demande", type="text", length=0, nullable=false)
+     */
+    private $objetDemande;
 
-        return $this;
-    }
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_demande", type="date", nullable=false)
+     */
+    private $dateDemande;
 
-    public function removeParent(User $parent): static
-    {
-        if ($this->parent->removeElement($parent)) {
-            // set the owning side to null (unless already changed)
-            if ($parent->getIdDemandeUser() === $this) {
-                $parent->setIdDemandeUser(null);
-            }
-        }
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="enfant", type="integer", nullable=false)
+     */
+    private $enfant;
 
-        return $this;
-    }
+    /**
+     * @var \DemandeContact
+     *
+     * @ORM\ManyToOne(targetEntity="DemandeContact")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_demande_user_id", referencedColumnName="id")
+     * })
+     */
+    private $idDemandeUser;
 
-    public function getEnfant(): ?int
-    {
-        return $this->enfant;
-    }
 
-    public function setEnfant(int $enfant): static
-    {
-        $this->enfant = $enfant;
-
-        return $this;
-    }
-
-    public function getIdDemandeUser(): ?self
-    {
-        return $this->idDemandeUser;
-    }
-
-    public function setIdDemandeUser(?self $idDemandeUser): static
-    {
-        $this->idDemandeUser = $idDemandeUser;
-
-        return $this;
-    }
-
-    public function addIdDemandeUser(self $idDemandeUser): static
-    {
-        if (!$this->idDemandeUser->contains($idDemandeUser)) {
-            $this->idDemandeUser->add($idDemandeUser);
-            $idDemandeUser->setIdDemandeUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeIdDemandeUser(self $idDemandeUser): static
-    {
-        if ($this->idDemandeUser->removeElement($idDemandeUser)) {
-            // set the owning side to null (unless already changed)
-            if ($idDemandeUser->getIdDemandeUser() === $this) {
-                $idDemandeUser->setIdDemandeUser(null);
-            }
-        }
-
-        return $this;
-    }
 }

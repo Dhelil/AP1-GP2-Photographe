@@ -2,80 +2,55 @@
 
 namespace App\Entity;
 
-use App\Repository\AvisRepository;
-use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: AvisRepository::class)]
+/**
+ * Avis
+ *
+ * @ORM\Table(name="avis", indexes={@ORM\Index(name="IDX_8F91ABF0AFAC36E1", columns={"id_avis_user_id"})})
+ * @ORM\Entity
+ */
 class Avis
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
 
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $descriptionAvis = null;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_avis", type="text", length=0, nullable=false)
+     */
+    private $descriptionAvis;
 
-    #[ORM\Column]
-    private ?float $niveauAvis = null;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="niveau_avis", type="float", precision=10, scale=0, nullable=false)
+     */
+    private $niveauAvis;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $dateAvis = null;
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_avis", type="date", nullable=false)
+     */
+    private $dateAvis;
 
-    #[ORM\ManyToOne]
-    private ?User $idAvisUser = null;
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_avis_user_id", referencedColumnName="id")
+     * })
+     */
+    private $idAvisUser;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
-    public function getDescriptionAvis(): ?string
-    {
-        return $this->descriptionAvis;
-    }
-
-    public function setDescriptionAvis(string $descriptionAvis): static
-    {
-        $this->descriptionAvis = $descriptionAvis;
-
-        return $this;
-    }
-
-    public function getNiveauAvis(): ?float
-    {
-        return $this->niveauAvis;
-    }
-
-    public function setNiveauAvis(float $niveauAvis): static
-    {
-        $this->niveauAvis = $niveauAvis;
-
-        return $this;
-    }
-
-    public function getDateAvis(): ?\DateTimeInterface
-    {
-        return $this->dateAvis;
-    }
-
-    public function setDateAvis(\DateTimeInterface $dateAvis): static
-    {
-        $this->dateAvis = $dateAvis;
-
-        return $this;
-    }
-
-    public function getIdAvisUser(): ?User
-    {
-        return $this->idAvisUser;
-    }
-
-    public function setIdAvisUser(?User $idAvisUser): static
-    {
-        $this->idAvisUser = $idAvisUser;
-
-        return $this;
-    }
 }
