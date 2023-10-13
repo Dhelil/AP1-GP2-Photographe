@@ -1,105 +1,421 @@
 <?php
 
+ 
+
 namespace App\Entity;
+
+ 
+
+use App\Repository\UserRepository;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * User
- *
- * @ORM\Table(name="user", uniqueConstraints={@ORM\UniqueConstraint(name="UNIQ_8D93D649E7927C74", columns={"email"})}, indexes={@ORM\Index(name="IDX_8D93D6497EC7ABB2", columns={"id_demande_user_id"})})
- * @ORM\Entity
- */
-class User
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
+
+use Symfony\Component\Security\Core\User\UserInterface;
+
+ 
+
+#[ORM\Entity(repositoryClass: UserRepository::class)]
+
+#[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
+
+class User implements UserInterface, PasswordAuthenticatedUserInterface
+
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
+
+    #[ORM\Id]
+
+    #[ORM\GeneratedValue]
+
+    #[ORM\Column]
+
+    private ?int $id = null;
+
+ 
+
+    #[ORM\Column(length: 180, unique: true)]
+
+    private ?string $email = null;
+
+ 
+
+    #[ORM\Column]
+
+    private array $roles = [];
+
+ 
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="email", type="string", length=180, nullable=false)
+
+     * @var string The hashed password
+
      */
-    private $email;
+
+    #[ORM\Column]
+
+    private ?string $password = null;
+
+ 
+
+    #[ORM\Column(length: 100)]
+
+    private ?string $nomUser = null;
+
+ 
+
+    #[ORM\Column(length: 100)]
+
+    private ?string $prenomUser = null;
+
+ 
+
+    #[ORM\Column(length: 255)]
+
+    private ?string $adresseUser = null;
+
+ 
+
+    #[ORM\Column(length: 5)]
+
+    private ?string $cpUser = null;
+
+ 
+
+    #[ORM\Column(length: 150)]
+
+    private ?string $villeUser = null;
+
+ 
+
+    #[ORM\Column(length: 80)]
+
+    private ?string $genreUser = null;
+
+ 
+
+    #[ORM\Column]
+
+    private ?int $telephoneUser = null;
+
+ 
+
+    #[ORM\ManyToOne(inversedBy: 'parent')]
+
+
+ 
+
+    public function getId(): ?int
+
+    {
+
+        return $this->id;
+
+    }
+
+ 
+
+    public function getEmail(): ?string
+
+    {
+
+        return $this->email;
+
+    }
+
+ 
+
+    public function setEmail(string $email): static
+
+    {
+
+        $this->email = $email;
+
+ 
+
+        return $this;
+
+    }
+
+ 
 
     /**
-     * @var array
+
+     * A visual identifier that represents this user.
+
      *
-     * @ORM\Column(name="roles", type="json", nullable=false)
+
+     * @see UserInterface
+
      */
-    private $roles;
+
+    public function getUserIdentifier(): string
+
+    {
+
+        return (string) $this->email;
+
+    }
+
+ 
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="password", type="string", length=255, nullable=false)
+
+     * @see UserInterface
+
      */
-    private $password;
+
+    public function getRoles(): array
+
+    {
+
+        $roles = $this->roles;
+
+        // guarantee every user at least has ROLE_USER
+
+        $roles[] = 'ROLE_USER';
+
+ 
+
+        return array_unique($roles);
+
+    }
+
+ 
+
+    public function setRoles(array $roles): static
+
+    {
+
+        $this->roles = $roles;
+
+ 
+
+        return $this;
+
+    }
+
+ 
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="nom_user", type="string", length=100, nullable=false)
+
+     * @see PasswordAuthenticatedUserInterface
+
      */
-    private $nomUser;
+
+    public function getPassword(): string
+
+    {
+
+        return $this->password;
+
+    }
+
+ 
+
+    public function setPassword(string $password): static
+
+    {
+
+        $this->password = $password;
+
+ 
+
+        return $this;
+
+    }
+
+ 
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="prenom_user", type="string", length=100, nullable=false)
-     */
-    private $prenomUser;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="adresse_user", type="string", length=255, nullable=false)
-     */
-    private $adresseUser;
+     * @see UserInterface
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="cp_user", type="string", length=5, nullable=false)
      */
-    private $cpUser;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="ville_user", type="string", length=150, nullable=false)
-     */
-    private $villeUser;
+    public function eraseCredentials(): void
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="genre_user", type="string", length=80, nullable=false)
-     */
-    private $genreUser;
+    {
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="telephone_user", type="integer", nullable=false)
-     */
-    private $telephoneUser;
+        // If you store any temporary, sensitive data on the user, clear it here
 
-    /**
-     * @var \DemandeContact
-     *
-     * @ORM\ManyToOne(targetEntity="DemandeContact")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_demande_user_id", referencedColumnName="id")
-     * })
-     */
-    private $idDemandeUser;
+        // $this->plainPassword = null;
 
+    }
+
+ 
+
+    public function getNomUser(): ?string
+
+    {
+
+        return $this->nomUser;
+
+    }
+
+ 
+
+    public function setNomUser(string $nomUser): static
+
+    {
+
+        $this->nomUser = $nomUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getPrenomUser(): ?string
+
+    {
+
+        return $this->prenomUser;
+
+    }
+
+ 
+
+    public function setPrenomUser(string $prenomUser): static
+
+    {
+
+        $this->prenomUser = $prenomUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getAdresseUser(): ?string
+
+    {
+
+        return $this->adresseUser;
+
+    }
+
+ 
+
+    public function setAdresseUser(string $adresseUser): static
+
+    {
+
+        $this->adresseUser = $adresseUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getCpUser(): ?string
+
+    {
+
+        return $this->cpUser;
+
+    }
+
+ 
+
+    public function setCpUser(string $cpUser): static
+
+    {
+
+        $this->cpUser = $cpUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getVilleUser(): ?string
+
+    {
+
+        return $this->villeUser;
+
+    }
+
+ 
+
+    public function setVilleUser(string $villeUser): static
+
+    {
+
+        $this->villeUser = $villeUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getGenreUser(): ?string
+
+    {
+
+        return $this->genreUser;
+
+    }
+
+ 
+
+    public function setGenreUser(string $genreUser): static
+
+    {
+
+        $this->genreUser = $genreUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+    public function getTelephoneUser(): ?int
+
+    {
+
+        return $this->telephoneUser;
+
+    }
+
+ 
+
+    public function setTelephoneUser(int $telephoneUser): static
+
+    {
+
+        $this->telephoneUser = $telephoneUser;
+
+ 
+
+        return $this;
+
+    }
+
+ 
+
+
+   
 
 }
