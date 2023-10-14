@@ -40,8 +40,7 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/_header.html.twig"));
 
         // line 1
-        echo "<div class=\"grid-content\">
-<nav class=\"grid-nav\">
+        echo "<nav class=\"nav\">
         <ul class=\"nav-items\">
             <li><a href=\"/\">Acceuil</a></li>
             <li><a href=\"/presentations\">Presentations</a></li>
@@ -49,9 +48,8 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
             <li><a href=\"#\">Avis</a></li>
             <li><a href=\"#\">Contact</a></li>
         </ul>
-        <button>Deconexion</button>
+        <button class=\"btn-deco\">Deconexion</button>
     </nav>
-</div>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -73,8 +71,7 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"grid-content\">
-<nav class=\"grid-nav\">
+        return new Source("<nav class=\"nav\">
         <ul class=\"nav-items\">
             <li><a href=\"/\">Acceuil</a></li>
             <li><a href=\"/presentations\">Presentations</a></li>
@@ -82,9 +79,8 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
             <li><a href=\"#\">Avis</a></li>
             <li><a href=\"#\">Contact</a></li>
         </ul>
-        <button>Deconexion</button>
+        <button class=\"btn-deco\">Deconexion</button>
     </nav>
-</div>
 ", "partials/_header.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_header.html.twig");
     }
 }

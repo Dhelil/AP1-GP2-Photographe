@@ -1,31 +1,42 @@
+{# Template HTML de base relatif a tout les templates #}
 <!DOCTYPE html>
 <html>
-	<head>
+	<head> {# Partie en-tête des templates #}
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome!{% endblock %}
+			{% block title %}AlexCaptures #1 | photographe{% endblock %}
 		</title>
 		{% block stylesheets %}
+		{# fichiers styles CSS à ajouter #}
 		{% endblock %}
 		{% block headerFooter %}
+			{#  Styles du Header et du pieds de page de tout nos templates #}
 			<link rel="stylesheet" href="/assets/css/style_header.css"> 
 			<link rel="stylesheet" href="/assets/css/style_footer.css">
 		{% endblock %}
 		{% block icon %}
+		{# icon de tout les templates #}
 		 {# <link rel="icon" href="assets/images/cameraicon.png">  #}
-		 {% endblock %}
-		{% block javascripts %}{% endblock %}
-	</head>		
-	<body>
-	{# header template #}
+		{% endblock %}
+		{% block javascripts %}
+		{# Script JavaScript #}
+		{% endblock %}
+	</head>
+	<body> {# -- Corps de page des templates -- #}
+		<header>
+		{# header relatif a tout nos templates #}
 		{% block header %}
+			{# inclusion du Header #}
 			{% include 'partials/_header.html.twig' %}
 		{% endblock %}
-	{# body template #}
-		{% block body %}{% endblock %}
-	</body>
-	{# footer template #}
+		</header>
+		{% block body %}{# contenu de la page #}{% endblock %}
+		<footer>
+		{# footer relatif a tout nos templates #}
 		{% block footer %}
+			{# inclusion du pieds de page #}
 			{% include 'partials/_footer.html.twig' %}
-		{% endblock %}	
+		{% endblock %}
+		</footer>
+	</body>
 </html>

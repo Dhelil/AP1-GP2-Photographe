@@ -5,8 +5,8 @@
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
+    <parameter key="kernel.build_dir">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
@@ -92,12 +92,12 @@
     <parameter key="kernel.error_controller">error_controller</parameter>
     <parameter key="debug.file_link_format">%env(default::SYMFONY_IDE)%</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
-    <parameter key="router.cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
+    <parameter key="router.cache_dir">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="cache.prefix.seed">_C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe.App_KernelDevDebugContainer</parameter>
@@ -113,11 +113,11 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
@@ -186,7 +186,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -295,6 +295,13 @@
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\PrestationsController"/>
       </call>
     </service>
+    <service id="App\Controller\ProductsController" class="App\Controller\ProductsController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\ProductsController"/>
+      </call>
+    </service>
     <service id="App\Controller\RegistrationController" class="App\Controller\RegistrationController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -358,7 +365,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.PaBThxT"/>
+      <argument type="service" id=".service_locator.sU4ZibZ"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -439,7 +446,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/http_cache</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -449,7 +456,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -1074,7 +1081,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1093,7 +1100,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1681,7 +1688,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.PaBThxT"/>
+      <argument type="service" id=".service_locator.sU4ZibZ"/>
     </service>
     <service id="routing.resolver" class="Symfony\Component\Config\Loader\LoaderResolver">
       <call method="addLoader">
@@ -1777,7 +1784,7 @@
       <argument type="service" id=".service_locator.PvoQzFT.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</argument>
+        <argument key="cache_dir">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1857,13 +1864,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
       <tag name="container.hot_path"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor">
@@ -1955,7 +1962,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/sessions</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -2151,10 +2158,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
@@ -2496,7 +2503,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/profiler</argument>
+      <argument>file:C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -2543,7 +2550,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -2826,7 +2833,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/twig</argument>
+        <argument key="cache">C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -3566,7 +3573,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4536,6 +4543,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PrestationsController" class="App\Controller\PrestationsController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PrestationsController" class="App\Controller\PrestationsController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PrestationsController" class="App\Controller\PrestationsController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ProductsController" class="App\Controller\ProductsController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ProductsController" class="App\Controller\ProductsController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ProductsController" class="App\Controller\ProductsController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -4934,6 +4944,12 @@
         <argument key="manage" type="service_closure" id="App\Repository\PrestationRepository"/>
       </argument>
     </service>
+    <service id=".service_locator.5_j.JOr" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service_closure" id=".errored..service_locator.5_j.JOr.Doctrine\ORM\EntityManager"/>
+      </argument>
+    </service>
     <service id=".service_locator.QaaDzHL" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4949,10 +4965,11 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.PaBThxT" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.sU4ZibZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\PrestationsController::index" type="service_closure" id=".service_locator.XpLysvP"/>
+        <argument key="App\Controller\ProductsController::index" type="service_closure" id=".service_locator.5_j.JOr"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.QaaDzHL"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
@@ -4960,6 +4977,7 @@
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="App\Controller\PrestationsController:index" type="service_closure" id=".service_locator.XpLysvP"/>
+        <argument key="App\Controller\ProductsController:index" type="service_closure" id=".service_locator.5_j.JOr"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.QaaDzHL"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
@@ -5247,6 +5265,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.O2p6Lk7" method="withContext"/>
     </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\ProductsController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ProductsController"/>
+      <argument>App\Controller\ProductsController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
     <service id=".service_locator.O2p6Lk7.App\Controller\RegistrationController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\RegistrationController"/>
       <argument>App\Controller\RegistrationController</argument>
@@ -5434,6 +5458,9 @@
     <service id="debug.security.event_dispatcher.main.inner" class="Symfony\Component\EventDispatcher\EventDispatcher"/>
     <service id=".errored..service_locator.y4_Zrx..Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface">
       <tag name="container.error" message="Cannot autowire service &quot;.service_locator.y4_Zrx.&quot;: it needs an instance of &quot;Symfony\Component\Config\Loader\LoaderInterface&quot; but this type has been excluded from autowiring."/>
+    </service>
+    <service id=".errored..service_locator.5_j.JOr.Doctrine\ORM\EntityManager" class="Doctrine\ORM\EntityManager">
+      <tag name="container.error" message="Cannot autowire service &quot;.service_locator.5_j.JOr&quot;: it references class &quot;Doctrine\ORM\EntityManager&quot; but no such service exists. Try changing the type-hint to &quot;Doctrine\ORM\EntityManagerInterface&quot; instead."/>
     </service>
     <service id=".console.command.about.lazy" class="Symfony\Component\Console\Command\LazyCommand">
       <argument>about</argument>
@@ -6013,7 +6040,7 @@
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>JJUCN-xb9d</argument>
       <argument>0</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -6023,7 +6050,7 @@
       <argument>xsqtN59nIs</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6031,7 +6058,7 @@
       <argument>XPjucCrqlK</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6039,7 +6066,7 @@
       <argument>8GFthQyyki</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6047,7 +6074,7 @@
       <argument>koxsKd2dVB</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6055,7 +6082,7 @@
       <argument>dCmthHk4qC</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6063,7 +6090,7 @@
       <argument>QapKXHy+EZ</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6073,7 +6100,7 @@
       <argument>UwdO-YwAVO</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6081,7 +6108,7 @@
       <argument>geMZ2k1ij+</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/ezzaouit/Desktop/Atteliers/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6199,13 +6226,13 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.7nzbL4K" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.PaBThxT"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.sU4ZibZ"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="Psr\Log\LoggerInterface" alias="logger"/>
     <service id=".service_locator.o.uf2zi" alias=".service_locator.7nzbL4K"/>
     <service id=".service_locator.c1lbGYr" alias=".service_locator.QaaDzHL"/>
-    <service id=".service_locator.rJrLFGb" alias=".service_locator.PaBThxT"/>
+    <service id=".service_locator.qD8MwO." alias=".service_locator.sU4ZibZ"/>
     <service id=".service_locator.BFrsqsn" alias=".service_locator.F9PKc.7"/>
     <service id=".service_locator.yj07qm_" alias=".service_locator.ZyXYEQR"/>
     <service id=".service_locator.LMuqDDe" alias=".service_locator.VHsrTPK"/>
@@ -6222,6 +6249,7 @@
     <service id="security.event_dispatcher.main" alias="debug.security.event_dispatcher.main"/>
     <service id=".service_locator.gFlme_s" alias=".service_locator.y4_Zrx."/>
     <service id=".service_locator.6B.2kWi" alias=".service_locator.XpLysvP"/>
+    <service id=".service_locator.ZUlIRSR" alias=".service_locator.5_j.JOr"/>
     <service id=".service_locator.EUYXuS0" alias=".service_locator.QaaDzHL"/>
     <service id=".service_locator.7NIAq8D" alias=".service_locator.rSTd.nA"/>
     <service id=".service_locator.GDg2hr7" alias=".service_locator.O2p6Lk7"/>

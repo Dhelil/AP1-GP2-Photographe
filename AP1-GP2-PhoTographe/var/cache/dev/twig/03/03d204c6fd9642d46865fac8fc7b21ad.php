@@ -47,49 +47,55 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
-        // line 1
+        // line 2
         echo "<!DOCTYPE html>
 <html>
 \t<head>
-\t\t<meta charset=\"UTF-8\">
+\t";
+        // line 6
+        echo "\t\t<meta charset=\"UTF-8\">
 \t\t<title>
 \t\t\t";
-        // line 6
+        // line 8
         $this->displayBlock('title', $context, $blocks);
-        // line 7
+        // line 9
         echo "\t\t</title>
 \t\t";
-        // line 8
-        $this->displayBlock('stylesheets', $context, $blocks);
         // line 10
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 13
         echo "\t\t";
         $this->displayBlock('headerFooter', $context, $blocks);
-        // line 14
+        // line 18
         echo "\t\t";
         $this->displayBlock('icon', $context, $blocks);
-        // line 17
+        // line 21
         echo "\t\t";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 18
+        // line 24
         echo "\t</head>\t\t
 \t<body>
 \t";
-        // line 21
+        // line 27
+        echo "\t\t<header>
+\t\t";
+        // line 29
         echo "\t\t";
         $this->displayBlock('header', $context, $blocks);
-        // line 24
-        echo "\t";
-        // line 25
-        echo "\t\t";
+        // line 33
+        echo "\t\t</header>
+\t\t";
+        // line 34
         $this->displayBlock('body', $context, $blocks);
-        // line 26
-        echo "\t</body>
-\t";
-        // line 28
+        // line 35
+        echo "\t\t<footer>
+\t\t";
+        // line 37
         echo "\t\t";
         $this->displayBlock('footer', $context, $blocks);
-        // line 30
-        echo "\t
+        // line 41
+        echo "\t\t</footer>
+\t</body>
 </html>
 ";
         
@@ -100,7 +106,7 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
 
     }
 
-    // line 6
+    // line 8
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -110,27 +116,7 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 8
-    public function block_stylesheets($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 9
-        echo "\t\t";
+        echo "AlexCaptures #1 | photographe";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -140,6 +126,28 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
     }
 
     // line 10
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 11
+        echo "\t\t";
+        // line 12
+        echo "\t\t";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 13
     public function block_headerFooter($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -149,7 +157,9 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "headerFooter"));
 
-        // line 11
+        // line 14
+        echo "\t\t\t";
+        // line 15
         echo "\t\t\t<link rel=\"stylesheet\" href=\"/assets/css/style_header.css\"> 
 \t\t\t<link rel=\"stylesheet\" href=\"/assets/css/style_footer.css\">
 \t\t";
@@ -161,7 +171,7 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
 
     }
 
-    // line 14
+    // line 18
     public function block_icon($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -171,28 +181,10 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "icon"));
 
-        // line 15
+        // line 19
         echo "\t\t ";
-        // line 16
-        echo "\t\t ";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 17
-    public function block_javascripts($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
+        // line 20
+        echo "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -202,18 +194,17 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
     }
 
     // line 21
-    public function block_header($context, array $blocks = [])
+    public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 22
-        echo "\t\t\t";
-        $this->loadTemplate("partials/_header.html.twig", "base.html.twig", 22)->display($context);
+        echo "\t\t";
         // line 23
         echo "\t\t";
         
@@ -224,7 +215,32 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
 
     }
 
-    // line 25
+    // line 29
+    public function block_header($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
+
+        // line 30
+        echo "\t\t\t";
+        // line 31
+        echo "\t\t\t";
+        $this->loadTemplate("partials/_header.html.twig", "base.html.twig", 31)->display($context);
+        // line 32
+        echo "\t\t";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 34
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -242,7 +258,7 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
 
     }
 
-    // line 28
+    // line 37
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -252,10 +268,12 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 29
+        // line 38
         echo "\t\t\t";
-        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 29)->display($context);
-        // line 30
+        // line 39
+        echo "\t\t\t";
+        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 39)->display($context);
+        // line 40
         echo "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -272,41 +290,53 @@ class __TwigTemplate_1bb326a0002ebf64ca15cbdbe9caf6bf extends Template
 
     public function getDebugInfo()
     {
-        return array (  259 => 30,  256 => 29,  246 => 28,  228 => 25,  218 => 23,  215 => 22,  205 => 21,  187 => 17,  177 => 16,  175 => 15,  165 => 14,  153 => 11,  143 => 10,  133 => 9,  123 => 8,  104 => 6,  92 => 30,  89 => 28,  86 => 26,  83 => 25,  81 => 24,  78 => 21,  74 => 18,  71 => 17,  68 => 14,  65 => 10,  63 => 8,  60 => 7,  58 => 6,  51 => 1,);
+        return array (  277 => 40,  274 => 39,  272 => 38,  262 => 37,  244 => 34,  234 => 32,  231 => 31,  229 => 30,  219 => 29,  209 => 23,  207 => 22,  197 => 21,  187 => 20,  185 => 19,  175 => 18,  163 => 15,  161 => 14,  151 => 13,  141 => 12,  139 => 11,  129 => 10,  110 => 8,  97 => 41,  94 => 37,  91 => 35,  89 => 34,  86 => 33,  83 => 29,  80 => 27,  76 => 24,  73 => 21,  70 => 18,  67 => 13,  65 => 10,  62 => 9,  60 => 8,  56 => 6,  51 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
+        return new Source("{# Template HTML de base relatif a tout les templates #}
+<!DOCTYPE html>
 <html>
 \t<head>
+\t{# Partie en-tête des templates #}
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
-\t\t\t{% block title %}Welcome!{% endblock %}
+\t\t\t{% block title %}AlexCaptures #1 | photographe{% endblock %}
 \t\t</title>
 \t\t{% block stylesheets %}
+\t\t{# fichiers styles CSS #}
 \t\t{% endblock %}
 \t\t{% block headerFooter %}
+\t\t\t{#  Styles du Header et du pieds de page de tout nos templates #}
 \t\t\t<link rel=\"stylesheet\" href=\"/assets/css/style_header.css\"> 
 \t\t\t<link rel=\"stylesheet\" href=\"/assets/css/style_footer.css\">
 \t\t{% endblock %}
 \t\t{% block icon %}
 \t\t {# <link rel=\"icon\" href=\"assets/images/cameraicon.png\">  #}
-\t\t {% endblock %}
-\t\t{% block javascripts %}{% endblock %}
+\t\t{% endblock %}
+\t\t{% block javascripts %}
+\t\t{# Script JavaScript #}
+\t\t{% endblock %}
 \t</head>\t\t
 \t<body>
-\t{# header template #}
+\t{# -- Corps de page des templates -- #}
+\t\t<header>
+\t\t{# header relatif a tout nos templates #}
 \t\t{% block header %}
+\t\t\t{# inclusion du Header #}
 \t\t\t{% include 'partials/_header.html.twig' %}
 \t\t{% endblock %}
-\t{# body template #}
-\t\t{% block body %}{% endblock %}
-\t</body>
-\t{# footer template #}
+\t\t</header>
+\t\t{% block body %}{# contenu de la page #}{% endblock %}
+\t\t<footer>
+\t\t{# footer relatif a tout nos templates #}
 \t\t{% block footer %}
+\t\t\t{# inclusion du pieds de page #}
 \t\t\t{% include 'partials/_footer.html.twig' %}
-\t\t{% endblock %}\t
+\t\t{% endblock %}
+\t\t</footer>
+\t</body>
 </html>
 ", "base.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
     }

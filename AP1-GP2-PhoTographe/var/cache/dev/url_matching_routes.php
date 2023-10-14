@@ -17,6 +17,7 @@ return [
         '/' => [[['_route' => 'app_c_principal', '_controller' => 'App\\Controller\\CPrincipalController::index'], null, null, null, false, false, null]],
         '/presentations' => [[['_route' => 'app_presentations', '_controller' => 'App\\Controller\\PresentationsController::index'], null, null, null, false, false, null]],
         '/prestations' => [[['_route' => 'app_prestations', '_controller' => 'App\\Controller\\PrestationsController::index'], null, null, null, false, false, null]],
+        '/products' => [[['_route' => 'app_products', '_controller' => 'App\\Controller\\ProductsController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/deconnexion' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],

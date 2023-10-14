@@ -49,5 +49,20 @@ class Presentation
      */
     private $libelletransformation;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
 
+    public function getLibellepresentation(): ?string
+    {
+        return $this->libellepresentation;
+    }
+
+    public function setTile($prestation): string
+    {
+        $this->libellepresentation = $prestation;
+
+        return $this->libellepresentation;
+    }
 }

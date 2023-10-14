@@ -19,6 +19,7 @@ return [
     'app_c_principal' => [[], ['_controller' => 'App\\Controller\\CPrincipalController::index'], [], [['text', '/']], [], [], []],
     'app_presentations' => [[], ['_controller' => 'App\\Controller\\PresentationsController::index'], [], [['text', '/presentations']], [], [], []],
     'app_prestations' => [[], ['_controller' => 'App\\Controller\\PrestationsController::index'], [], [['text', '/prestations']], [], [], []],
+    'app_products' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/products']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/inscription']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/connexion']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/deconnexion']], [], [], []],

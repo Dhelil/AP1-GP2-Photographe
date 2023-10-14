@@ -41,13 +41,11 @@ class __TwigTemplate_e606071d4ca00b1a4e5064e1b545dfa2 extends Template
 
         // line 1
         echo "<footer class=\"footer\">
-    <div class=\"footer-content\">
         <p>&copy; ";
-        // line 3
+        // line 2
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " AlexCapture</p>
         <span><a href=\"tel:+33645328500\">+33 6 45 32 85 00</a></span>
-    </div>
 </footer>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -69,16 +67,14 @@ class __TwigTemplate_e606071d4ca00b1a4e5064e1b545dfa2 extends Template
 
     public function getDebugInfo()
     {
-        return array (  47 => 3,  43 => 1,);
+        return array (  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<footer class=\"footer\">
-    <div class=\"footer-content\">
         <p>&copy; {{ 'now'|date('Y') }} AlexCapture</p>
         <span><a href=\"tel:+33645328500\">+33 6 45 32 85 00</a></span>
-    </div>
 </footer>", "partials/_footer.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_footer.html.twig");
     }
 }
