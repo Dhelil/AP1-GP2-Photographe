@@ -7,22 +7,20 @@
             padding: 0;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+
 
         h1 {
             font-size: 2.5rem;
+            text-align: center;
         }
 
         .container {
+            grid-row: repeat(3, 1fr);
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #010101;
+            opacity: 0.9;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -35,7 +33,12 @@
 
         .package {
             width: 30%;
-            background-color: #f9f9f9;
+            background-image: url("/assets/images/photographe.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-color: rgb(86, 77, 77);
             margin: 10px;
             padding: 20px;
             text-align: center;
@@ -46,12 +49,12 @@
 
         .package h2 {
             font-size: 1.8rem;
-            color: #333;
+            color: #ffffff;
         }
 
         .package p {
             font-size: 1.2rem;
-            color: #666;
+            color: #ffffff;
             margin: 10px 0;
         }
 
@@ -74,13 +77,7 @@
             margin-right: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-        }
+
 
         .admin-button {
             display: none;
@@ -89,8 +86,3 @@
         .add-button {
             text-align: center;
         }
-
-        /* Applique un style pour cacher les boutons avec la classe "inactive" */
-button.inactive {
-    display: none;
-}

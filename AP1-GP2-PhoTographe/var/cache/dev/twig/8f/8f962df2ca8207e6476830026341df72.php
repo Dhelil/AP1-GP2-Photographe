@@ -41,15 +41,27 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
 
         // line 1
         echo "<nav class=\"nav\">
-        <ul class=\"nav-items\">
-            <li><a href=\"/\">Acceuil</a></li>
-            <li><a href=\"/presentations\">Presentations</a></li>
-            <li><a href=\"/prestations\">Prestations</a></li>
-            <li><a href=\"#\">Avis</a></li>
-            <li><a href=\"#\">Contact</a></li>
-        </ul>
-        <button class=\"btn-deco\">Deconexion</button>
-    </nav>
+    <ul class=\"nav-items\">
+        <li><a href=\"/\">Acceuil</a></li>
+        <li><a href=\"/presentations\">Presentations</a></li>
+        <li><a href=\"/prestations\">Prestations</a></li>
+        <li><a href=\"#\">Avis</a></li>
+        <li><a href=\"#\">Contact</a></li>
+    </ul>
+    ";
+        // line 9
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 9, $this->source); })()), "user", [], "any", false, false, false, 9)) {
+            // line 10
+            echo "    <div clas=\"deco\">
+        <button class=\"btn-deco\" onclick=\"window.location.href=";
+            // line 11
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Deconexion</button>
+    </div>
+    ";
+        }
+        // line 14
+        echo "</nav>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -64,23 +76,32 @@ class __TwigTemplate_d083090aca86f2490f4d2606bab75516 extends Template
         return "partials/_header.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  64 => 14,  58 => 11,  55 => 10,  53 => 9,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<nav class=\"nav\">
-        <ul class=\"nav-items\">
-            <li><a href=\"/\">Acceuil</a></li>
-            <li><a href=\"/presentations\">Presentations</a></li>
-            <li><a href=\"/prestations\">Prestations</a></li>
-            <li><a href=\"#\">Avis</a></li>
-            <li><a href=\"#\">Contact</a></li>
-        </ul>
-        <button class=\"btn-deco\">Deconexion</button>
-    </nav>
+    <ul class=\"nav-items\">
+        <li><a href=\"/\">Acceuil</a></li>
+        <li><a href=\"/presentations\">Presentations</a></li>
+        <li><a href=\"/prestations\">Prestations</a></li>
+        <li><a href=\"#\">Avis</a></li>
+        <li><a href=\"#\">Contact</a></li>
+    </ul>
+    {% if app.user %}
+    <div clas=\"deco\">
+        <button class=\"btn-deco\" onclick=\"window.location.href={{ path('app_logout') }}\">Deconexion</button>
+    </div>
+    {% endif %}
+</nav>
 ", "partials/_header.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_header.html.twig");
     }
 }

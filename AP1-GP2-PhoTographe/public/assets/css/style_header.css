@@ -9,7 +9,7 @@
     align-items: center;
 }
 .nav-items a {
-    color: #fff; 
+    color: #ffffff; 
     font-size: 20px;
     text-decoration: none;
 }
@@ -19,20 +19,30 @@
 }
 
 nav {
-    background-color: #525252;
+    background-color: #000000;
      min-height: 5em;
      display: flex;
      align-items: center;
      justify-content: center;
+     justify-content: space-evenly;
+     box-shadow: 0 0 10px rgba(167, 158, 158, 0.5);
 }
 
-.grid-nav {
-    order: 1;
-    grid-column: span 2;
- }
-
- .grid-content {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.btn-deco {
+    padding: .6rem 2rem;
+    margin: .2rem;
+    background-color: rgb(206, 206, 206);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: #000;
 }
 
+.btn-deco:hover {
+    background-color: #383535;
+    color: #ffffff;
+}
+
+.btn-deco {
+    margin-right: 1rem;
+}

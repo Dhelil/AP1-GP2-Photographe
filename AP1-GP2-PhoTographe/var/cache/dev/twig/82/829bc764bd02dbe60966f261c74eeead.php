@@ -75,7 +75,7 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
 
     }
 
-    // line 7
+    // line 4
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,7 +85,7 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
+        // line 5
         echo "<link rel=\"stylesheet\" href=\"assets/css/style_accueil.css\">
  ";
         
@@ -96,7 +96,7 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
 
     }
 
-    // line 14
+    // line 7
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -106,25 +106,24 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 15
-        echo "<body class=\"accueil-login\">
-<div class=\"grid-content\">
-  
-    <h1 class=\"titile-acueille grid-title\">AlexCaptures</h1>
+        // line 8
+        echo "<main class=\"container\">
+    <h1 class=\"title\">AlexCaptures</h1>
+   <section class=\"btns\">
+        <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button>
+        <div class=\"or\">
+        <p>ou</p>
         </div>
- 
+        <button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button>
     </section>
-       <section class=\"login-choice\">
-        <button class=\"btn-login\"> <a href=\"/connexion\">Se connecter </a></button>
-        <p class=\"txt-login\">ou</p>
-        <button class=\"btn-login\"><a href=\"/inscription\">Créer un compte </a></button>
+    <section class=\"image\">
+        <img src=\"assets/images/photographe.jpg\" alt=\"photographe\" width=\"350rem\">
     </section>
-    <section class=\"presentation\">
+    <aside class=\"presentation\">
     Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
     Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
-    </section>
-
-</body>
+    </aside>
+</main>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -146,7 +145,7 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
 
     public function getDebugInfo()
     {
-        return array (  110 => 15,  100 => 14,  89 => 8,  79 => 7,  60 => 3,  37 => 1,);
+        return array (  110 => 8,  100 => 7,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -154,35 +153,27 @@ class __TwigTemplate_54be7091acc3c146e3ed10143a2c8e00 extends Template
         return new Source("{% extends 'base.html.twig' %}
 
 {% block title %} Accueil{% endblock %}
-
-
-
 {% block stylesheets %}
 <link rel=\"stylesheet\" href=\"assets/css/style_accueil.css\">
  {% endblock %}
-
-
-
-
 {% block body %}
-<body class=\"accueil-login\">
-<div class=\"grid-content\">
-  
-    <h1 class=\"titile-acueille grid-title\">AlexCaptures</h1>
+<main class=\"container\">
+    <h1 class=\"title\">AlexCaptures</h1>
+   <section class=\"btns\">
+        <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button>
+        <div class=\"or\">
+        <p>ou</p>
         </div>
- 
+        <button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button>
     </section>
-       <section class=\"login-choice\">
-        <button class=\"btn-login\"> <a href=\"/connexion\">Se connecter </a></button>
-        <p class=\"txt-login\">ou</p>
-        <button class=\"btn-login\"><a href=\"/inscription\">Créer un compte </a></button>
+    <section class=\"image\">
+        <img src=\"assets/images/photographe.jpg\" alt=\"photographe\" width=\"350rem\">
     </section>
-    <section class=\"presentation\">
+    <aside class=\"presentation\">
     Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
     Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
-    </section>
-
-</body>
+    </aside>
+</main>
 {% endblock %}
 
 

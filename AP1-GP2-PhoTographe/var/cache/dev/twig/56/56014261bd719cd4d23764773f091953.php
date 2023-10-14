@@ -40,13 +40,20 @@ class __TwigTemplate_e606071d4ca00b1a4e5064e1b545dfa2 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/_footer.html.twig"));
 
         // line 1
-        echo "<footer class=\"footer\">
+        echo "<div class=\"footer\">
         <p>&copy; ";
         // line 2
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " AlexCapture</p>
-        <span><a href=\"tel:+33645328500\">+33 6 45 32 85 00</a></span>
-</footer>";
+        <p><a href=\"#\">Mentions légales</a></p>
+        <p><a href=\"#\">Conditions générales de vente</a></p>
+        <p><a href=\"#\">Politique de confidentialité</a></p>
+        <p><a href=\"#\">Politique de cookies</a></p>
+        <p><a href=\"#\">FAQ</a></p>
+        <p><a href=\"#\">Partenaires</a></p>
+        <p><a href=\"#\">Aide</a></p>
+        <p><a href=\"#\">Espace client</a></p>
+</div>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -72,9 +79,16 @@ class __TwigTemplate_e606071d4ca00b1a4e5064e1b545dfa2 extends Template
 
     public function getSourceContext()
     {
-        return new Source("<footer class=\"footer\">
+        return new Source("<div class=\"footer\">
         <p>&copy; {{ 'now'|date('Y') }} AlexCapture</p>
-        <span><a href=\"tel:+33645328500\">+33 6 45 32 85 00</a></span>
-</footer>", "partials/_footer.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_footer.html.twig");
+        <p><a href=\"#\">Mentions légales</a></p>
+        <p><a href=\"#\">Conditions générales de vente</a></p>
+        <p><a href=\"#\">Politique de confidentialité</a></p>
+        <p><a href=\"#\">Politique de cookies</a></p>
+        <p><a href=\"#\">FAQ</a></p>
+        <p><a href=\"#\">Partenaires</a></p>
+        <p><a href=\"#\">Aide</a></p>
+        <p><a href=\"#\">Espace client</a></p>
+</div>", "partials/_footer.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_footer.html.twig");
     }
 }

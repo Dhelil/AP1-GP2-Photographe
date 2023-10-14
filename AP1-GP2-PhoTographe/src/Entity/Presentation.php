@@ -2,67 +2,109 @@
 
 namespace App\Entity;
 
+use App\Repository\PresentationRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * Presentation
- *
- * @ORM\Table(name="presentation")
- * @ORM\Entity
- */
+#[ORM\Entity(repositoryClass: PresentationRepository::class)]
 class Presentation
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    private ?int $id = null;
 
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="libellePresentation", type="text", length=65535, nullable=true)
-     */
-    private $libellepresentation;
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $description = null;
 
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="libelleExpertise", type="text", length=65535, nullable=true)
-     */
-    private $libelleexpertise;
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $expertise = null;
 
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="libelleCreate", type="text", length=65535, nullable=true)
-     */
-    private $libellecreate;
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $autre = null;
 
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="libelleTransformation", type="text", length=65535, nullable=true)
-     */
-    private $libelletransformation;
+    #[ORM\Column(length: 255)]
+    private ?string $intituleDescription = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $intituleExpertise = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $intituleAutre = null;
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getLibellepresentation(): ?string
+    public function getDescription(): ?string
     {
-        return $this->libellepresentation;
+        return $this->description;
     }
 
-    public function setTile($prestation): string
+    public function setDescription(string $description): static
     {
-        $this->libellepresentation = $prestation;
+        $this->description = $description;
 
-        return $this->libellepresentation;
+        return $this;
+    }
+
+    public function getExpertise(): ?string
+    {
+        return $this->expertise;
+    }
+
+    public function setExpertise(string $expertise): static
+    {
+        $this->expertise = $expertise;
+
+        return $this;
+    }
+
+    public function getAutre(): ?string
+    {
+        return $this->autre;
+    }
+
+    public function setAutre(string $autre): static
+    {
+        $this->autre = $autre;
+
+        return $this;
+    }
+
+    public function getIntituleDescription(): ?string
+    {
+        return $this->intituleDescription;
+    }
+
+    public function setIntituleDescription(string $intituleDescription): static
+    {
+        $this->intituleDescription = $intituleDescription;
+
+        return $this;
+    }
+
+    public function getIntituleExpertise(): ?string
+    {
+        return $this->intituleExpertise;
+    }
+
+    public function setIntituleExpertise(string $intituleExpertise): static
+    {
+        $this->intituleExpertise = $intituleExpertise;
+
+        return $this;
+    }
+
+    public function getIntituleAutre(): ?string
+    {
+        return $this->intituleAutre;
+    }
+
+    public function setIntituleAutre(string $intituleAutre): static
+    {
+        $this->intituleAutre = $intituleAutre;
+
+        return $this;
     }
 }

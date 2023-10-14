@@ -1,10 +1,14 @@
 <nav class="nav">
-        <ul class="nav-items">
-            <li><a href="/">Acceuil</a></li>
-            <li><a href="/presentations">Presentations</a></li>
-            <li><a href="/prestations">Prestations</a></li>
-            <li><a href="#">Avis</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="btn-deco">Deconexion</button>
-    </nav>
+    <ul class="nav-items">
+        <li><a href="/">Acceuil</a></li>
+        <li><a href="/presentations">Presentations</a></li>
+        <li><a href="/prestations">Prestations</a></li>
+        <li><a href="#">Avis</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    {% if app.user %}
+    <div clas="deco">
+        <button class="btn-deco" onclick="window.location.href={{ path('app_logout') }}">Deconexion</button>
+    </div>
+    {% endif %}
+</nav>

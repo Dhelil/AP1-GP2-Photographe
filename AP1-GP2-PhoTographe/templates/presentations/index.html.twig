@@ -1,41 +1,29 @@
 {% extends 'base.html.twig' %}
-
 {% block title %} Presentations{% endblock %}
 {% block stylesheets %}<link rel="stylesheet" href="assets/css/style_presentation.css"> {% endblock %}
-
 {% block body %}
-<body>
-
-{# <ul>
-  {% for presentations in presentations %}
-    <li style="color:#fff">{{ presentations.libellePresentation}}</li>
-  {% endfor %}
-</ul> #}
-
-    <div class="header">
-        <h1>Présentation d'Alex, Photographe Passionné</h1>
-    </div>
-
-    <div class="container">
-        <div class="about">
-            <h2>Salut, je suis Alex, un photographe passionné,</h2>
-            <p>et je suis là pour capturer vos moments spéciaux et les transformer en souvenirs durables. Mon objectif en tant que photographe est de créer des images exceptionnelles qui vous laisseront sans voix.</p>
-        </div>
-
-        <div class="expertise">
-            <h2>Mon Expertise</h2>
-            <p>Mon expérience et mon expertise dans le domaine de la photographie me permettent de saisir l'essence même de chaque instant. Que ce soit un mariage, une séance photo en famille, une célébration d'entreprise ou n'importe quel autre événement spécial, je mets en œuvre mon savoir-faire pour capturer chaque détail, chaque émotion et chaque sourire.</p>
-        </div>
-
-        <div class="creativity">
-            <h2>Ma Créativité</h2>
-            <p>Ce qui me distingue, c'est ma créativité. Je cherche toujours à repousser les limites de la photographie pour créer des images uniques et mémorables. J'aime jouer avec la lumière, les couleurs et les angles pour obtenir des résultats qui sortent de l'ordinaire. Mon approche artistique donne vie à vos moments spéciaux de manière extraordinaire.</p>
-        </div>
-
-        <div class="memories">
-            <h2>La Transformation en Souvenirs Durables</h2>
-            <p>Mon objectif ultime est de vous fournir des souvenirs durables. Les photographies que je crée deviendront des trésors que vous chérirez pour les années à venir. Chaque cliché raconte une histoire, et je m'efforce de faire en sorte que ces histoires restent vivantes à travers mes images.</p>
-        </div>
-    </div>
-</body>
+    <main class="container presentation">
+        {% for presentation in presentations %}
+            {% if app.user %}
+                <div class="btns-edit">
+                    <button class="btn-edit">Modifier</button>
+                </div>  
+            {% endif %}
+            <div class="header">
+                <h1>Présentation d'Alex, Photographe Passionné</h1>
+            </div>
+            <div class="about">
+                <h2>{{presentation.intituleDescription}}</h2>
+                <p>{{presentation.description}}</p>
+            </div>
+            <div class="expertise">
+                <h2>{{presentation.intituleExpertise}}</h2>
+                <p>{{presentation.expertise}}</p>
+            </div>
+            <div class="others">
+                <h2>{{presentation.intituleAutre}}</h2>
+                <p>{{presentation.autre}}</p>
+            </div>
+        {% endfor %}
+    </main>
 {% endblock %}

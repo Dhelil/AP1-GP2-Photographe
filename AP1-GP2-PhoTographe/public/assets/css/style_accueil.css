@@ -1,105 +1,87 @@
-.accueil-login {
+main.container {
     background-image: url("/assets/images/back-ground-image.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-
-}
-
-
-.nav-items {
-    list-style: none;
-    display: flex;
+    background-color: rgb(86, 77, 77);
+    height: 100%;
     width: 100%;
-    padding: 0;
-    margin : 0;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav-items a {
-    color: #fff; 
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.nav-items a:hover {
-    color: #928686;
-}
-
-nav {
-    background-color: #525252;
-     min-height: 5em;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-
-
-.titile-acueille {
-    text-align: center;
-    font-size: 70px;
-    margin-top: 5%;
-    color: #fff;
-}
-
-
-
-
-.presentation {
-    background-color: rgba(255, 255, 255,0.2);
-    max-width: 600px;
-    border-radius: 15px;
-    margin: 5% auto;
-    padding: 1.5rem .5rem;
-
-}
-
-.grid-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
 }
 
-.grid-content  * {
-    order: 10;
+.container > * {
+    order: 0;
 }
 
-.grid-nav {
-   order: 1;
-   grid-column: span 2;
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+    grid-column: span 3;
+    order: 1;
 }
 
-.grid-title {
+aside.presentation {
+    margin-bottom: 10rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.2);
+    max-width: 30rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem .5rem;
     order: 2;
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+
+}
+
+section.btns {
+    max-width: 15rem;
+    order: 3;
+    justify-self: center;
+    align-self: center;
     grid-column: span 2;
+    margin-left: 15rem;
+
+
+ 
+    
 }
 
-section.login-choice {
-    margin : 0 0 0 80%;
-    max-width: 200px;
-}
-
-.btn-login {
-
+/* style buttons */
+button.btn{
+    padding: .6rem 4rem;
+    margin: .2rem;
+    background-color: rgb(206, 206, 206);
     border-radius: 20px;
-    padding:.4rem  2.5rem ;
-    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    color: #000;
+}
+
+.or {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #383535;
+    color: #ffffff;
+}
+
+.image {
+    order: 4;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1rem;
+    max-width: 20rem;
+
+}
+img {
     text-align: center;
     width: 100%;
+    border-radius: 1rem;
+    opacity: 0.6;
 }
-
-.btn-login a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.txt-login {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-}
-

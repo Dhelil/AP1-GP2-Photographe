@@ -1,35 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block title %} Accueil{% endblock %}
-
-
-
 {% block stylesheets %}
 <link rel="stylesheet" href="assets/css/style_accueil.css">
  {% endblock %}
-
-
-
-
 {% block body %}
-<body class="accueil-login">
-<div class="grid-content">
-  
-    <h1 class="titile-acueille grid-title">AlexCaptures</h1>
+<main class="container">
+    <h1 class="title">AlexCaptures</h1>
+   <section class="btns">
+        <button class="btn" onclick="window.location.href='/connexion'">Se connecter</button>
+        <div class="or">
+        <p>ou</p>
         </div>
- 
+        <button class="btn" onclick="window.location.href='/inscription'">Créer un compte</button>
     </section>
-       <section class="login-choice">
-        <button class="btn-login"> <a href="/connexion">Se connecter </a></button>
-        <p class="txt-login">ou</p>
-        <button class="btn-login"><a href="/inscription">Créer un compte </a></button>
+    <section class="image">
+        <img src="assets/images/photographe.jpg" alt="photographe" width="350rem">
     </section>
-    <section class="presentation">
+    <aside class="presentation">
     Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
     Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
-    </section>
-
-</body>
+    </aside>
+</main>
 {% endblock %}
 
 
