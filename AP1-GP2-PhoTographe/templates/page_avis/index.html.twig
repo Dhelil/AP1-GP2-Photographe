@@ -1,66 +1,104 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PageAvisController!{% endblock %}
+{% block title %}Hello PageAvisController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
 
-<div class"avis-global">
-    <div class="avis-note-gen">
-        <h1>Note Générale sur {{ ttlesavis|length }} avis, moyenne de : {{ moyenne }}</h1>
-        <div class"note-globale">
+	<div class"avis-global">
+		<div class="avis-note-gen">
+			<h2>Note Générale sur
+				{{ ttlesavis|length }}
+				avis, moyenne de :
+				{{ moyenne }}</h2>
+			<div class"note-globale">
 
-            {% for i in range(1, moyenne) %}
-                <img src="assets\images/etoile_pleine.png" width="50px" height="50px">
-            {% endfor %}
-            
-            {% if etoilesemi == 1 %}
-                <img src="assets\images/etoile_semi.png" width="50px" height="50px">
-                {% if moyenne < 4.5 %}
-                {% for i in range(1, quantsemi) %}
-                    <img src="assets\images/etoile_vide.png" width="50px" height="50px">
-                {% endfor %}
-                {% endif %}
-            
-            {% else %}
-                {% if moyenne < 4.5 %}
-                {% for i in range(1, quant) %}
-                    <img src="assets\images/etoile_vide.png" width="50px" height="50px">
-                {% endfor %}
-                {% endif %}
-            {% endif %}
+				{% for i in range(1, moyenne) %}
+					<img src="assets\images/etoile_pleine.png" width="30px" height="30px">
+				{% endfor %}
 
-        </div>
-    </div>
-    <div class="avis-note-prc">
-        <div class="1etoile"> </div>
-        <div class="2etoile"> </div>
-        <div class="3etoile"> </div>
-        <div class="4etoile"> </div>
-        <div class="5etoile"> </div>
-    </div>
-</div>
-<div class="" contact-barre>
-	<hr>
-</div>
-<div class="avis-commentaires">
-{% for avis in ttlesavis %}
-    <div class="avis">
-        <div class="headerdavis">
-            <h2 class="nom">{{ avis.getIdAvisUser().getNomUser() ~ ' ' ~ avis.getIdAvisUser().getPrenomUser() }}</h2>
-            {% for i in range(1, 3) %}
-                <img src="assets\images/etoile_pleine.png" width="50px" height="50px">
-            {% endfor %}
-                <img src="assets\images/etoile_semi.png" width="50px" height="50px">
-                <img src="assets\images/etoile_vide.png" width="50px" height="50px">
-        </div>
-        <p class="description">{{ avis.getDescriptionAvis() }}</p>
-        <p class="date">date du {{ avis.getDateAvis()|date('d-m-Y') }}</p>
-        <br>
-    </div>
-{% endfor %}
-</div>
+				{% if etoilesemi == 1 %}
+					<img src="assets\images/etoile_semi.png" width="30px" height="30px">
+					{% if moyenne < 4.5 %}
+						{% for i in range(1, quantsemi) %}
+							<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+						{% endfor %}
+					{% endif %}
+
+				{% else %}
+					{% if moyenne < 4.5 %}
+						{% for i in range(1, quant) %}
+							<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+						{% endfor %}
+					{% endif %}
+				{% endif %}
+
+			</div>
+		</div>
+		<div class="avis-note-prc">
+			<div class="1etoile"></div>
+			<div class="2etoile"></div>
+			<div class="3etoile"></div>
+			<div class="4etoile"></div>
+			<div class="5etoile"></div>
+		</div>
+	</div>
+	<div class="" contact-barre>
+		<hr>
+	</div>
+	<div class="avis-commentaires">
+		{% for avis in ttlesavis %}
+			<div class="avis">
+				<div class="headerdavis">
+					<h2 class="nom">{{ avis.getIdAvisUser().getNomUser() ~ ' ' ~ avis.getIdAvisUser().getPrenomUser() }}</h2>
+
+
+					{% for i in range(1, avis.getNiveauAvis()) %}
+						<img src="assets\images/etoile_pleine.png" width="50px" height="50px">
+					{% endfor %}
+
+					{% if avis.getNiveauAvis() is defined and avis.getNiveauAvis()|length >= 2 %}
+						<img src="assets\images/etoile_semi.png" width="50px" height="50px">
+						{% if avis.getNiveauAvis() < 4.5 %}
+							{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+								<img src="assets\images/etoile_vide.png" width="50px" height="50px">
+							{% endfor %}
+						{% endif %}
+
+					{% else %}
+						{% if avis.getNiveauAvis() < 4.5 %}
+							{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+								<img src="assets\images/etoile_vide.png" width="50px" height="50px">
+							{% endfor %}
+						{% endif %}
+					{% endif %}
+
+
+					{# {% for i in range(1, 3) %}
+																																																																																																									<img src="assets\images/etoile_pleine.png" width="50px" height="50px">
+																																																																																																									{% endfor %}
+																																																																																																									<img src="assets\images/etoile_semi.png" width="50px" height="50px">
+																																																																																																									<img src="assets\images/etoile_vide.png" width="50px" height="50px"> #}
+
+
+				</div>
+				<p class="description">{{ avis.getDescriptionAvis() }}</p>
+				<p class="date">date du
+					{{ avis.getDateAvis()|date('d-m-Y') }}</p>
+				<br>
+			</div>
+		{% endfor %}
+	</div>
 {% endblock %}
