@@ -16,6 +16,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'admin' => [[], ['_controller' => 'App\\Controller\\Admin\\AdministrationController::index'], [], [['text', '/admin']], [], [], []],
     'app_c_principal' => [[], ['_controller' => 'App\\Controller\\CPrincipalController::index'], [], [['text', '/']], [], [], []],
     'app_presentations' => [[], ['_controller' => 'App\\Controller\\PresentationsController::index'], [], [['text', '/presentations']], [], [], []],
     'app_prestations' => [[], ['_controller' => 'App\\Controller\\PrestationsController::index'], [], [['text', '/prestations']], [], [], []],
