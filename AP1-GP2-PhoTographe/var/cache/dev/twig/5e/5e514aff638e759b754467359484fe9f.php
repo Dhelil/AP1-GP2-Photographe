@@ -108,59 +108,66 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 9
-        echo "    <h1>Mes Prestations</h1>
-        <div class=\"container\">
+        echo " 
+    <h1>Mes Prestations</h1>
+        ";
+        // line 10
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 10, $this->source); })()), "user", [], "any", false, false, false, 10)) {
+            echo " ";
+            // line 11
+            echo "            ";
+            if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+                echo " ";
+                // line 12
+                echo "                    <div class=\"editPrestations\"><button class=\"edit-button\" onclick=\"window.location.href='/admin'\">Modifier </button><div>
+            ";
+            }
+            // line 13
+            echo " ";
+            // line 14
+            echo "        ";
+        }
+        echo " ";
+        // line 15
+        echo "        <div class=\"container\">
             <div class=\"pricing\">
                 ";
-        // line 12
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["prestations"]) || array_key_exists("prestations", $context) ? $context["prestations"] : (function () { throw new RuntimeError('Variable "prestations" does not exist.', 12, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["prestations"]) || array_key_exists("prestations", $context) ? $context["prestations"] : (function () { throw new RuntimeError('Variable "prestations" does not exist.', 17, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["prestation"]) {
-            // line 13
+            echo " ";
+            // line 18
             echo "                    <div class=\"package\">
                         <h2>";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "titre", [], "any", false, false, false, 14), "html", null, true);
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "titre", [], "any", false, false, false, 19), "html", null, true);
             echo "</h2>
                             <p>À partir de <span class=\"highlight\">";
-            // line 15
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "prix", [], "any", false, false, false, 15), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "prix", [], "any", false, false, false, 20), "html", null, true);
             echo "€</span></p>
                             <p>";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "description", [], "any", false, false, false, 16), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "description", [], "any", false, false, false, 21), "html", null, true);
             echo "</p>
                             <p><span class=\"highlight\">";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "nbPhotosRetouche", [], "any", false, false, false, 17), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "nbPhotosRetouche", [], "any", false, false, false, 22), "html", null, true);
             echo " photos</span> retouchées incluses</p>
                             <p>";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "opt", [], "any", false, false, false, 18), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "opt", [], "any", false, false, false, 23), "html", null, true);
             echo "</p>
-                            ";
-            // line 19
-            if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 19, $this->source); })()), "user", [], "any", false, false, false, 19)) {
-                // line 20
-                echo "                            ";
-                if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-                    // line 21
-                    echo "                                <button class=\"edit-button\" onclick=\"modifierPrestation(this)\">Modifier</button>
-                                <button class=\"delete-button\" onclick=\"supprimerPrestation(this)\">Supprimer</button>
-                            ";
-                }
-                // line 24
-                echo "                            ";
-            }
-            // line 25
-            echo "                    </div>
+                    </div>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prestation'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 27
+        // line 25
+        echo " ";
+        // line 26
         echo "            </div>
         </div>
 ";
@@ -184,7 +191,7 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  164 => 27,  157 => 25,  154 => 24,  149 => 21,  146 => 20,  144 => 19,  140 => 18,  136 => 17,  132 => 16,  128 => 15,  124 => 14,  121 => 13,  117 => 12,  112 => 9,  102 => 8,  91 => 6,  81 => 5,  60 => 2,  37 => 1,);
+        return array (  171 => 26,  169 => 25,  160 => 23,  156 => 22,  152 => 21,  148 => 20,  144 => 19,  141 => 18,  136 => 17,  132 => 15,  128 => 14,  126 => 13,  122 => 12,  118 => 11,  115 => 10,  102 => 8,  91 => 6,  81 => 5,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -196,25 +203,24 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
 {% block stylesheets %}
     <link rel=\"stylesheet\" href=\"assets/css/style_prestations.css\"> 
 {% endblock %}
-{% block body %}
+{% block body %} 
     <h1>Mes Prestations</h1>
+        {% if app.user %} {# si l'utilisateur est connecté #}
+            {% if  is_granted('ROLE_ADMIN') %} {# si l'utilisateur est connecté et qu'il est admin #}
+                    <div class=\"editPrestations\"><button class=\"edit-button\" onclick=\"window.location.href='/admin'\">Modifier </button><div>
+            {% endif %} {# fin de la condition admin #}
+        {% endif %} {# fin de la condition user #}
         <div class=\"container\">
             <div class=\"pricing\">
-                {% for prestation in prestations %}
+                {% for prestation in prestations %} {# boucle sur les prestations #}
                     <div class=\"package\">
                         <h2>{{prestation.titre}}</h2>
                             <p>À partir de <span class=\"highlight\">{{prestation.prix}}€</span></p>
                             <p>{{prestation.description}}</p>
                             <p><span class=\"highlight\">{{prestation.nbPhotosRetouche}} photos</span> retouchées incluses</p>
                             <p>{{prestation.opt}}</p>
-                            {% if app.user %}
-                            {% if  is_granted('ROLE_ADMIN') %}
-                                <button class=\"edit-button\" onclick=\"modifierPrestation(this)\">Modifier</button>
-                                <button class=\"delete-button\" onclick=\"supprimerPrestation(this)\">Supprimer</button>
-                            {% endif %}
-                            {% endif %}
                     </div>
-                {% endfor %}
+                {% endfor %} {# fin de la boucle #}
             </div>
         </div>
 {% endblock %}

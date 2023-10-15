@@ -116,7 +116,7 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
             if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 7, $this->source); })()), "user", [], "any", false, false, false, 7)) {
                 // line 8
                 echo "           l     <div class=\"btns-edit\">
-                    <button class=\"btn-edit\">Modifier</button>
+                    <button class=\"btn-edit\" onclick=\"window.location.href='/admin'\">Modifier</button>
                 </div>  
             ";
             }
@@ -195,7 +195,7 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
         {% for presentation in presentations %}
             {% if app.user %}
            l     <div class=\"btns-edit\">
-                    <button class=\"btn-edit\">Modifier</button>
+                    <button class=\"btn-edit\" onclick=\"window.location.href='/admin'\">Modifier</button>
                 </div>  
             {% endif %}
             <div class=\"header\">

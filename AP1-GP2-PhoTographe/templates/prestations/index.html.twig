@@ -5,25 +5,24 @@
 {% block stylesheets %}
     <link rel="stylesheet" href="assets/css/style_prestations.css"> 
 {% endblock %}
-{% block body %}
+{% block body %} 
     <h1>Mes Prestations</h1>
+        {% if app.user %} {# si l'utilisateur est connecté #}
+            {% if  is_granted('ROLE_ADMIN') %} {# si l'utilisateur est connecté et qu'il est admin #}
+                    <div class="editPrestations"><button class="edit-button" onclick="window.location.href='/admin'">Modifier </button><div>
+            {% endif %} {# fin de la condition admin #}
+        {% endif %} {# fin de la condition user #}
         <div class="container">
             <div class="pricing">
-                {% for prestation in prestations %}
+                {% for prestation in prestations %} {# boucle sur les prestations #}
                     <div class="package">
                         <h2>{{prestation.titre}}</h2>
                             <p>À partir de <span class="highlight">{{prestation.prix}}€</span></p>
                             <p>{{prestation.description}}</p>
                             <p><span class="highlight">{{prestation.nbPhotosRetouche}} photos</span> retouchées incluses</p>
                             <p>{{prestation.opt}}</p>
-                            {% if app.user %}
-                            {% if  is_granted('ROLE_ADMIN') %}
-                                <button class="edit-button" onclick="modifierPrestation(this)">Modifier</button>
-                                <button class="delete-button" onclick="supprimerPrestation(this)">Supprimer</button>
-                            {% endif %}
-                            {% endif %}
                     </div>
-                {% endfor %}
+                {% endfor %} {# fin de la boucle #}
             </div>
         </div>
 {% endblock %}

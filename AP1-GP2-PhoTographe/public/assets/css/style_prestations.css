@@ -64,13 +64,14 @@
             font-weight: bold;
         }
 
-        .edit-button, .delete-button {
-            padding: 5px 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .edit-button {
+            background-color: rgb(161, 157, 157);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    padding: .6rem 4rem;
+    opacity: 0.9;
         }
 
         .edit-button {
@@ -86,3 +87,11 @@
         .add-button {
             text-align: center;
         }
+        .editPrestations {
+    text-align: center;
+}
+
+.edit-button:hover {
+    background-color: #383535;
+    color: #ffffff;
+}

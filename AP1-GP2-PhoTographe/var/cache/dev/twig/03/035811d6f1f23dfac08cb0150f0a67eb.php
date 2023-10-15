@@ -53,10 +53,7 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 9, $this->source); })()), "user", [], "any", false, false, false, 9)) {
             // line 10
             echo "    <div clas=\"deco\">
-        <button class=\"btn-deco\" onclick=\"window.location.href=";
-            // line 11
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Deconexion</button>
+        <button class=\"btn-deco\" onclick=\"window.location.href='/deconexion'\">Deconexion</button>
     </div>
     ";
         }
@@ -83,7 +80,7 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  64 => 14,  58 => 11,  55 => 10,  53 => 9,  43 => 1,);
+        return array (  61 => 14,  55 => 10,  53 => 9,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -98,7 +95,7 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
     </ul>
     {% if app.user %}
     <div clas=\"deco\">
-        <button class=\"btn-deco\" onclick=\"window.location.href={{ path('app_logout') }}\">Deconexion</button>
+        <button class=\"btn-deco\" onclick=\"window.location.href='/deconexion'\">Deconexion</button>
     </div>
     {% endif %}
 </nav>
