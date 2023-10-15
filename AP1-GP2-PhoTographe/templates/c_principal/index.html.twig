@@ -15,6 +15,12 @@
 				<a href="{{ path('app_logout') }}">Déconnexion</a>
 			</button>
 
+			{% if app.session.flashbag.has('success') %}
+				<div class="confirmation_creation_success">
+					{{ app.session.flashbag.get('success')|first }}
+				</div>
+			{% endif %}
+
 
 			{% if app.user %}
 				{% if is_granted('ROLE_ADMIN') %}
@@ -26,11 +32,9 @@
 
 
 			{% if app.user %}
-				{% if is_granted('ROLE_ADMIN') %}
-					<div class="btn_retour">
-						Vous êtes connecté(e) en tant
-						{{ app.user.userIdentifier }}
-					</div>
-				{% endif %}
+				<div class="btn_retour">
+					Vous êtes connecté(e) en tant
+					{{ app.user.userIdentifier }}
+				</div>
 			{% endif %}
 		{% endblock %}

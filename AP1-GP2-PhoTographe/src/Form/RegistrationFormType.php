@@ -141,41 +141,16 @@ class RegistrationFormType extends AbstractType
 
             ->add('plainPassword', RepeatedType::class, [
                 'type' => PasswordType::class,
-                'invalid_message' => 'Les mots de passe doivent correspondre.',
+                'invalid_message' => 'Les MDP ne correspondent pas',
+                'options' => [ 'attr' => ['class' => 'password-field']],
                 'required' => true,
-                'first_options' => [
-                    'label' => 'Mot de passe',
-                    'attr' => [
-                        'autocomplete' => 'new-password',
-                        'class' => 'form-control',
-                        'placeholder' => 'Mot de passe',
-                    ],
-                ],
-                'second_options' => [
-                    'label' => 'Confirmez le mot de passe',
-                    'attr' => [
-                        'autocomplete' => 'new-password',
-                        'class' => 'form-control',
-                        'placeholder' => 'Confirmez le mot de passe',
-                    ],
-                ],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => 'Veuillez entrer un mot de passe',
-                    ]),
-                    new Length([
-                        'min' => 12,
-                        'max' => 4096,
-                    ]),
-                    new Regex([
-                        'pattern' => '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!])(?=.{12,}$)',
-                        'message' => 'Le mot de passe doit contenir au moins une lettre minuscule, une lettre majuscule, un chiffre, un caractère spécial et avoir une longueur minimale de 12 caractères.',
-                    ]),
-                ],
-            ]);
-            
-            
-
+                'first_options' => ['label' => false, 
+                                    'attr' => ['placeholder' => 'Mot de passe']],
+                                    
+                'second_options' => ['label' => false, 
+                                     'attr' => ['placeholder' => "Confirmation du mot de passe"]],
+                'mapped' => false,
+            ])     
 
         ;
     }

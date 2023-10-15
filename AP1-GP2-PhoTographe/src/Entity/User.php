@@ -7,6 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
@@ -30,15 +32,27 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $password = null;
 
     #[ORM\Column(length: 100)]
+    #[Assert\Length(
+        min : 5,
+        minMessage : 'Le nom doit contenir 5 caractères minimum'
+        )]
     private ?string $nomUser = null;
 
     #[ORM\Column(length: 100)]
+    #[Assert\Length(
+        min : 5,
+        minMessage : 'Le prénom doit contenir {{ limit }} caractères minimum'
+        )]
     private ?string $prenomUser = null;
 
     #[ORM\Column(length: 255)]
     private ?string $adresseUser = null;
 
     #[ORM\Column(length: 5)]
+    #[Assert\Regex (
+        pattern : '/^(0[1-9]|[1-8][0-9]|9[0-5])\d{3}$/',
+        message : "Veuillez entrer un code postal valide en France. Les codes postaux en France sont composés de 5 chiffres et ne commencent pas par 96 ou 97."
+    )]
     private ?string $cpUser = null;
 
     #[ORM\Column(length: 150)]

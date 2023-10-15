@@ -75,23 +75,25 @@
 
 			<div class="input-box">
 				<div class="input-field" minlength="12">
-					{{ form_row(registrationForm.plainPassword) }}
+					{{ form_row(registrationForm.plainPassword.first) }}
 					<i class='bx bxs-lock-alt'></i>
 				</div>
+
 				<div class="input-field" minlength="12">
-					{{ form_row(registrationForm.plainPassword) }}
+					{{ form_row(registrationForm.plainPassword.second) }}
 					<i class='bx bxs-lock-alt'></i>
 				</div>
 			</div>
 
-
-			{{ form_row(registrationForm.RGPDConsent) }}
+			<div style="margin-top: 20px">
+				{{ form_row(registrationForm.RGPDConsent) }}
+			</div>
 
 			<button type="submit" class="btn_crer_compte">Créer un compte</button>
 
 
 			<div class="btn_retour">
-				<p>Vous avez déjà un compte ?</p>
+				<p style="display: inline-block;">Vous avez déjà un compte ?</p>
 				<a href="{{ path('app_login') }}">Connexion</a>
 			</div>
 
