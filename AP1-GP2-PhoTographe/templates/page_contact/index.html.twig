@@ -23,6 +23,8 @@
 				<hr>
 			</div>
 			<form action="{{ path('app_page_contact') }}" method="post">
+				{{ form_start(form) }}
+				{{ form_widget(form) }}
 				<div class="contact-infosa">
 					<input class="input-email" type="text" placeholder="E-mail..." required>
 					<input class="input-objet" type="text" placeholder="Objet..." required>
@@ -38,8 +40,9 @@
 					<textarea class="textarea-commentaire" id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
 				</div>
 				<div class="contact-bouton">
-					<input type="submit">
-				<div>
+					<button type="submit">Submit</button>
+				</div>
+				{{ form_end(form) }}
 			</form>
 		</div>
 	</div>

@@ -11,9 +11,11 @@ class PageContactController extends AbstractController
     #[Route('/contact', name: 'app_page_contact')]
     public function index(): Response
     {
+        $form = $this->createForm(YourFormType::class);
 
         return $this->render('page_contact/index.html.twig', [
             'controller_name' => 'PageContactController',
+            'form' => $form,
         ]);
     }
 }
