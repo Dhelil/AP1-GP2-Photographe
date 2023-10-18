@@ -1,52 +1,92 @@
-main.container {
-    background-image: url("/assets/images/back-ground-image.jpg");
+body {
+    background-image: url("/assets/images/back-ground-image.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgb(86, 77, 77);
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    
 }
 
+main.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 100%;
+}
+@media screen and (max-width: 768px) {
+    main.container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .vide {
+        order: 3;
+    }
+    .presentation {
+        order:1;
+    }
+    .btns {
+       order : 2    
+    }
+}
+    
+
 .container > * {
-    order: 0;
+    order: 10;
 }
 
 .title {
     text-align: center;
     font-size: 4.5rem;
-    grid-column: span 3;
-    order: 1;
-}
-
-aside.presentation {
-    margin-bottom: 10rem;
     text-align: center;
-    background-color: rgba(255, 255, 255,0.2);
-    max-width: 30rem;
-    border-radius: 1rem;
-    margin: 0 auto;
-    padding: 1.5rem .5rem;
+    
+
+   
+    
+}
+.vide {
+    margin-top: 5%;
     order: 2;
     align-self: center;
     justify-self: center;
-    margin-left: 2rem;
+    border-radius: 1rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    border: none;
+
+    
+}
+img {
+    width: 100%;
+    border-radius: 1rem;
+    opacity: 0.5;
+    border: none;
+
+}
+
+
+aside.presentation {
+    text-align: center;
+
+    background-color: rgba(255, 255, 255,0.2);
+    max-width: 20rem;
+    max-height: auto;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem .5rem;
+    order: 1;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto ;
+
 
 }
 
 section.btns {
-    max-width: 15rem;
+    max-width: 50%;
     order: 3;
     justify-self: center;
     align-self: center;
-    grid-column: span 2;
-    margin-left: 15rem;
-
-
+    margin: 0 auto;
  
     
 }
@@ -62,6 +102,14 @@ button.btn{
     color: #000;
 }
 
+.btns {
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .or {
     text-align: center;
 }
@@ -71,17 +119,15 @@ button.btn{
     color: #ffffff;
 }
 
-.image {
-    order: 4;
-    align-self: center;
-    justify-self: center;
-    border-radius: 1rem;
-    max-width: 20rem;
 
+
+
+.co {
+    display: none !important;
 }
-img {
-    text-align: center;
+
+.footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    border-radius: 1rem;
-    opacity: 0.6;
 }

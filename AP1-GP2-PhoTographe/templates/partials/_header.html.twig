@@ -5,10 +5,16 @@
         <li><a href="/prestations">Prestations</a></li>
         <li><a href="#">Avis</a></li>
         <li><a href="#">Contact</a></li>
+       
     </ul>
+    
     {% if app.user %}
     <div clas="deco">
         <button class="btn-deco" onclick="window.location.href='{{ path('app_logout') }}'">Deconnexion</button>
     </div>
+    {% else %}
+    <div class="co">
+        <button class="btn-co1" onclick="window.location.href='{{ path('app_login') }}'">Connexion</button>
+        <button class="btn-co2" onclick="window.location.href='{{ path('app_register') }}'">Inscription</button>
     {% endif %}
 </nav>

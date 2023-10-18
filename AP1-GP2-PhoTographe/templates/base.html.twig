@@ -25,7 +25,7 @@
 		{# Script JavaScript #}
 		{% endblock %}
 	</head>
-	<body> {# -- Corps de page des templates -- #}
+	<body class="body"> {# -- Corps de page des templates -- #}
 		<header>
 		{# header relatif a tout nos templates #}
 		{% block header %}
@@ -34,12 +34,13 @@
 		{% endblock %}
 		</header>
 		{% block body %}{# contenu de la page #}{% endblock %}
-		<footer>
+	<footer class="footer">
 		{# footer relatif a tout nos templates #}
 		{% block footer %}
 			{# inclusion du pieds de page #}
 			{% include 'partials/_footer.html.twig' %}
 		{% endblock %}
-		</footer>
+	</footer>
 	</body>
+
 </html>

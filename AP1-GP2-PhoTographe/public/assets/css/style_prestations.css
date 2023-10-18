@@ -3,8 +3,6 @@
             background-image: url("/assets/images/back-ground-image.jpg");
             background-size: cover;
             background-attachment: fixed;
-            margin: 0;
-            padding: 0;
         }
 
 
@@ -17,12 +15,16 @@
         .container {
             grid-row: repeat(3, 1fr);
             max-width: 900px;
+            min-height: 500px;
             margin: 0 auto;
             padding: 20px;
             background-color: #010101;
             opacity: 0.9;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            overflow: hidden;
+            word-wrap: break-word;
         }
 
         .pricing {
@@ -45,6 +47,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             position: relative;
+           
         }
 
         .package h2 {
@@ -95,3 +98,5 @@
     background-color: #383535;
     color: #ffffff;
 }
+
+

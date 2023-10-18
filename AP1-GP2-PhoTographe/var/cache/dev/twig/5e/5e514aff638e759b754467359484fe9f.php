@@ -130,44 +130,68 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
         echo " ";
         // line 15
         echo "        <div class=\"container\">
+        ";
+        // line 16
+        if (twig_test_empty((isset($context["prestations"]) || array_key_exists("prestations", $context) ? $context["prestations"] : (function () { throw new RuntimeError('Variable "prestations" does not exist.', 16, $this->source); })()))) {
+            // line 17
+            echo "    <p>Aucune prestation n'a été remplie.</p>
+    <a href=\"";
+            // line 18
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_prestations");
+            echo "\" class=\"btn btn-primary\">Ajouter des prestations</a>
+    <div class=\"addPrestations\"> 
+        <button class=\"add-button\" onclick=\"window.location.href='/admin'\">Ajouter des prestations</button>
+   </div>
+";
+        } else {
+            // line 23
+            echo "    <ul>
             <div class=\"pricing\">
                 ";
-        // line 17
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["prestations"]) || array_key_exists("prestations", $context) ? $context["prestations"] : (function () { throw new RuntimeError('Variable "prestations" does not exist.', 17, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["prestation"]) {
-            echo " ";
-            // line 18
-            echo "                    <div class=\"package\">
+            // line 25
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["prestations"]) || array_key_exists("prestations", $context) ? $context["prestations"] : (function () { throw new RuntimeError('Variable "prestations" does not exist.', 25, $this->source); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["prestation"]) {
+                echo " ";
+                // line 26
+                echo "                    <div class=\"package\">
                         <h2>";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "titre", [], "any", false, false, false, 19), "html", null, true);
-            echo "</h2>
+                // line 27
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "titre", [], "any", false, false, false, 27), "html", null, true);
+                echo "</h2>
                             <p>À partir de <span class=\"highlight\">";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "prix", [], "any", false, false, false, 20), "html", null, true);
-            echo "€</span></p>
+                // line 28
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "prix", [], "any", false, false, false, 28), "html", null, true);
+                echo "€</span></p>
                             <p>";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "description", [], "any", false, false, false, 21), "html", null, true);
-            echo "</p>
+                // line 29
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "description", [], "any", false, false, false, 29), "html", null, true);
+                echo "</p>
                             <p><span class=\"highlight\">";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "nbPhotosRetouche", [], "any", false, false, false, 22), "html", null, true);
-            echo " photos</span> retouchées incluses</p>
+                // line 30
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "nbPhotosRetouche", [], "any", false, false, false, 30), "html", null, true);
+                echo " photos</span> retouchées incluses</p>
                             <p>";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "opt", [], "any", false, false, false, 23), "html", null, true);
-            echo "</p>
+                // line 31
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["prestation"], "opt", [], "any", false, false, false, 31), "html", null, true);
+                echo "</p>
                     </div>
+                    <script>
+                    let add = document.querySelector('.addPrestations'); 
+                    add.style.display = 'none'; 
+                    </script>
                 ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prestation'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 37
+            echo " ";
+            // line 38
+            echo "            ";
         }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['prestation'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
         echo " ";
-        // line 26
+        // line 39
         echo "            </div>
         </div>
 ";
@@ -191,7 +215,7 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  171 => 26,  169 => 25,  160 => 23,  156 => 22,  152 => 21,  148 => 20,  144 => 19,  141 => 18,  136 => 17,  132 => 15,  128 => 14,  126 => 13,  122 => 12,  118 => 11,  115 => 10,  102 => 8,  91 => 6,  81 => 5,  60 => 2,  37 => 1,);
+        return array (  195 => 39,  191 => 38,  189 => 37,  176 => 31,  172 => 30,  168 => 29,  164 => 28,  160 => 27,  157 => 26,  152 => 25,  148 => 23,  140 => 18,  137 => 17,  135 => 16,  132 => 15,  128 => 14,  126 => 13,  122 => 12,  118 => 11,  115 => 10,  102 => 8,  91 => 6,  81 => 5,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -211,6 +235,14 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
             {% endif %} {# fin de la condition admin #}
         {% endif %} {# fin de la condition user #}
         <div class=\"container\">
+        {% if prestations is empty %}
+    <p>Aucune prestation n'a été remplie.</p>
+    <a href=\"{{ path('admin_prestations') }}\" class=\"btn btn-primary\">Ajouter des prestations</a>
+    <div class=\"addPrestations\"> 
+        <button class=\"add-button\" onclick=\"window.location.href='/admin'\">Ajouter des prestations</button>
+   </div>
+{% else %}
+    <ul>
             <div class=\"pricing\">
                 {% for prestation in prestations %} {# boucle sur les prestations #}
                     <div class=\"package\">
@@ -220,7 +252,12 @@ class __TwigTemplate_bff7c61cb297b2e3a5838e6118af10e7 extends Template
                             <p><span class=\"highlight\">{{prestation.nbPhotosRetouche}} photos</span> retouchées incluses</p>
                             <p>{{prestation.opt}}</p>
                     </div>
+                    <script>
+                    let add = document.querySelector('.addPrestations'); 
+                    add.style.display = 'none'; 
+                    </script>
                 {% endfor %} {# fin de la boucle #}
+            {% endif %} {# fin de la condition #}
             </div>
         </div>
 {% endblock %}

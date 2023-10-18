@@ -23,4 +23,5 @@ return [
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/inscription']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/connexion']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/deconnexion']], [], [], []],
+    'app_error' => [['error'], ['_controller' => 'App\\Controller\\ZErrorController::index'], [], [['variable', '/', '[^/]++', 'error', true]], [], [], []],
 ];

@@ -77,7 +77,7 @@ class __TwigTemplate_46ae0c8035d05982fd9ad45001b5a315 extends Template
         $this->displayBlock('javascripts', $context, $blocks);
         // line 27
         echo "\t</head>
-\t<body> ";
+\t<body class=\"body\"> ";
         // line 29
         echo "\t\t<header>
 \t\t";
@@ -90,14 +90,15 @@ class __TwigTemplate_46ae0c8035d05982fd9ad45001b5a315 extends Template
         // line 36
         $this->displayBlock('body', $context, $blocks);
         // line 37
-        echo "\t\t<footer>
+        echo "\t<footer class=\"footer\">
 \t\t";
         // line 39
         echo "\t\t";
         $this->displayBlock('footer', $context, $blocks);
         // line 43
-        echo "\t\t</footer>
+        echo "\t</footer>
 \t</body>
+
 </html>
 ";
         
@@ -315,7 +316,7 @@ class __TwigTemplate_46ae0c8035d05982fd9ad45001b5a315 extends Template
 
     public function getDebugInfo()
     {
-        return array (  302 => 42,  299 => 41,  297 => 40,  287 => 39,  269 => 36,  259 => 34,  256 => 33,  254 => 32,  244 => 31,  234 => 26,  232 => 25,  222 => 24,  212 => 23,  210 => 22,  208 => 21,  198 => 20,  186 => 17,  184 => 16,  174 => 15,  164 => 14,  162 => 13,  152 => 12,  141 => 10,  131 => 9,  112 => 7,  99 => 43,  96 => 39,  93 => 37,  91 => 36,  88 => 35,  85 => 31,  82 => 29,  79 => 27,  76 => 24,  73 => 20,  70 => 15,  67 => 12,  65 => 9,  62 => 8,  60 => 7,  56 => 5,  52 => 2,);
+        return array (  303 => 42,  300 => 41,  298 => 40,  288 => 39,  270 => 36,  260 => 34,  257 => 33,  255 => 32,  245 => 31,  235 => 26,  233 => 25,  223 => 24,  213 => 23,  211 => 22,  209 => 21,  199 => 20,  187 => 17,  185 => 16,  175 => 15,  165 => 14,  163 => 13,  153 => 12,  142 => 10,  132 => 9,  113 => 7,  99 => 43,  96 => 39,  93 => 37,  91 => 36,  88 => 35,  85 => 31,  82 => 29,  79 => 27,  76 => 24,  73 => 20,  70 => 15,  67 => 12,  65 => 9,  62 => 8,  60 => 7,  56 => 5,  52 => 2,);
     }
 
     public function getSourceContext()
@@ -347,7 +348,7 @@ class __TwigTemplate_46ae0c8035d05982fd9ad45001b5a315 extends Template
 \t\t{# Script JavaScript #}
 \t\t{% endblock %}
 \t</head>
-\t<body> {# -- Corps de page des templates -- #}
+\t<body class=\"body\"> {# -- Corps de page des templates -- #}
 \t\t<header>
 \t\t{# header relatif a tout nos templates #}
 \t\t{% block header %}
@@ -356,14 +357,15 @@ class __TwigTemplate_46ae0c8035d05982fd9ad45001b5a315 extends Template
 \t\t{% endblock %}
 \t\t</header>
 \t\t{% block body %}{# contenu de la page #}{% endblock %}
-\t\t<footer>
+\t<footer class=\"footer\">
 \t\t{# footer relatif a tout nos templates #}
 \t\t{% block footer %}
 \t\t\t{# inclusion du pieds de page #}
 \t\t\t{% include 'partials/_footer.html.twig' %}
 \t\t{% endblock %}
-\t\t</footer>
+\t</footer>
 \t</body>
+
 </html>
 ", "base.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\base.html.twig");
     }

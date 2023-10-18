@@ -71,10 +71,9 @@ class __TwigTemplate_c6519a15e95643c1b507e6838dd273bb extends Template
 </head>
 <body>
     <div class=\"error-container\">
-        <h1>Erreur d'autorisation</h1>
-        <p>Vous n'avez pas l'autorisation d'accéder à cette page.</p>
+        <h1>Page Introuvable Erreur 404</h1>
         <p><a href=\"index.php\">Retour à l'accueil</a></p>
-        
+
     </div>
 </body>
 </html>
@@ -130,10 +129,9 @@ class __TwigTemplate_c6519a15e95643c1b507e6838dd273bb extends Template
 </head>
 <body>
     <div class=\"error-container\">
-        <h1>Erreur d'autorisation</h1>
-        <p>Vous n'avez pas l'autorisation d'accéder à cette page.</p>
+        <h1>Page Introuvable Erreur 404</h1>
         <p><a href=\"index.php\">Retour à l'accueil</a></p>
-        
+
     </div>
 </body>
 </html>

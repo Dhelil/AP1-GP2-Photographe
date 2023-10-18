@@ -47,20 +47,34 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
         <li><a href=\"/prestations\">Prestations</a></li>
         <li><a href=\"#\">Avis</a></li>
         <li><a href=\"#\">Contact</a></li>
+       
     </ul>
+    
     ";
-        // line 9
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 9, $this->source); })()), "user", [], "any", false, false, false, 9)) {
-            // line 10
+        // line 11
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "user", [], "any", false, false, false, 11)) {
+            // line 12
             echo "    <div clas=\"deco\">
         <button class=\"btn-deco\" onclick=\"window.location.href='";
-            // line 11
+            // line 13
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "'\">Deconnexion</button>
     </div>
     ";
+        } else {
+            // line 16
+            echo "    <div class=\"co\">
+        <button class=\"btn-co1\" onclick=\"window.location.href='";
+            // line 17
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "'\">Connexion</button>
+        <button class=\"btn-co2\" onclick=\"window.location.href='";
+            // line 18
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+            echo "'\">Inscription</button>
+    ";
         }
-        // line 14
+        // line 20
         echo "</nav>
 ";
         
@@ -83,7 +97,7 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  64 => 14,  58 => 11,  55 => 10,  53 => 9,  43 => 1,);
+        return array (  78 => 20,  73 => 18,  69 => 17,  66 => 16,  60 => 13,  57 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -95,11 +109,17 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
         <li><a href=\"/prestations\">Prestations</a></li>
         <li><a href=\"#\">Avis</a></li>
         <li><a href=\"#\">Contact</a></li>
+       
     </ul>
+    
     {% if app.user %}
     <div clas=\"deco\">
         <button class=\"btn-deco\" onclick=\"window.location.href='{{ path('app_logout') }}'\">Deconnexion</button>
     </div>
+    {% else %}
+    <div class=\"co\">
+        <button class=\"btn-co1\" onclick=\"window.location.href='{{ path('app_login') }}'\">Connexion</button>
+        <button class=\"btn-co2\" onclick=\"window.location.href='{{ path('app_register') }}'\">Inscription</button>
     {% endif %}
 </nav>
 ", "partials/_header.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_header.html.twig");

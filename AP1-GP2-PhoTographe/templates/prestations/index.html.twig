@@ -13,6 +13,14 @@
             {% endif %} {# fin de la condition admin #}
         {% endif %} {# fin de la condition user #}
         <div class="container">
+        {% if prestations is empty %}
+    <p>Aucune prestation n'a été remplie.</p>
+    <a href="{{ path('admin_prestations') }}" class="btn btn-primary">Ajouter des prestations</a>
+    <div class="addPrestations"> 
+        <button class="add-button" onclick="window.location.href='/admin'">Ajouter des prestations</button>
+   </div>
+{% else %}
+    <ul>
             <div class="pricing">
                 {% for prestation in prestations %} {# boucle sur les prestations #}
                     <div class="package">
@@ -22,7 +30,12 @@
                             <p><span class="highlight">{{prestation.nbPhotosRetouche}} photos</span> retouchées incluses</p>
                             <p>{{prestation.opt}}</p>
                     </div>
+                    <script>
+                    let add = document.querySelector('.addPrestations'); 
+                    add.style.display = 'none'; 
+                    </script>
                 {% endfor %} {# fin de la boucle #}
+            {% endif %} {# fin de la condition #}
             </div>
         </div>
 {% endblock %}

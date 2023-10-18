@@ -30,6 +30,7 @@ class AdministrationController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Présentations', 'fas fa-list', PresentationCrudController::getEntityFqcn());
         yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-list', UserCrudController::getEntityFqcn());
         yield MenuItem::linkToCrud('Prestations', 'fas fa-list', PrestationsCrudController::getEntityFqcn());
+        
 
 
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);

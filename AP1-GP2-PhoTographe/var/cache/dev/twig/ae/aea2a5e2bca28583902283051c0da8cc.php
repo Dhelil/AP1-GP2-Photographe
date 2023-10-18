@@ -40,20 +40,15 @@ class __TwigTemplate_96aa0418dda6736c31e39217a351fcf8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/_footer.html.twig"));
 
         // line 1
-        echo "<div class=\"footer\">
-        <p>&copy; ";
-        // line 2
+        echo "        <p>&copy; ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " AlexCapture</p>
         <p><a href=\"#\">Mentions légales</a></p>
-        <p><a href=\"#\">Conditions générales de vente</a></p>
         <p><a href=\"#\">Politique de confidentialité</a></p>
         <p><a href=\"#\">Politique de cookies</a></p>
         <p><a href=\"#\">FAQ</a></p>
         <p><a href=\"#\">Partenaires</a></p>
-        <p><a href=\"#\">Aide</a></p>
-        <p><a href=\"#\">Espace client</a></p>
-</div>";
+        <p><a href=\"#\">Aide</a></p>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -74,21 +69,17 @@ class __TwigTemplate_96aa0418dda6736c31e39217a351fcf8 extends Template
 
     public function getDebugInfo()
     {
-        return array (  46 => 2,  43 => 1,);
+        return array (  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"footer\">
-        <p>&copy; {{ 'now'|date('Y') }} AlexCapture</p>
+        return new Source("        <p>&copy; {{ 'now'|date('Y') }} AlexCapture</p>
         <p><a href=\"#\">Mentions légales</a></p>
-        <p><a href=\"#\">Conditions générales de vente</a></p>
         <p><a href=\"#\">Politique de confidentialité</a></p>
         <p><a href=\"#\">Politique de cookies</a></p>
         <p><a href=\"#\">FAQ</a></p>
         <p><a href=\"#\">Partenaires</a></p>
-        <p><a href=\"#\">Aide</a></p>
-        <p><a href=\"#\">Espace client</a></p>
-</div>", "partials/_footer.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_footer.html.twig");
+        <p><a href=\"#\">Aide</a></p>", "partials/_footer.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_footer.html.twig");
     }
 }

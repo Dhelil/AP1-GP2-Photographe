@@ -107,21 +107,24 @@ class __TwigTemplate_4b35a530a23336d91515b4e208339db1 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 8
-        echo "<main class=\"container\">
-    <h1 class=\"title\">AlexCaptures</h1>
+        echo "    <h1 class=\"title\">AlexCaptures</h1>
+<main class=\"container\">
+<div class='vide'>
+<img src=\"assets/images/photographe.jpg\" >
+</div>
    <section class=\"btns\">
-        <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button>
-        <div class=\"or\">
+       <div> <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button></div>
         <p>ou</p>
-        </div>
-        <button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button>
-    </section>
-    <section class=\"image\">
-        <img src=\"assets/images/photographe.jpg\" alt=\"photographe\" width=\"350rem\">
+        <div><button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button></div>
     </section>
     <aside class=\"presentation\">
+    <h2>Photographe professionnel</h2>
+    <br>
+    <hr>
+    <br>
     Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
     Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
+    
     </aside>
 </main>
 ";
@@ -157,21 +160,24 @@ class __TwigTemplate_4b35a530a23336d91515b4e208339db1 extends Template
 <link rel=\"stylesheet\" href=\"assets/css/style_accueil.css\">
  {% endblock %}
 {% block body %}
-<main class=\"container\">
     <h1 class=\"title\">AlexCaptures</h1>
+<main class=\"container\">
+<div class='vide'>
+<img src=\"assets/images/photographe.jpg\" >
+</div>
    <section class=\"btns\">
-        <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button>
-        <div class=\"or\">
+       <div> <button class=\"btn\" onclick=\"window.location.href='/connexion'\">Se connecter</button></div>
         <p>ou</p>
-        </div>
-        <button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button>
-    </section>
-    <section class=\"image\">
-        <img src=\"assets/images/photographe.jpg\" alt=\"photographe\" width=\"350rem\">
+        <div><button class=\"btn\" onclick=\"window.location.href='/inscription'\">Créer un compte</button></div>
     </section>
     <aside class=\"presentation\">
+    <h2>Photographe professionnel</h2>
+    <br>
+    <hr>
+    <br>
     Je suis Alex, un photographe passionné qui transforme vos moments spéciaux en souvenirs durables. 
     Mon expertise et ma créativité se combinent pour vous offrir des images exceptionnelles.
+    
     </aside>
 </main>
 {% endblock %}
