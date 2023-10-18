@@ -15,6 +15,11 @@ use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Regex;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+use App\Validator\Constraints\RegexPasswordConstraint;
+use App\Validator\Constraints\RegexMailConstraint;
+use App\Validator\Constraints\RegexNumeroConstraint;
+use App\Validator\Constraints\RegexCPConstraint;
+
 
 
 
@@ -26,9 +31,12 @@ class RegistrationFormType extends AbstractType
             ->add('email', EmailType::class, [
                 'attr' => [
                     'class' => 'form-control',
-                    'placeholder' => 'E-Mail'
+                    'placeholder' => 'E-Mail',
+                    'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
+
                 ],
                 'constraints' => [
+                    new RegexMailConstraint(),
                     // Regex du mail
                     //new Regex('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(fr|com|net)$/',
                     //"Veuillez entrer une adresse e-mail valide. L'adresse e-mail doit suivre le format standard, comprenant une partie locale de texte suivie d'un '@', puis une partie de domaine de texte, et se terminer par l'une des extensions de domaine autorisées (.fr, .com, .net).")
@@ -70,16 +78,17 @@ class RegistrationFormType extends AbstractType
                 'label' => false
             ])
 
-            ->add('cp_user', TextType::class, [
+            ->add('cpUser', TextType::class, [
                 'attr' => [
                     'class' => 'form-control',
-                    'placeholder' => 'Code Postal'
+                    'placeholder' => 'Code Postal',
+                    'class' => 'register-cp-input',
+                    'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
+
                 ],
                 'constraints' => [
-                    // Regex du CP
-                    //new Regex('^(0[1-9]|[1-8][0-9]|9[0-5])\d{3}$/',
-                    //"Veuillez entrer un code postal valide en France. Les codes postaux en France sont composés de 5 chiffres et ne commencent pas par 96 ou 97.")
-                ],
+                    new RegexCPConstraint(),
+                    ],
                 'label' => false
             ])
 
@@ -112,16 +121,12 @@ class RegistrationFormType extends AbstractType
             ->add('telephone_user', TextType::class, [
                 'attr' => [
                     'class' => 'form-control',
-                    'placeholder' => 'Numéro de téléphone'
+                    'placeholder' => 'Numéro de téléphone',
+                    'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
+
                 ],
                 'constraints' => [
-                    new Length([
-
-                        // taille min et max du num de tel
-                        'min' => 10,
-                        'max' => 10,
-                    ]),
-
+                    new RegexNumeroConstraint(),
                     // Regex du num de tel
                     //new Regex('/^(01|06|07)\d{8}$)/', 
                     //"Veuillez entrer un numéro de téléphone valide. Le numéro de téléphone doit commencer par '01', '06' ou '07' et doit comporter exactement 10 chiffres.")
@@ -141,14 +146,22 @@ class RegistrationFormType extends AbstractType
 
             ->add('plainPassword', RepeatedType::class, [
                 'type' => PasswordType::class,
-                'invalid_message' => 'Les MDP ne correspondent pas',
                 'options' => [ 'attr' => ['class' => 'password-field']],
                 'required' => true,
+                'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
                 'first_options' => ['label' => false, 
-                                    'attr' => ['placeholder' => 'Mot de passe']],
+                                    'attr' => ['placeholder' => 'Mot de passe',
+                                                'class' => 'register-password-input',
+                                                'autocomplete' => 'new-password'],
+                                    'label_attr' => ['class' => 'register-label'],
+                                    'error_bubbling' => true,
+                                    ],
                                     
                 'second_options' => ['label' => false, 
-                                     'attr' => ['placeholder' => "Confirmation du mot de passe"]],
+                                     'attr' => ['placeholder' => "Confirmation mot de passe"]],
+                'constraints' => [
+                    new RegexPasswordConstraint(),
+                ],
                 'mapped' => false,
             ])     
 
@@ -162,3 +175,4 @@ class RegistrationFormType extends AbstractType
         ]);
     }
 }
+

@@ -49,10 +49,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $adresseUser = null;
 
     #[ORM\Column(length: 5)]
-    #[Assert\Regex (
-        pattern : '/^(0[1-9]|[1-8][0-9]|9[0-5])\d{3}$/',
-        message : "Veuillez entrer un code postal valide en France. Les codes postaux en France sont composés de 5 chiffres et ne commencent pas par 96 ou 97."
-    )]
     private ?string $cpUser = null;
 
     #[ORM\Column(length: 150)]

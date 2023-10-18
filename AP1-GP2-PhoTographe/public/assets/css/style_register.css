@@ -111,3 +111,10 @@ body {
     text-align: center;
     margin: 20px 0 15px;
 }
+
+.ERROR {
+    color: red;
+    font-size: 15px;
+}
+
+
