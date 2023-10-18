@@ -242,7 +242,11 @@ class __TwigTemplate_7c82f29847819b93b4f6537d9dc74965 extends Template
 \t</body>
 {% endblock %}
 <<<<<<< HEAD
+<<<<<<< HEAD
 ", "security/login.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\security\\login.html.twig");
+=======
+", "security/login.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\security\\login.html.twig");
+>>>>>>> feature_ilies
 =======
 ", "security/login.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\security\\login.html.twig");
 >>>>>>> feature_ilies

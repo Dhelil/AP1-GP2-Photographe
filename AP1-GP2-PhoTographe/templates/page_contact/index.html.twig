@@ -28,18 +28,31 @@
 			{% if app.user %}
 				{{ form_start(form) }}
 				<div class="contact-infosa">
+<<<<<<< HEAD
 					<input class="input-email" {#name="{{ field_name(form.dateDemande) }}"#} type="text" placeholder="E-mail..." required>
 					<input class="input-objet" {#name="{{ field_name(form.objetDemande) }}"#} type="text" placeholder="Objet..." required>
 				</div>
 				<div class="contact-infosb">
 					<input class="input-telephone" {#name="{{ field_name(form.enfant) }}"#} type="text" placeholder="Telephone..." required>
 					<input class="input-nom" {#name="{{ field_name(form.idDemandeUser) }}"#} type="text" placeholder="Nom..." required>
+=======
+					<input class="input-email" name="{{ field_name(form.enfant) }}" type="text" placeholder="E-mail..." required>
+					<input class="input-objet" name="{{ field_name(form.objetDemande) }}" type="text" placeholder="Objet..." required>
+				</div>
+				<div class="contact-infosb">
+					<input class="input-telephone" name="{{ field_name(form.idDemandeUser) }}" type="text" placeholder="Telephone..." required>
+					<input class="input-nom" name="{{ field_name(form.dateDemande) }}" type="text" placeholder="Nom..." required>
+>>>>>>> feature_ilies
 				</div>
 				<div class="contact-commentaire">
 					<p>Commentaire</P>
 				</div>
 				<div class="contact-infosc">
+<<<<<<< HEAD
 					<textarea class="textarea-commentaire" {#name="{{ field_name(form.descriptionDemande) }}"#} id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
+=======
+					<textarea class="textarea-commentaire" id="commentaire" name="{{ field_name(form.descriptionDemande) }}" placeholder="Entrez du texte ici..." required></textarea>
+>>>>>>> feature_ilies
 				</div>
 				<div class="contact-bouton">
 					<button class="submit-button" type="submit">Submit</button>
