@@ -8,9 +8,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\Security;
 
 class PageContactController extends AbstractController
 {
+    private $security;
     #[Route('/contact', name: 'app_page_contact')]
     public function index(Request $request): Response
     {

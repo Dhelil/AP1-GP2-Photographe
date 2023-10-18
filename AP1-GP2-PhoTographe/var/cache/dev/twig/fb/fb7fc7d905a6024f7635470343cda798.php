@@ -115,6 +115,10 @@ class __TwigTemplate_049c63243bf8b3538f8ef2a10ef001ce extends Template
 \t\t<button>
 \t\t\t<a href=\"/inscription\">Créer un compte</button>
 \t\t{% endblock %}
+<<<<<<< HEAD
 ", "c_principal/index.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\c_principal\\index.html.twig");
+=======
+", "c_principal/index.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\c_principal\\index.html.twig");
+>>>>>>> feature_ilies
     }
 }

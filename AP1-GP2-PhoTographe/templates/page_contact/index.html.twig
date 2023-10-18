@@ -25,7 +25,7 @@
 			<div class="" contact-barre>
 				<hr>
 			</div>
-			<form action="{{ path('app_page_contact') }}" method="post">
+			{% if app.user %}
 				{{ form_start(form) }}
 				<div class="contact-infosa">
 					<input class="input-email" {#name="{{ field_name(form.dateDemande) }}"#} type="text" placeholder="E-mail..." required>
@@ -42,10 +42,12 @@
 					<textarea class="textarea-commentaire" {#name="{{ field_name(form.descriptionDemande) }}"#} id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
 				</div>
 				<div class="contact-bouton">
-					<button type="submit">Submit</button>
+					<button class="submit-button" type="submit">Submit</button>
 				</div>
 				{{ form_end(form) }}
-			</form>
+			{% else %}
+				<p>Vous devez vous connecter pour faire une demande de contact</p>
+			{% endif %}
 		</div>
 
 		{% if form_errors(form) %}
