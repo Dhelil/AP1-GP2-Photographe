@@ -6,8 +6,8 @@ return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     'app_c_principal' => [[], ['_controller' => 'App\\Controller\\CPrincipalController::index'], [], [['text', '/home']], [], [], []],
     'app_page_avis' => [[], ['_controller' => 'App\\Controller\\PageAvisController::index'], [], [['text', '/avis']], [], [], []],
-    'app_page_contact' => [[], ['_controller' => 'App\\Controller\\PageContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/inscription']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/connexion']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/deconnexion']], [], [], []],
+    'app_page_contact' => [[], ['_controller' => 'App\\Controller\\PageContactController::index'], [], [['text', '/contact']], [], [], []],
 ];

@@ -84,200 +84,221 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 \t\t}
 \t</style>
 
-\t<div class\"avis-global\">
-\t\t<div class=\"avis-note-gen\">
-\t\t\t<h2>Note Générale sur
-\t\t\t\t";
-        // line 23
-        echo twig_escape_filter($this->env, twig_length_filter($this->env, (isset($context["ttlesavis"]) || array_key_exists("ttlesavis", $context) ? $context["ttlesavis"] : (function () { throw new RuntimeError('Variable "ttlesavis" does not exist.', 23, $this->source); })())), "html", null, true);
+\t<div class=\"example-wrapper\">
+\t\t<div class\"avis-global\">
+\t\t\t<div class=\"avis-note-gen\">
+\t\t\t\t<h2>Note Générale sur
+\t\t\t\t\t";
+        // line 24
+        echo twig_escape_filter($this->env, twig_length_filter($this->env, (isset($context["ttlesavis"]) || array_key_exists("ttlesavis", $context) ? $context["ttlesavis"] : (function () { throw new RuntimeError('Variable "ttlesavis" does not exist.', 24, $this->source); })())), "html", null, true);
         echo "
-\t\t\t\tavis, moyenne de :
-\t\t\t\t";
-        // line 25
-        echo twig_escape_filter($this->env, (isset($context["moyenne"]) || array_key_exists("moyenne", $context) ? $context["moyenne"] : (function () { throw new RuntimeError('Variable "moyenne" does not exist.', 25, $this->source); })()), "html", null, true);
-        echo "</h2>
-\t\t\t<div class\"note-globale\">
-
-\t\t\t\t";
+\t\t\t\t\tavis</h2>
+\t\t\t\t<div class\"note-globale\">
+\t\t\t\t\t<div class=\"etoiles-moyenne\">
+\t\t\t\t\t\t";
         // line 28
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["moyenne"]) || array_key_exists("moyenne", $context) ? $context["moyenne"] : (function () { throw new RuntimeError('Variable "moyenne" does not exist.', 28, $this->source); })())));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
             // line 29
-            echo "\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t";
+            echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 31
         echo "
-\t\t\t\t";
+\t\t\t\t\t\t";
         // line 32
         if (((isset($context["etoilesemi"]) || array_key_exists("etoilesemi", $context) ? $context["etoilesemi"] : (function () { throw new RuntimeError('Variable "etoilesemi" does not exist.', 32, $this->source); })()) == 1)) {
             // line 33
-            echo "\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t\t";
+            echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t";
             // line 34
             if (((isset($context["moyenne"]) || array_key_exists("moyenne", $context) ? $context["moyenne"] : (function () { throw new RuntimeError('Variable "moyenne" does not exist.', 34, $this->source); })()) < 4.5)) {
                 // line 35
-                echo "\t\t\t\t\t\t";
+                echo "\t\t\t\t\t\t\t\t";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["quantsemi"]) || array_key_exists("quantsemi", $context) ? $context["quantsemi"] : (function () { throw new RuntimeError('Variable "quantsemi" does not exist.', 35, $this->source); })())));
                 foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
                     // line 36
-                    echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t\t\t";
+                    echo "\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 38
-                echo "\t\t\t\t\t";
+                echo "\t\t\t\t\t\t\t";
             }
             // line 39
             echo "
-\t\t\t\t";
+\t\t\t\t\t\t";
         } else {
             // line 41
-            echo "\t\t\t\t\t";
+            echo "\t\t\t\t\t\t\t";
             if (((isset($context["moyenne"]) || array_key_exists("moyenne", $context) ? $context["moyenne"] : (function () { throw new RuntimeError('Variable "moyenne" does not exist.', 41, $this->source); })()) < 4.5)) {
                 // line 42
-                echo "\t\t\t\t\t\t";
+                echo "\t\t\t\t\t\t\t\t";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["quant"]) || array_key_exists("quant", $context) ? $context["quant"] : (function () { throw new RuntimeError('Variable "quant" does not exist.', 42, $this->source); })())));
                 foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
                     // line 43
-                    echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t\t\t";
+                    echo "\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 45
-                echo "\t\t\t\t\t";
+                echo "\t\t\t\t\t\t\t";
             }
             // line 46
-            echo "\t\t\t\t";
+            echo "\t\t\t\t\t\t";
         }
         // line 47
+        echo "\t\t\t\t\t</div>
+\t\t\t\t\t<div class=\"texte-moyenne\">
+\t\t\t\t\t\t<p>";
+        // line 49
+        echo twig_escape_filter($this->env, (isset($context["moyenne"]) || array_key_exists("moyenne", $context) ? $context["moyenne"] : (function () { throw new RuntimeError('Variable "moyenne" does not exist.', 49, $this->source); })()), "html", null, true);
         echo "
+\t\t\t\t\t\t\tsur 5</p>
+\t\t\t\t\t</div>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t\t<div class=\"avis-note-prc\">
+\t\t\t\t<div class=\"1etoile\"></div>
+\t\t\t\t<div class=\"2etoile\"></div>
+\t\t\t\t<div class=\"3etoile\"></div>
+\t\t\t\t<div class=\"4etoile\"></div>
+\t\t\t\t<div class=\"5etoile\"></div>
 \t\t\t</div>
 \t\t</div>
-\t\t<div class=\"avis-note-prc\">
-\t\t\t<div class=\"1etoile\"></div>
-\t\t\t<div class=\"2etoile\"></div>
-\t\t\t<div class=\"3etoile\"></div>
-\t\t\t<div class=\"4etoile\"></div>
-\t\t\t<div class=\"5etoile\"></div>
+\t\t<div class=\"\" contact-barre>
+\t\t\t<hr>
 \t\t</div>
-\t</div>
-\t<div class=\"\" contact-barre>
-\t\t<hr>
-\t</div>
-\t<div class=\"avis-commentaires\">
-\t\t";
-        // line 62
+\t\t<div class=\"avis-commentaires\">
+\t\t\t";
+        // line 66
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["ttlesavis"]) || array_key_exists("ttlesavis", $context) ? $context["ttlesavis"] : (function () { throw new RuntimeError('Variable "ttlesavis" does not exist.', 62, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["ttlesavis"]) || array_key_exists("ttlesavis", $context) ? $context["ttlesavis"] : (function () { throw new RuntimeError('Variable "ttlesavis" does not exist.', 66, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["avis"]) {
-            // line 63
-            echo "\t\t\t<div class=\"avis\">
-\t\t\t\t<div class=\"headerdavis\">
-\t\t\t\t\t<h2 class=\"nom\">";
-            // line 65
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["avis"], "getIdAvisUser", [], "method", false, false, false, 65), "getNomUser", [], "method", false, false, false, 65) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["avis"], "getIdAvisUser", [], "method", false, false, false, 65), "getPrenomUser", [], "method", false, false, false, 65)), "html", null, true);
-            echo "</h2>
+            // line 67
+            echo "\t\t\t\t<div class=\"avis\">
+\t\t\t\t\t<div class=\"headerdavis\">
+\t\t\t\t\t\t<p class=\"nom\">";
+            // line 69
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["avis"], "getIdAvisUser", [], "method", false, false, false, 69), "getNomUser", [], "method", false, false, false, 69) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["avis"], "getIdAvisUser", [], "method", false, false, false, 69), "getPrenomUser", [], "method", false, false, false, 69)), "html", null, true);
+            echo "</p>
 
 
-\t\t\t\t\t";
-            // line 68
+\t\t\t\t\t\t";
+            // line 72
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 68)));
+            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 72)));
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 69
-                echo "\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t";
+                // line 73
+                echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 71
+            // line 75
             echo "
-\t\t\t\t\t";
-            // line 72
-            if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", true, true, false, 72) && (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 72)) >= 2))) {
-                // line 73
-                echo "\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"50px\" height=\"50px\">
 \t\t\t\t\t\t";
-                // line 74
-                if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 74) < 4.5)) {
-                    // line 75
-                    echo "\t\t\t\t\t\t\t";
-                    $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(range(1, (5 - twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 75))));
-                    foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                        // line 76
-                        echo "\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\">
+            // line 76
+            if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", true, true, false, 76) && (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 76)) >= 2))) {
+                // line 77
+                echo "\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
 \t\t\t\t\t\t\t";
+                // line 78
+                if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 78) < 4.5)) {
+                    // line 79
+                    echo "\t\t\t\t\t\t\t\t";
+                    $context['_parent'] = $context;
+                    $context['_seq'] = twig_ensure_traversable(range(1, (5 - twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 79))));
+                    foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
+                        // line 80
+                        echo "\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 78
-                    echo "\t\t\t\t\t\t";
-                }
-                // line 79
-                echo "
-\t\t\t\t\t";
-            } else {
-                // line 81
-                echo "\t\t\t\t\t\t";
-                if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 81) < 4.5)) {
                     // line 82
                     echo "\t\t\t\t\t\t\t";
+                }
+                // line 83
+                echo "
+\t\t\t\t\t\t";
+            } else {
+                // line 85
+                echo "\t\t\t\t\t\t\t";
+                if ((twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 85) < 4.5)) {
+                    // line 86
+                    echo "\t\t\t\t\t\t\t\t";
                     $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(range(1, (5 - twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 82))));
+                    $context['_seq'] = twig_ensure_traversable(range(1, (5 - twig_get_attribute($this->env, $this->source, $context["avis"], "getNiveauAvis", [], "method", false, false, false, 86))));
                     foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                        // line 83
-                        echo "\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t";
+                        // line 87
+                        echo "\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 85
-                    echo "\t\t\t\t\t\t";
+                    // line 89
+                    echo "\t\t\t\t\t\t\t";
                 }
-                // line 86
-                echo "\t\t\t\t\t";
+                // line 90
+                echo "\t\t\t\t\t\t";
             }
-            // line 87
+            // line 91
             echo "
 
-\t\t\t\t\t";
-            // line 94
+\t\t\t\t\t\t";
+            // line 98
             echo "
 
+\t\t\t\t\t</div>
+\t\t\t\t\t<p class=\"description\">";
+            // line 101
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDescriptionAvis", [], "method", false, false, false, 101), "html", null, true);
+            echo "</p>
+\t\t\t\t\t<p class=\"date\">date du
+\t\t\t\t\t\t";
+            // line 103
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDateAvis", [], "method", false, false, false, 103), "d-m-Y"), "html", null, true);
+            echo "</p>
+\t\t\t\t\t<br>
 \t\t\t\t</div>
-\t\t\t\t<p class=\"description\">";
-            // line 97
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDescriptionAvis", [], "method", false, false, false, 97), "html", null, true);
-            echo "</p>
-\t\t\t\t<p class=\"date\">date du
-\t\t\t\t\t";
-            // line 99
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDateAvis", [], "method", false, false, false, 99), "d-m-Y"), "html", null, true);
-            echo "</p>
-\t\t\t\t<br>
-\t\t\t</div>
-\t\t";
+\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['avis'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 103
-        echo "\t</div>
+        // line 107
+        echo "\t\t</div>
+\t\t<div class=\"\" contact-barre>
+\t\t\t<hr>
+\t\t</div>
+
+\t\t";
+        // line 112
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 112, $this->source); })()), 'form_start');
+        echo "
+\t\t<div class=\"contact-bouton\">
+\t\t\t<button type=\"submit\">Submit</button>
+\t\t</div>
+\t\t";
+        // line 116
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 116, $this->source); })()), 'form_end');
+        echo "
+
+\t</div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -296,7 +317,7 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 
     public function getDebugInfo()
     {
-        return array (  280 => 103,  270 => 99,  265 => 97,  260 => 94,  256 => 87,  253 => 86,  250 => 85,  243 => 83,  238 => 82,  235 => 81,  231 => 79,  228 => 78,  221 => 76,  216 => 75,  214 => 74,  211 => 73,  209 => 72,  206 => 71,  199 => 69,  195 => 68,  189 => 65,  185 => 63,  181 => 62,  164 => 47,  161 => 46,  158 => 45,  151 => 43,  146 => 42,  143 => 41,  139 => 39,  136 => 38,  129 => 36,  124 => 35,  122 => 34,  119 => 33,  117 => 32,  114 => 31,  107 => 29,  103 => 28,  97 => 25,  92 => 23,  74 => 7,  67 => 6,  53 => 3,  36 => 1,);
+        return array (  298 => 116,  291 => 112,  284 => 107,  274 => 103,  269 => 101,  264 => 98,  260 => 91,  257 => 90,  254 => 89,  247 => 87,  242 => 86,  239 => 85,  235 => 83,  232 => 82,  225 => 80,  220 => 79,  218 => 78,  215 => 77,  213 => 76,  210 => 75,  203 => 73,  199 => 72,  193 => 69,  189 => 67,  185 => 66,  165 => 49,  161 => 47,  158 => 46,  155 => 45,  148 => 43,  143 => 42,  140 => 41,  136 => 39,  133 => 38,  126 => 36,  121 => 35,  119 => 34,  116 => 33,  114 => 32,  111 => 31,  104 => 29,  100 => 28,  93 => 24,  74 => 7,  67 => 6,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -320,89 +341,104 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 \t\t}
 \t</style>
 
-\t<div class\"avis-global\">
-\t\t<div class=\"avis-note-gen\">
-\t\t\t<h2>Note Générale sur
-\t\t\t\t{{ ttlesavis|length }}
-\t\t\t\tavis, moyenne de :
-\t\t\t\t{{ moyenne }}</h2>
-\t\t\t<div class\"note-globale\">
-
-\t\t\t\t{% for i in range(1, moyenne) %}
-\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t{% endfor %}
-
-\t\t\t\t{% if etoilesemi == 1 %}
-\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t\t{% if moyenne < 4.5 %}
-\t\t\t\t\t\t{% for i in range(1, quantsemi) %}
-\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t<div class=\"example-wrapper\">
+\t\t<div class\"avis-global\">
+\t\t\t<div class=\"avis-note-gen\">
+\t\t\t\t<h2>Note Générale sur
+\t\t\t\t\t{{ ttlesavis|length }}
+\t\t\t\t\tavis</h2>
+\t\t\t\t<div class\"note-globale\">
+\t\t\t\t\t<div class=\"etoiles-moyenne\">
+\t\t\t\t\t\t{% for i in range(1, moyenne) %}
+\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
 \t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t{% endif %}
 
-\t\t\t\t{% else %}
-\t\t\t\t\t{% if moyenne < 4.5 %}
-\t\t\t\t\t\t{% for i in range(1, quant) %}
-\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
-\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t{% endif %}
-\t\t\t\t{% endif %}
+\t\t\t\t\t\t{% if etoilesemi == 1 %}
+\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t{% if moyenne < 4.5 %}
+\t\t\t\t\t\t\t\t{% for i in range(1, quantsemi) %}
+\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t\t{% endif %}
 
-\t\t\t</div>
-\t\t</div>
-\t\t<div class=\"avis-note-prc\">
-\t\t\t<div class=\"1etoile\"></div>
-\t\t\t<div class=\"2etoile\"></div>
-\t\t\t<div class=\"3etoile\"></div>
-\t\t\t<div class=\"4etoile\"></div>
-\t\t\t<div class=\"5etoile\"></div>
-\t\t</div>
-\t</div>
-\t<div class=\"\" contact-barre>
-\t\t<hr>
-\t</div>
-\t<div class=\"avis-commentaires\">
-\t\t{% for avis in ttlesavis %}
-\t\t\t<div class=\"avis\">
-\t\t\t\t<div class=\"headerdavis\">
-\t\t\t\t\t<h2 class=\"nom\">{{ avis.getIdAvisUser().getNomUser() ~ ' ' ~ avis.getIdAvisUser().getPrenomUser() }}</h2>
-
-
-\t\t\t\t\t{% for i in range(1, avis.getNiveauAvis()) %}
-\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t{% endfor %}
-
-\t\t\t\t\t{% if avis.getNiveauAvis() is defined and avis.getNiveauAvis()|length >= 2 %}
-\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t{% if avis.getNiveauAvis() < 4.5 %}
-\t\t\t\t\t\t\t{% for i in range(1, (5 - avis.getNiveauAvis())) %}
-\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t{% else %}
+\t\t\t\t\t\t\t{% if moyenne < 4.5 %}
+\t\t\t\t\t\t\t\t{% for i in range(1, quant) %}
+\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t\t{% endif %}
 \t\t\t\t\t\t{% endif %}
-
-\t\t\t\t\t{% else %}
-\t\t\t\t\t\t{% if avis.getNiveauAvis() < 4.5 %}
-\t\t\t\t\t\t\t{% for i in range(1, (5 - avis.getNiveauAvis())) %}
-\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t{% endif %}
-\t\t\t\t\t{% endif %}
-
-
-\t\t\t\t\t{# {% for i in range(1, 3) %}
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\"> #}
-
-
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class=\"texte-moyenne\">
+\t\t\t\t\t\t<p>{{ moyenne }}
+\t\t\t\t\t\t\tsur 5</p>
+\t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<p class=\"description\">{{ avis.getDescriptionAvis() }}</p>
-\t\t\t\t<p class=\"date\">date du
-\t\t\t\t\t{{ avis.getDateAvis()|date('d-m-Y') }}</p>
-\t\t\t\t<br>
 \t\t\t</div>
-\t\t{% endfor %}
+\t\t\t<div class=\"avis-note-prc\">
+\t\t\t\t<div class=\"1etoile\"></div>
+\t\t\t\t<div class=\"2etoile\"></div>
+\t\t\t\t<div class=\"3etoile\"></div>
+\t\t\t\t<div class=\"4etoile\"></div>
+\t\t\t\t<div class=\"5etoile\"></div>
+\t\t\t</div>
+\t\t</div>
+\t\t<div class=\"\" contact-barre>
+\t\t\t<hr>
+\t\t</div>
+\t\t<div class=\"avis-commentaires\">
+\t\t\t{% for avis in ttlesavis %}
+\t\t\t\t<div class=\"avis\">
+\t\t\t\t\t<div class=\"headerdavis\">
+\t\t\t\t\t\t<p class=\"nom\">{{ avis.getIdAvisUser().getNomUser() ~ ' ' ~ avis.getIdAvisUser().getPrenomUser() }}</p>
+
+
+\t\t\t\t\t\t{% for i in range(1, avis.getNiveauAvis()) %}
+\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t{% endfor %}
+
+\t\t\t\t\t\t{% if avis.getNiveauAvis() is defined and avis.getNiveauAvis()|length >= 2 %}
+\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t{% if avis.getNiveauAvis() < 4.5 %}
+\t\t\t\t\t\t\t\t{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t\t{% endif %}
+
+\t\t\t\t\t\t{% else %}
+\t\t\t\t\t\t\t{% if avis.getNiveauAvis() < 4.5 %}
+\t\t\t\t\t\t\t\t{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"30px\" height=\"30px\">
+\t\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t\t{% endif %}
+\t\t\t\t\t\t{% endif %}
+
+
+\t\t\t\t\t\t{# {% for i in range(1, 3) %}
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"50px\" height=\"50px\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"50px\" height=\"50px\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\"> #}
+
+
+\t\t\t\t\t</div>
+\t\t\t\t\t<p class=\"description\">{{ avis.getDescriptionAvis() }}</p>
+\t\t\t\t\t<p class=\"date\">date du
+\t\t\t\t\t\t{{ avis.getDateAvis()|date('d-m-Y') }}</p>
+\t\t\t\t\t<br>
+\t\t\t\t</div>
+\t\t\t{% endfor %}
+\t\t</div>
+\t\t<div class=\"\" contact-barre>
+\t\t\t<hr>
+\t\t</div>
+
+\t\t{{ form_start(form) }}
+\t\t<div class=\"contact-bouton\">
+\t\t\t<button type=\"submit\">Submit</button>
+\t\t</div>
+\t\t{{ form_end(form) }}
+
 \t</div>
 {% endblock %}
 ", "page_avis/index.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_avis\\index.html.twig");

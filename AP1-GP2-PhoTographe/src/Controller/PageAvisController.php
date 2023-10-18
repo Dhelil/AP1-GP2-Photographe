@@ -2,17 +2,18 @@
 
 namespace App\Controller;
 
-use App\Entity\Article;
+use App\Entity\Avis;
 use App\Repository\AvisRepository;
+use App\Form\AvisFormType;  
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Form\YourFormType;
 
 class PageAvisController extends AbstractController
 {
     #[Route('/avis', name: 'app_page_avis')]
-    public function index(AvisRepository $avis): Response
+    public function index(AvisRepository $avis, Request $request): Response
     {
         $lesavis = $avis->findAll();
 
@@ -35,6 +36,21 @@ class PageAvisController extends AbstractController
 
         $quantsemi = (5 - $moyenne - 0.5);
 
+        
+        $avisform = new Avis();
+
+        $formavis = $this->createForm(AvisFormType::class, $avisform);
+        $formavis->handleRequest($request);
+
+        if ($formavis->isSubmitted() && $formavis->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($avisform);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_page_avis');
+        }
+
+
         return $this->render('page_avis/index.html.twig', [
             'controller_name' => 'PageAvisController',
             'ttlesavis' => $lesavis,
@@ -42,6 +58,7 @@ class PageAvisController extends AbstractController
             'etoilesemi' => $etoilesemi,
             'quant' => $quant,
             'quantsemi' => $quantsemi,
+            'form' => $formavis->createView(),
         ]);
     }
 }

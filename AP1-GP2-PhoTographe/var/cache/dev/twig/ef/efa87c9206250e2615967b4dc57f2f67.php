@@ -56,9 +56,10 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
         $this->displayBlock('stylesheets', $context, $blocks);
         $this->displayBlock('javascripts', $context, $blocks);
         // line 10
-        echo "\t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
+        echo "\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
+\t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
 \t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
-\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
+
 \t</head>
 \t<body>
 
@@ -87,9 +88,9 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t</div>
 
 \t\t";
-        // line 40
-        $this->displayBlock('body', $context, $blocks);
         // line 41
+        $this->displayBlock('body', $context, $blocks);
+        // line 42
         echo "\t</body>
 </html>
 ";
@@ -135,7 +136,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     }
 
-    // line 40
+    // line 41
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -154,7 +155,7 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  139 => 40,  116 => 9,  102 => 6,  93 => 41,  91 => 40,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
+        return array (  140 => 41,  117 => 9,  103 => 6,  94 => 42,  92 => 41,  59 => 10,  56 => 9,  53 => 8,  51 => 6,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -168,9 +169,10 @@ class __TwigTemplate_d12f48f742719928af6f496d56dce1d7 extends Template
 \t\t\t{% endblock %}
 \t\t</title>
 \t\t<link rel=\"icon\" href=\"assets/images/cameraicon.png\"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
 \t\t<link href=\"assets/css/style_nav.css\" rel=\"stylesheet\">
 \t\t<link href=\"assets/css/style_contact.css\" rel=\"stylesheet\">
-\t\t<link href=\"assets/css/style_avis.css\" rel=\"stylesheet\">
+
 \t</head>
 \t<body>
 

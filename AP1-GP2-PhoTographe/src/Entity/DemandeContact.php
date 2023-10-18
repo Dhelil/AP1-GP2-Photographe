@@ -37,7 +37,7 @@ class DemandeContact
     public function __construct()
     {
         $this->parent = new ArrayCollection();
-        $this->idDemandeUser = new ArrayCollection();
+        #$this->idDemandeUser = new ArrayCollection();
     }
 
     public function getId(): ?int
