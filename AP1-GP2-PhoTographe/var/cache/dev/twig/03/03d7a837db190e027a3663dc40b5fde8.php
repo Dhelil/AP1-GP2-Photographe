@@ -77,29 +77,57 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t<div class=\"\" contact-barre>
 \t\t\t\t<hr>
 \t\t\t</div>
-\t\t\t<form action=\"";
+\t\t\t";
         // line 25
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page_contact");
-        echo "\" method=\"post\">
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25)) {
+            // line 26
+            echo "\t\t\t\t";
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), 'form_start');
+            echo "
 \t\t\t\t<div class=\"contact-infosa\">
-\t\t\t\t\t<input class=\"input-email\" type=\"text\" placeholder=\"E-mail...\" required>
-\t\t\t\t\t<input class=\"input-objet\" type=\"text\" placeholder=\"Objet...\" required>
+\t\t\t\t\t<input class=\"input-email\" name=\"";
+            // line 28
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), "enfant", [], "any", false, false, false, 28)), "html", null, true);
+            echo "\" type=\"text\" placeholder=\"E-mail...\" required>
+\t\t\t\t\t<input class=\"input-objet\" name=\"";
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), "objetDemande", [], "any", false, false, false, 29)), "html", null, true);
+            echo "\" type=\"text\" placeholder=\"Objet...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosb\">
-\t\t\t\t\t<input class=\"input-telephone\" type=\"text\" placeholder=\"Telephone...\" required>
-\t\t\t\t\t<input class=\"input-nom\" type=\"text\" placeholder=\"Nom...\" required>
+\t\t\t\t\t<input class=\"input-telephone\" name=\"";
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), "idDemandeUser", [], "any", false, false, false, 32)), "html", null, true);
+            echo "\" type=\"text\" placeholder=\"Telephone...\" required>
+\t\t\t\t\t<input class=\"input-nom\" name=\"";
+            // line 33
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), "dateDemande", [], "any", false, false, false, 33)), "html", null, true);
+            echo "\" type=\"text\" placeholder=\"Nom...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-commentaire\">
 \t\t\t\t\t<p>Commentaire</P>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosc\">
-\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Entrez du texte ici...\" required></textarea>
+\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"";
+            // line 39
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), "descriptionDemande", [], "any", false, false, false, 39)), "html", null, true);
+            echo "\" placeholder=\"Entrez du texte ici...\" required></textarea>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-bouton\">
-\t\t\t\t\t<input type=\"submit\">
-\t\t\t\t<div>
-\t\t\t</form>
-\t\t</div>
+\t\t\t\t\t<button class=\"submit-button\" type=\"submit\">Submit</button>
+\t\t\t\t</div>
+\t\t\t\t";
+            // line 44
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 44, $this->source); })()), 'form_end');
+            echo "
+\t\t\t";
+        } else {
+            // line 46
+            echo "\t\t\t\t<p>Vous devez vous connecter pour faire une demande de contact</p>
+\t\t\t";
+        }
+        // line 48
+        echo "\t\t</div>
 \t</div>
 
 
@@ -121,7 +149,7 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 
     public function getDebugInfo()
     {
-        return array (  82 => 25,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  130 => 48,  126 => 46,  121 => 44,  113 => 39,  104 => 33,  100 => 32,  94 => 29,  90 => 28,  84 => 26,  82 => 25,  59 => 4,  52 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -150,30 +178,34 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t<div class=\"\" contact-barre>
 \t\t\t\t<hr>
 \t\t\t</div>
-\t\t\t<form action=\"{{ path('app_page_contact') }}\" method=\"post\">
+\t\t\t{% if app.user %}
+\t\t\t\t{{ form_start(form) }}
 \t\t\t\t<div class=\"contact-infosa\">
-\t\t\t\t\t<input class=\"input-email\" type=\"text\" placeholder=\"E-mail...\" required>
-\t\t\t\t\t<input class=\"input-objet\" type=\"text\" placeholder=\"Objet...\" required>
+\t\t\t\t\t<input class=\"input-email\" name=\"{{ field_name(form.enfant) }}\" type=\"text\" placeholder=\"E-mail...\" required>
+\t\t\t\t\t<input class=\"input-objet\" name=\"{{ field_name(form.objetDemande) }}\" type=\"text\" placeholder=\"Objet...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosb\">
-\t\t\t\t\t<input class=\"input-telephone\" type=\"text\" placeholder=\"Telephone...\" required>
-\t\t\t\t\t<input class=\"input-nom\" type=\"text\" placeholder=\"Nom...\" required>
+\t\t\t\t\t<input class=\"input-telephone\" name=\"{{ field_name(form.idDemandeUser) }}\" type=\"text\" placeholder=\"Telephone...\" required>
+\t\t\t\t\t<input class=\"input-nom\" name=\"{{ field_name(form.dateDemande) }}\" type=\"text\" placeholder=\"Nom...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-commentaire\">
 \t\t\t\t\t<p>Commentaire</P>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosc\">
-\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Entrez du texte ici...\" required></textarea>
+\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"{{ field_name(form.descriptionDemande) }}\" placeholder=\"Entrez du texte ici...\" required></textarea>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-bouton\">
-\t\t\t\t\t<input type=\"submit\">
-\t\t\t\t<div>
-\t\t\t</form>
+\t\t\t\t\t<button class=\"submit-button\" type=\"submit\">Submit</button>
+\t\t\t\t</div>
+\t\t\t\t{{ form_end(form) }}
+\t\t\t{% else %}
+\t\t\t\t<p>Vous devez vous connecter pour faire une demande de contact</p>
+\t\t\t{% endif %}
 \t\t</div>
 \t</div>
 
 
 {% endblock %}
-", "page_contact/index.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_contact\\index.html.twig");
+", "page_contact/index.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_contact\\index.html.twig");
     }
 }
