@@ -8,13 +8,21 @@
        
     </ul>
     
-    {% if app.user %}
-    <div clas="deco">
-        <button class="btn-deco" onclick="window.location.href='{{ path('app_logout') }}'">Deconnexion</button>
+{% if app.user %}
+    <div class="deco">
+        <button class="btn-deco" onclick="window.location.href='{{ path('app_logout') }}'">Déconnexion</button>
     </div>
-    {% else %}
+    
+    {% if is_granted('ROLE_ADMIN') %} {# Si l'utilisateur est connecté et qu'il est admin #}
+        <div class="deco">
+            <button class="btn-deco" onclick="window.location.href='/admin'">Administration</button>
+        </div>
+    {% endif %}
+{% else %}
     <div class="co">
         <button class="btn-co1" onclick="window.location.href='{{ path('app_login') }}'">Connexion</button>
         <button class="btn-co2" onclick="window.location.href='{{ path('app_register') }}'">Inscription</button>
-    {% endif %}
+    </div>
+{% endif %}
+
 </nav>

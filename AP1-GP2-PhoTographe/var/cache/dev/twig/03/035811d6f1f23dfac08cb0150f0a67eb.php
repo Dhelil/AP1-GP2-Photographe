@@ -50,32 +50,44 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
        
     </ul>
     
-    ";
+";
         // line 11
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "user", [], "any", false, false, false, 11)) {
             // line 12
-            echo "    <div clas=\"deco\">
+            echo "    <div class=\"deco\">
         <button class=\"btn-deco\" onclick=\"window.location.href='";
             // line 13
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "'\">Deconnexion</button>
+            echo "'\">Déconnexion</button>
     </div>
+    
     ";
-        } else {
             // line 16
+            if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+                echo " ";
+                // line 17
+                echo "        <div class=\"deco\">
+            <button class=\"btn-deco\" onclick=\"window.location.href='/admin'\">Administration</button>
+        </div>
+    ";
+            }
+        } else {
+            // line 22
             echo "    <div class=\"co\">
         <button class=\"btn-co1\" onclick=\"window.location.href='";
-            // line 17
+            // line 23
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "'\">Connexion</button>
         <button class=\"btn-co2\" onclick=\"window.location.href='";
-            // line 18
+            // line 24
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
             echo "'\">Inscription</button>
-    ";
+    </div>
+";
         }
-        // line 20
-        echo "</nav>
+        // line 27
+        echo "
+</nav>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -97,7 +109,7 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  78 => 20,  73 => 18,  69 => 17,  66 => 16,  60 => 13,  57 => 12,  55 => 11,  43 => 1,);
+        return array (  89 => 27,  83 => 24,  79 => 23,  76 => 22,  69 => 17,  66 => 16,  60 => 13,  57 => 12,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -112,15 +124,23 @@ class __TwigTemplate_f2882b96a538771154b0107ffded3fd4 extends Template
        
     </ul>
     
-    {% if app.user %}
-    <div clas=\"deco\">
-        <button class=\"btn-deco\" onclick=\"window.location.href='{{ path('app_logout') }}'\">Deconnexion</button>
+{% if app.user %}
+    <div class=\"deco\">
+        <button class=\"btn-deco\" onclick=\"window.location.href='{{ path('app_logout') }}'\">Déconnexion</button>
     </div>
-    {% else %}
+    
+    {% if is_granted('ROLE_ADMIN') %} {# Si l'utilisateur est connecté et qu'il est admin #}
+        <div class=\"deco\">
+            <button class=\"btn-deco\" onclick=\"window.location.href='/admin'\">Administration</button>
+        </div>
+    {% endif %}
+{% else %}
     <div class=\"co\">
         <button class=\"btn-co1\" onclick=\"window.location.href='{{ path('app_login') }}'\">Connexion</button>
         <button class=\"btn-co2\" onclick=\"window.location.href='{{ path('app_register') }}'\">Inscription</button>
-    {% endif %}
+    </div>
+{% endif %}
+
 </nav>
 ", "partials/_header.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\partials\\_header.html.twig");
     }

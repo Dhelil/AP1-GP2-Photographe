@@ -13,7 +13,6 @@
       <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
       <parameter key="TwigExtraBundle">Twig\Extra\TwigExtraBundle\TwigExtraBundle</parameter>
-      <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="DoctrineMigrationsBundle">Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -36,10 +35,6 @@
       <parameter key="TwigExtraBundle" type="collection">
         <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
-      </parameter>
-      <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\sensio\framework-extra-bundle\src</parameter>
-        <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
         <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle</parameter>
@@ -1799,7 +1794,6 @@
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\maker-bundle\src/translations</argument>
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bundle/translations</argument>
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\sensio\framework-extra-bundle\src/translations</argument>
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/translations</argument>
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
           <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/translations</argument>
@@ -1816,7 +1810,6 @@
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\maker-bundle\src/translations</argument>
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bundle/translations</argument>
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\sensio\framework-extra-bundle\src/translations</argument>
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/translations</argument>
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
             <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/translations</argument>
@@ -2463,70 +2456,6 @@
         <argument>-128</argument>
       </call>
       <call method="addListener">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.controller.listener"/>
-          <argument>onKernelController</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.converter.listener"/>
-          <argument>onKernelController</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.view.listener"/>
-          <argument>onKernelController</argument>
-        </argument>
-        <argument>-128</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.view</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.view.listener"/>
-          <argument>onKernelView</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.cache.listener"/>
-          <argument>onKernelController</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.response</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.cache.listener"/>
-          <argument>onKernelResponse</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller_arguments</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="sensio_framework_extra.security.listener"/>
-          <argument>onKernelControllerArguments</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller_arguments</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="framework_extra_bundle.event.is_granted"/>
-          <argument>onKernelControllerArguments</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.controller_arguments</argument>
         <argument type="collection">
           <argument type="service_closure" id="controller.is_granted_attribute_listener"/>
@@ -2702,7 +2631,7 @@
     </service>
     <service id="routing.loader.annotation" class="Symfony\Bundle\FrameworkBundle\Routing\AnnotatedRouteControllerLoader">
       <tag name="routing.loader" priority="-10"/>
-      <argument type="service" id="annotations.cached_reader" on-invalid="null"/>
+      <argument>null</argument>
       <argument>dev</argument>
     </service>
     <service id="routing.loader.annotation.directory" class="Symfony\Component\Routing\Loader\AnnotationDirectoryLoader">
@@ -2788,38 +2717,6 @@
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\TemplateController" class="Symfony\Bundle\FrameworkBundle\Controller\TemplateController" public="true">
       <argument type="service" id="twig" on-invalid="ignore"/>
-    </service>
-    <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader">
-      <call method="addGlobalIgnoredName">
-        <argument>required</argument>
-      </call>
-    </service>
-    <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\PsrCachedReader">
-      <tag name="annotations.cached_reader"/>
-      <tag name="container.do_not_inline"/>
-      <argument type="service" id="annotations.reader"/>
-      <argument type="service">
-        <service class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
-      </argument>
-      <argument>true</argument>
-      <argument type="service_closure" id="annotations.cache_adapter"/>
-    </service>
-    <service id="annotations.filesystem_cache_adapter" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument></argument>
-      <argument>0</argument>
-      <argument type="abstract">Cache-Directory</argument>
-    </service>
-    <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
-      <tag name="kernel.cache_warmer"/>
-      <argument type="service" id="annotations.reader"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/annotations.php</argument>
-      <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
-      <argument>true</argument>
-    </service>
-    <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <tag name="container.hot_path"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/annotations.php</argument>
-      <argument type="service" id="cache.annotations"/>
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor">
       <argument>3</argument>
@@ -3115,9 +3012,6 @@
       </call>
       <call method="enableAnnotationMapping">
         <argument>true</argument>
-      </call>
-      <call method="setDoctrineAnnotationReader">
-        <argument type="service" id="annotations.cached_reader"/>
       </call>
       <call method="addMethodMapping">
         <argument>loadValidatorMetadata</argument>
@@ -4128,74 +4022,6 @@
       </call>
     </service>
     <service id="twig.missing_extension_suggestor" class="Twig\Extra\TwigExtraBundle\MissingExtensionSuggestor"/>
-    <service id="sensio_framework_extra.controller.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="annotations.cached_reader"/>
-    </service>
-    <service id="sensio_framework_extra.converter.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="sensio_framework_extra.converter.manager"/>
-      <argument>true</argument>
-    </service>
-    <service id="sensio_framework_extra.converter.manager" class="Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\ParamConverterManager">
-      <call method="add">
-        <argument type="service" id="sensio_framework_extra.converter.doctrine.orm"/>
-        <argument>0</argument>
-        <argument>doctrine.orm</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id="framework_extra_bundle.date_time_param_converter"/>
-        <argument>0</argument>
-        <argument>datetime</argument>
-      </call>
-    </service>
-    <service id="sensio_framework_extra.converter.doctrine.orm" class="Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter">
-      <tag name="request.param_converter" converter="doctrine.orm"/>
-      <argument type="service" id="doctrine" on-invalid="ignore"/>
-      <argument>null</argument>
-    </service>
-    <service id="framework_extra_bundle.date_time_param_converter" class="Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DateTimeParamConverter">
-      <tag name="request.param_converter" converter="datetime"/>
-    </service>
-    <service id="sensio_framework_extra.view.guesser" class="Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser">
-      <argument type="service" id="kernel"/>
-    </service>
-    <service id="sensio_framework_extra.view.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener">
-      <tag name="container.service_subscriber" id="twig"/>
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="sensio_framework_extra.view.guesser"/>
-      <call method="setContainer">
-        <argument type="service" id=".service_locator.xRhNObu.sensio_framework_extra.view.listener"/>
-      </call>
-    </service>
-    <service id="sensio_framework_extra.cache.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <tag name="container.hot_path"/>
-    </service>
-    <service id="sensio_framework_extra.security.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="framework_extra_bundle.argument_name_convertor"/>
-      <argument>null</argument>
-      <argument type="service" id="security.authentication.trust_resolver" on-invalid="null"/>
-      <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
-      <argument type="service" id="security.token_storage" on-invalid="null"/>
-      <argument type="service" id="security.authorization_checker" on-invalid="null"/>
-      <argument type="service" id="logger" on-invalid="null"/>
-    </service>
-    <service id="framework_extra_bundle.event.is_granted" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\IsGrantedListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="framework_extra_bundle.argument_name_convertor"/>
-      <argument type="service" id="security.authorization_checker" on-invalid="null"/>
-    </service>
-    <service id="framework_extra_bundle.argument_name_convertor" class="Sensio\Bundle\FrameworkExtraBundle\Request\ArgumentNameConverter">
-      <argument type="service" id="argument_metadata_factory"/>
-    </service>
     <service id="data_collector.doctrine" class="Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector">
       <tag name="data_collector" template="@Doctrine/Collector/db.html.twig" id="db" priority="250"/>
       <argument type="service" id="doctrine"/>
@@ -6773,10 +6599,10 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry" class="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry">
       <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</argument>
       <argument type="collection">
-        <argument key="App\Controller\Admin\AdministrationController">35dee7b</argument>
+        <argument key="App\Controller\Admin\AdministrationController">d271194</argument>
       </argument>
       <argument type="collection">
-        <argument key="35dee7b">App\Controller\Admin\AdministrationController</argument>
+        <argument key="d271194">App\Controller\Admin\AdministrationController</argument>
       </argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry" class="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry">
@@ -6786,9 +6612,9 @@
         <argument key="App\Controller\Admin\UserCrudController">App\Entity\User</argument>
       </argument>
       <argument type="collection">
-        <argument key="App\Controller\Admin\PresentationCrudController">9ef2108</argument>
-        <argument key="App\Controller\Admin\PrestationsCrudController" type="string">28205e9</argument>
-        <argument key="App\Controller\Admin\UserCrudController">06904ad</argument>
+        <argument key="App\Controller\Admin\PresentationCrudController">e6d2da8</argument>
+        <argument key="App\Controller\Admin\PrestationsCrudController">87ac858</argument>
+        <argument key="App\Controller\Admin\UserCrudController">b2ccedc</argument>
       </argument>
       <argument type="collection">
         <argument key="App\Entity\Presentation">App\Controller\Admin\PresentationCrudController</argument>
@@ -6796,9 +6622,9 @@
         <argument key="App\Entity\User">App\Controller\Admin\UserCrudController</argument>
       </argument>
       <argument type="collection">
-        <argument key="9ef2108">App\Controller\Admin\PresentationCrudController</argument>
-        <argument key="28205e9">App\Controller\Admin\PrestationsCrudController</argument>
-        <argument key="06904ad">App\Controller\Admin\UserCrudController</argument>
+        <argument key="e6d2da8">App\Controller\Admin\PresentationCrudController</argument>
+        <argument key="87ac858">App\Controller\Admin\PrestationsCrudController</argument>
+        <argument key="b2ccedc">App\Controller\Admin\UserCrudController</argument>
       </argument>
     </service>
     <service id="logger" class="Symfony\Component\HttpKernel\Log\Logger">
@@ -7083,18 +6909,6 @@
       <argument>twig.template_cache_warmer</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.etVElvN" method="withContext"/>
-    </service>
-    <service id=".service_locator.xRhNObu" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
-      </argument>
-    </service>
-    <service id=".service_locator.xRhNObu.sensio_framework_extra.view.listener" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator_context" id="sensio_framework_extra.view.listener"/>
-      <argument>sensio_framework_extra.view.listener</argument>
-      <argument type="service" id="service_container"/>
-      <factory service=".service_locator.xRhNObu" method="withContext"/>
     </service>
     <service id=".service_locator.BSVJ08h" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
@@ -8043,8 +7857,6 @@
     <service id="Symfony\Component\Routing\Matcher\UrlMatcherInterface" alias="router.default"/>
     <service id="Symfony\Component\Routing\RequestContextAwareInterface" alias="router.default"/>
     <service id="Symfony\Component\Routing\RequestContext" alias="router.request_context"/>
-    <service id="annotation_reader" alias="annotations.cached_reader"/>
-    <service id="Doctrine\Common\Annotations\Reader" alias="annotations.cached_reader"/>
     <service id="Symfony\Component\PropertyAccess\PropertyAccessorInterface" alias="property_accessor"/>
     <service id="Symfony\Component\PropertyInfo\PropertyAccessExtractorInterface" alias="property_info"/>
     <service id="Symfony\Component\PropertyInfo\PropertyDescriptionExtractorInterface" alias="property_info"/>
@@ -8086,7 +7898,6 @@
     <service id="doctrine.dbal.event_manager" alias="doctrine.dbal.default_connection.event_manager"/>
     <service id="Doctrine\DBAL\Connection $defaultConnection" alias="doctrine.dbal.default_connection"/>
     <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.default_entity_manager"/>
-    <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader"/>
     <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
     <service id="doctrine.orm.default_metadata_cache" alias="cache.doctrine.orm.default.metadata"/>
     <service id="doctrine.orm.default_result_cache" alias="cache.doctrine.orm.default.result"/>

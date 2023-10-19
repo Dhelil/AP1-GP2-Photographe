@@ -111,3 +111,9 @@ body {
     text-align: center;
     margin: 20px 0 15px;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

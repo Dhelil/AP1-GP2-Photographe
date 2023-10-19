@@ -29,7 +29,6 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
             'stylesheets' => [$this, 'block_stylesheets'],
             'header' => [$this, 'block_header'],
             'body' => [$this, 'block_body'],
-            'footer' => [$this, 'block_footer'],
         ];
     }
 
@@ -130,7 +129,6 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
         // line 12
         echo "\t<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-\t<body>
 \t\t<div class=\"wrapper\">
 \t\t\t<form method=\"post\">
 
@@ -138,8 +136,8 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 
 \t\t\t\t<div class=\"input_box\">
 \t\t\t\t\t<input type=\"email\" value=\"";
-        // line 21
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 21, $this->source); })()), "html", null, true);
+        // line 20
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 20, $this->source); })()), "html", null, true);
         echo "\" id=\"inputEmail\" name=\"email\" minlength=\"6\" size=\"15\" class=\"form-control\" placeholder=\"Email\" autocomplete=\"email\" required autofocus/>
 \t\t\t\t\t<i class='bx bxs-user'></i>
 \t\t\t\t</div>
@@ -152,7 +150,7 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 
 
 \t\t\t\t<input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 32
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 
@@ -168,59 +166,37 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 \t\t\t\t</div>
 
 \t\t\t\t";
-        // line 45
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 45, $this->source); })()), "user", [], "any", false, false, false, 45)) {
-            // line 46
+        // line 44
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 44, $this->source); })()), "user", [], "any", false, false, false, 44)) {
+            // line 45
             echo "\t\t\t\t\t<div class=\"mb-3\">
 \t\t\t\t\t\tVous êtes connecté(e) comme
 \t\t\t\t\t\t";
-            // line 48
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 48, $this->source); })()), "user", [], "any", false, false, false, 48), "userIdentifier", [], "any", false, false, false, 48), "html", null, true);
+            // line 47
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "user", [], "any", false, false, false, 47), "userIdentifier", [], "any", false, false, false, 47), "html", null, true);
             echo ",
 \t\t\t\t\t\t<a href=\"";
-            // line 49
+            // line 48
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
 \t\t\t\t\t</div>
 \t\t\t\t";
         }
-        // line 52
+        // line 51
         echo "
 
 \t\t\t\t";
-        // line 54
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 54, $this->source); })())) {
-            // line 55
+        // line 53
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 53, $this->source); })())) {
+            // line 54
             echo "\t\t\t\t\t<div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 55, $this->source); })()), "messageKey", [], "any", false, false, false, 55), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 55, $this->source); })()), "messageData", [], "any", false, false, false, 55), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 54, $this->source); })()), "messageKey", [], "any", false, false, false, 54), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 54, $this->source); })()), "messageData", [], "any", false, false, false, 54), "security"), "html", null, true);
             echo "</div>
 \t\t\t\t";
         }
-        // line 57
+        // line 56
         echo "\t\t\t</form>
 \t\t</div>
-\t</body>
-";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 61
-    public function block_footer($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
-
-        // line 62
-        echo "g
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -242,7 +218,7 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 
     public function getDebugInfo()
     {
-        return array (  223 => 62,  213 => 61,  200 => 57,  194 => 55,  192 => 54,  188 => 52,  182 => 49,  178 => 48,  174 => 46,  172 => 45,  156 => 32,  142 => 21,  131 => 12,  121 => 11,  103 => 9,  92 => 7,  82 => 6,  62 => 3,  39 => 1,);
+        return array (  198 => 56,  192 => 54,  190 => 53,  186 => 51,  180 => 48,  176 => 47,  172 => 45,  170 => 44,  154 => 31,  140 => 20,  130 => 12,  120 => 11,  102 => 9,  91 => 7,  81 => 6,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -260,7 +236,6 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 {% block body %}
 \t<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-\t<body>
 \t\t<div class=\"wrapper\">
 \t\t\t<form method=\"post\">
 
@@ -305,11 +280,9 @@ class __TwigTemplate_7ba873eaaa5de17694fb1a53d12a321a extends Template
 \t\t\t\t{% endif %}
 \t\t\t</form>
 \t\t</div>
-\t</body>
 {% endblock %}
-{% block footer %}
-g
-{% endblock %}
+
+
 ", "security/login.html.twig", "C:\\Users\\ezzaouit\\Desktop\\Atteliers\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\security\\login.html.twig");
     }
 }

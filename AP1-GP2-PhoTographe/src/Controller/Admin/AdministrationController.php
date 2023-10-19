@@ -21,15 +21,19 @@ class AdministrationController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('AP1 GP2 PhoTographe');
+            ->setTitle('Administration AlexCaptures');
     }
+            
+
+           
+    
 
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::linkToCrud('Présentations', 'fas fa-list', PresentationCrudController::getEntityFqcn());
-        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-list', UserCrudController::getEntityFqcn());
-        yield MenuItem::linkToCrud('Prestations', 'fas fa-list', PrestationsCrudController::getEntityFqcn());
+        yield MenuItem::linkToCrud('Présentations', 'fas fa-info-circle', PresentationCrudController::getEntityFqcn());
+        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user-pen', UserCrudController::getEntityFqcn());
+        yield MenuItem::linkToCrud('Prestations', 'fas fa-building', PrestationsCrudController::getEntityFqcn());
         
 
 

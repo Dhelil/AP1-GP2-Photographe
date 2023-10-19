@@ -115,43 +115,51 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
             echo "            ";
             if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 7, $this->source); })()), "user", [], "any", false, false, false, 7)) {
                 // line 8
-                echo "           l     <div class=\"btns-edit\">
+                echo "            ";
+                if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+                    echo " ";
+                    // line 9
+                    echo "
+           l     <div class=\"btns-edit\">
                     <button class=\"btn-edit\" onclick=\"window.location.href='/admin'\">Modifier</button>
                 </div>  
             ";
+                }
+                // line 14
+                echo "            ";
             }
-            // line 12
+            // line 15
             echo "            <div class=\"header\">
                 <h1>Présentation d'Alex, Photographe Passionné</h1>
             </div>
             <div class=\"about\">
                 <h2>";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleDescription", [], "any", false, false, false, 16), "html", null, true);
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleDescription", [], "any", false, false, false, 19), "html", null, true);
             echo "</h2>
                 <p>";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "description", [], "any", false, false, false, 17), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "description", [], "any", false, false, false, 20), "html", null, true);
             echo "</p>
             </div>
             <div class=\"expertise\">
                 <h2>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleExpertise", [], "any", false, false, false, 20), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleExpertise", [], "any", false, false, false, 23), "html", null, true);
             echo "</h2>
                 <p>";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "expertise", [], "any", false, false, false, 21), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "expertise", [], "any", false, false, false, 24), "html", null, true);
             echo "</p>
             </div>
             <div class=\"others\">
                 <h2>";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleAutre", [], "any", false, false, false, 24), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "intituleAutre", [], "any", false, false, false, 27), "html", null, true);
             echo "</h2>
                 <p>";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "autre", [], "any", false, false, false, 25), "html", null, true);
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["presentation"], "autre", [], "any", false, false, false, 28), "html", null, true);
             echo "</p>
             </div>
         ";
@@ -159,7 +167,7 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['presentation'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 28
+        // line 31
         echo "    </main>
 ";
         
@@ -182,7 +190,7 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
 
     public function getDebugInfo()
     {
-        return array (  163 => 28,  154 => 25,  150 => 24,  144 => 21,  140 => 20,  134 => 17,  130 => 16,  124 => 12,  118 => 8,  115 => 7,  111 => 6,  108 => 5,  98 => 4,  79 => 3,  60 => 2,  37 => 1,);
+        return array (  171 => 31,  162 => 28,  158 => 27,  152 => 24,  148 => 23,  142 => 20,  138 => 19,  132 => 15,  129 => 14,  122 => 9,  118 => 8,  115 => 7,  111 => 6,  108 => 5,  98 => 4,  79 => 3,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -194,9 +202,12 @@ class __TwigTemplate_789b24ac973ca0e5e219cee1c2899a7a extends Template
     <main class=\"container presentation\">
         {% for presentation in presentations %}
             {% if app.user %}
+            {% if  is_granted('ROLE_ADMIN') %} {# si l'utilisateur est connecté et qu'il est admin #}
+
            l     <div class=\"btns-edit\">
                     <button class=\"btn-edit\" onclick=\"window.location.href='/admin'\">Modifier</button>
                 </div>  
+            {% endif %}
             {% endif %}
             <div class=\"header\">
                 <h1>Présentation d'Alex, Photographe Passionné</h1>

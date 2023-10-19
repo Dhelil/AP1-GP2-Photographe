@@ -9,7 +9,7 @@ class PresentationCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
     {
-        return Presentation::class;
+        return Presentation::class; // name class complet
     }
 
     /*

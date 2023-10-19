@@ -5,9 +5,12 @@
     <main class="container presentation">
         {% for presentation in presentations %}
             {% if app.user %}
+            {% if  is_granted('ROLE_ADMIN') %} {# si l'utilisateur est connecté et qu'il est admin #}
+
            l     <div class="btns-edit">
                     <button class="btn-edit" onclick="window.location.href='/admin'">Modifier</button>
                 </div>  
+            {% endif %}
             {% endif %}
             <div class="header">
                 <h1>Présentation d'Alex, Photographe Passionné</h1>
