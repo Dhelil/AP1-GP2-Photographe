@@ -21,8 +21,11 @@ class PageContactController extends AbstractController
     {
         $DemandeContact = new DemandeContact();
 
+        $user = $this->getUser();
+
         $form = $this->createForm(ContactFormType::class, $DemandeContact);
         $form->handleRequest($request);
+        //$DemandeContact->setIdDemandeUser($user);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $doctrine->getManager();

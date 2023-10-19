@@ -27,13 +27,13 @@
 			</div>
 			{% if app.user %}
 				{{ form_start(form) }}
-				<div class="contact-infosa">
-					<input class="input-email" {#name="{{ field_name(form.dateDemande) }}"#} type="text" placeholder="E-mail..." required>
+				<div
+					class="contact-infosa">
+					{#<input class="input-email" name="{{ field_name(form.dateDemande) }}" type="text" placeholder="E-mail..." required>#}
 					<input class="input-objet" name="{{ field_name(form.objetDemande) }}" type="text" placeholder="Objet..." required>
 				</div>
-				<div class="contact-infosb">
-					<input class="input-telephone" {#name="{{ field_name(form.enfant) }}"#} type="text" placeholder="Telephone..." required>
-					<input class="input-nom" {#name="{{ field_name(form.idDemandeUser) }}"#} type="text" placeholder="Nom..." required>
+				<div class="contact-infosb">{#<input class="input-telephone" name="{{ field_name(form.enfant) }}" type="text" placeholder="Telephone..." required>#}
+					{#<input class="input-nom" name="{{ field_name(form.idDemandeUser) }}" type="text" placeholder="Nom..." required>#}
 				</div>
 				<div class="contact-commentaire">
 					<p>Commentaire</P>
@@ -49,8 +49,9 @@
 				<div class="alert alert-danger">
 					<p>Vous devez être connecté pour pouvoir contacter un administrateur</p>
 				</div>
-			<div class="contact-bouton">
-			<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous ici</a></div>
+				<div class="contact-bouton">
+					<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous ici</a>
+				</div>
 			{% endif %}
 		</div>
 

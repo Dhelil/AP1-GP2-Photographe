@@ -103,16 +103,19 @@
 		</div>
 
 		{% if app.user %}
-		{{ form_start(form) }}
-		<p>{{ user.getNomUser() }} {{ user.getPrenomUser() }}</p>
-		<div class="contact-bouton">
-			<input type="submit" class="submit-button">
-		</div>
-		{{ form_end(form) }}
+			{{ form_start(form) }}
+			<p>{{ user.getNomUser() }}
+				{{ user.getPrenomUser() }}</p>
+			<div class="contact-bouton">
+				<input type="submit" class="submit-button">
+			</div>
+			{{ form_end(form) }}
 		{% else %}
-		<div class="contact-bouton">
-			<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous pour laisser un avis</a>
-		{% endif %}
+			<div class="contact-bouton">
+				<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous pour laisser un avis</a>
+			{% endif %}
 
-	</div>
-{% endblock %}
+		</div>
+	{% endblock %}
+
+	{# bug avec les nombres impairs a virgule #}

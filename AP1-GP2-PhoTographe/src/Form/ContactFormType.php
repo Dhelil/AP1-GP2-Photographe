@@ -17,9 +17,9 @@ class ContactFormType extends AbstractType
         $builder
             ->add('descriptionDemande')
             ->add('objetDemande')
-            ->add('dateDemande', dateType::class, ['data' => new \DateTime(), 'widget' => 'single_text', 'format' => 'yyyy-MM-dd',])
-            ->add('enfant')
-            ->add('idDemandeUser', EntityType::class, ['class' => User::class, 'choice_label' => 'nomUser', 'multiple' => false, 'expanded' => false,])
+            ->add('dateDemande', dateType::class, ['data' => new \DateTime(), 'widget' => 'single_text', 'format' => 'yyyy-MM-dd', 'label' => false, 'attr' => ['style' => 'display: none;'],])
+            ->add('enfant', null, ['label' => false, 'attr' => ['style' => 'display: none;',]])
+            ->add('idDemandeUser', EntityType::class, ['class' => User::class, 'choice_label' => 'nomUser', 'multiple' => false, 'expanded' => false, 'label' => false, 'attr' => ['style' => 'display: none;'],])
         ;
     }
 
