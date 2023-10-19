@@ -25,6 +25,7 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -49,13 +50,27 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
     }
 
     // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Contact
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+    }
+
+    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
+        // line 7
         echo "\t<style>
 \t\t.example-wrapper {
 \t\t\tmargin: 1em auto;
@@ -78,56 +93,75 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t\t<hr>
 \t\t\t</div>
 \t\t\t";
-        // line 25
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25)) {
-            // line 26
+        // line 28
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 28, $this->source); })()), "user", [], "any", false, false, false, 28)) {
+            // line 29
             echo "\t\t\t\t";
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), 'form_start');
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), 'form_start');
             echo "
 \t\t\t\t<div class=\"contact-infosa\">
-\t\t\t\t\t<input class=\"input-email\" name=\"";
-            // line 28
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), "enfant", [], "any", false, false, false, 28)), "html", null, true);
-            echo "\" type=\"text\" placeholder=\"E-mail...\" required>
+\t\t\t\t\t<input class=\"input-email\" ";
+            // line 31
+            echo " type=\"text\" placeholder=\"E-mail...\" required>
 \t\t\t\t\t<input class=\"input-objet\" name=\"";
-            // line 29
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), "objetDemande", [], "any", false, false, false, 29)), "html", null, true);
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), "objetDemande", [], "any", false, false, false, 32)), "html", null, true);
             echo "\" type=\"text\" placeholder=\"Objet...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosb\">
-\t\t\t\t\t<input class=\"input-telephone\" name=\"";
-            // line 32
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), "idDemandeUser", [], "any", false, false, false, 32)), "html", null, true);
-            echo "\" type=\"text\" placeholder=\"Telephone...\" required>
-\t\t\t\t\t<input class=\"input-nom\" name=\"";
-            // line 33
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), "dateDemande", [], "any", false, false, false, 33)), "html", null, true);
-            echo "\" type=\"text\" placeholder=\"Nom...\" required>
+\t\t\t\t\t<input class=\"input-telephone\" ";
+            // line 35
+            echo " type=\"text\" placeholder=\"Telephone...\" required>
+\t\t\t\t\t<input class=\"input-nom\" ";
+            // line 36
+            echo " type=\"text\" placeholder=\"Nom...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-commentaire\">
 \t\t\t\t\t<p>Commentaire</P>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosc\">
-\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"";
-            // line 39
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), "descriptionDemande", [], "any", false, false, false, 39)), "html", null, true);
-            echo "\" placeholder=\"Entrez du texte ici...\" required></textarea>
+\t\t\t\t\t<textarea class=\"textarea-commentaire\" name=\"";
+            // line 42
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 42, $this->source); })()), "descriptionDemande", [], "any", false, false, false, 42)), "html", null, true);
+            echo "\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Votre raison de contact ici...\" required></textarea>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-bouton\">
 \t\t\t\t\t<button class=\"submit-button\" type=\"submit\">Submit</button>
 \t\t\t\t</div>
 \t\t\t\t";
-            // line 44
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 44, $this->source); })()), 'form_end');
+            // line 47
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 47, $this->source); })()), 'form_end');
             echo "
 \t\t\t";
         } else {
-            // line 46
-            echo "\t\t\t\t<p>Vous devez vous connecter pour faire une demande de contact</p>
+            // line 49
+            echo "\t\t\t\t<div class=\"alert alert-danger\">
+\t\t\t\t\t<p>Vous devez être connecté pour pouvoir contacter un administrateur</p>
+\t\t\t\t</div>
+\t\t\t<div class=\"contact-bouton\">
+\t\t\t<a href=\"";
+            // line 53
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\" class=\"submit-button\">Connectez-vous ici</a></div>
 \t\t\t";
         }
-        // line 48
+        // line 55
         echo "\t\t</div>
+
+\t\t";
+        // line 57
+        if ($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 57, $this->source); })()), 'errors')) {
+            // line 58
+            echo "\t\t\t<div class=\"alert alert-danger\">
+\t\t\t\t";
+            // line 59
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 59, $this->source); })()), 'errors');
+            echo "
+\t\t\t</div>
+\t\t";
+        }
+        // line 62
+        echo "
 \t</div>
 
 
@@ -149,12 +183,15 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 
     public function getDebugInfo()
     {
-        return array (  130 => 48,  126 => 46,  121 => 44,  113 => 39,  104 => 33,  100 => 32,  94 => 29,  90 => 28,  84 => 26,  82 => 25,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  164 => 62,  158 => 59,  155 => 58,  153 => 57,  149 => 55,  144 => 53,  138 => 49,  133 => 47,  125 => 42,  117 => 36,  114 => 35,  108 => 32,  105 => 31,  99 => 29,  97 => 28,  74 => 7,  67 => 6,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
+
+{% block title %}Contact
+{% endblock %}
 
 {% block body %}
 \t<style>
@@ -181,27 +218,38 @@ class __TwigTemplate_f905b8bf6cf5176b4745c92fd701b708 extends Template
 \t\t\t{% if app.user %}
 \t\t\t\t{{ form_start(form) }}
 \t\t\t\t<div class=\"contact-infosa\">
-\t\t\t\t\t<input class=\"input-email\" name=\"{{ field_name(form.enfant) }}\" type=\"text\" placeholder=\"E-mail...\" required>
+\t\t\t\t\t<input class=\"input-email\" {#name=\"{{ field_name(form.dateDemande) }}\"#} type=\"text\" placeholder=\"E-mail...\" required>
 \t\t\t\t\t<input class=\"input-objet\" name=\"{{ field_name(form.objetDemande) }}\" type=\"text\" placeholder=\"Objet...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosb\">
-\t\t\t\t\t<input class=\"input-telephone\" name=\"{{ field_name(form.idDemandeUser) }}\" type=\"text\" placeholder=\"Telephone...\" required>
-\t\t\t\t\t<input class=\"input-nom\" name=\"{{ field_name(form.dateDemande) }}\" type=\"text\" placeholder=\"Nom...\" required>
+\t\t\t\t\t<input class=\"input-telephone\" {#name=\"{{ field_name(form.enfant) }}\"#} type=\"text\" placeholder=\"Telephone...\" required>
+\t\t\t\t\t<input class=\"input-nom\" {#name=\"{{ field_name(form.idDemandeUser) }}\"#} type=\"text\" placeholder=\"Nom...\" required>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-commentaire\">
 \t\t\t\t\t<p>Commentaire</P>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-infosc\">
-\t\t\t\t\t<textarea class=\"textarea-commentaire\" id=\"commentaire\" name=\"{{ field_name(form.descriptionDemande) }}\" placeholder=\"Entrez du texte ici...\" required></textarea>
+\t\t\t\t\t<textarea class=\"textarea-commentaire\" name=\"{{ field_name(form.descriptionDemande) }}\" id=\"commentaire\" name=\"commentaire\" placeholder=\"Votre raison de contact ici...\" required></textarea>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"contact-bouton\">
 \t\t\t\t\t<button class=\"submit-button\" type=\"submit\">Submit</button>
 \t\t\t\t</div>
 \t\t\t\t{{ form_end(form) }}
 \t\t\t{% else %}
-\t\t\t\t<p>Vous devez vous connecter pour faire une demande de contact</p>
+\t\t\t\t<div class=\"alert alert-danger\">
+\t\t\t\t\t<p>Vous devez être connecté pour pouvoir contacter un administrateur</p>
+\t\t\t\t</div>
+\t\t\t<div class=\"contact-bouton\">
+\t\t\t<a href=\"{{ path('app_login') }}\" class=\"submit-button\">Connectez-vous ici</a></div>
 \t\t\t{% endif %}
 \t\t</div>
+
+\t\t{% if form_errors(form) %}
+\t\t\t<div class=\"alert alert-danger\">
+\t\t\t\t{{ form_errors(form) }}
+\t\t\t</div>
+\t\t{% endif %}
+
 \t</div>
 
 

@@ -15,10 +15,10 @@ class AvisFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('descriptionAvis')
-            ->add('niveauAvis')
-            ->add('dateAvis', DateType::class, ['data' => new \DateTime(), 'widget' => 'single_text', 'format' => 'yyyy-MM-dd',])
-            ->add('idAvisUser', EntityType::class, ['class' => User::class, 'choice_label' => 'nomUser', 'multiple' => false, 'expanded' => false,])
+            ->add('descriptionAvis', null, ['label' => false, 'attr' => ['placeholder' => 'Votre avis...', 'rows' => '5',]])
+            ->add('niveauAvis', null, ['label' => false, 'attr' => ['placeholder' => 'Votre note...',]])
+            ->add('dateAvis', DateType::class, ['data' => new \DateTime(), 'widget' => 'single_text', 'format' => 'yyyy-MM-dd', 'label' => false, 'attr' => ['style' => 'display: none;'],])
+            ->add('idAvisUser', EntityType::class, ['class' => User::class, 'choice_label' => 'nomUser', 'multiple' => false, 'expanded' => false, 'label' => false, 'attr' => ['style' => 'display: none;'],])
         ;
     }
 

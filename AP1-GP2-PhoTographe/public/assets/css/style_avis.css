@@ -30,6 +30,6 @@
 }
 
 .etoiles-moyenne, .texte-moyenne{
-    flex: 1; /* Chaque div prend autant d'espace que possible */
-    padding: 10px; /* Ajout de rembourrage pour un aspect visuel */
+    flex: 1;
+    padding: 10px;
 }

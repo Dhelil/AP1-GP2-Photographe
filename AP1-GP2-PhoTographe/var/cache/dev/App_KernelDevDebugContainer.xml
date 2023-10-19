@@ -293,7 +293,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.OhNpgLM"/>
+      <argument type="service" id=".service_locator.wYP0vpr"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -1581,7 +1581,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.OhNpgLM"/>
+      <argument type="service" id=".service_locator.wYP0vpr"/>
     </service>
     <service id="routing.resolver" class="Symfony\Component\Config\Loader\LoaderResolver">
       <call method="addLoader">
@@ -4578,10 +4578,18 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.y4_Zrx..Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
-    <service id=".service_locator._o4GgsH" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator..o5gGWe" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="avis" type="service_closure" id="App\Repository\AvisRepository"/>
+        <argument key="doctrine" type="service_closure" id="doctrine"/>
+        <argument key="security" type="service_closure" id="security.helper"/>
+      </argument>
+    </service>
+    <service id=".service_locator.o6sN0hZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="doctrine" type="service_closure" id="doctrine"/>
       </argument>
     </service>
     <service id=".service_locator.QaaDzHL" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -4599,17 +4607,19 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.OhNpgLM" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.wYP0vpr" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\PageAvisController::index" type="service_closure" id=".service_locator._o4GgsH"/>
+        <argument key="App\Controller\PageAvisController::index" type="service_closure" id=".service_locator..o5gGWe"/>
+        <argument key="App\Controller\PageContactController::index" type="service_closure" id=".service_locator.o6sN0hZ"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.QaaDzHL"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
-        <argument key="App\Controller\PageAvisController:index" type="service_closure" id=".service_locator._o4GgsH"/>
+        <argument key="App\Controller\PageAvisController:index" type="service_closure" id=".service_locator..o5gGWe"/>
+        <argument key="App\Controller\PageContactController:index" type="service_closure" id=".service_locator.o6sN0hZ"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.QaaDzHL"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
@@ -5771,13 +5781,13 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.7nzbL4K" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.OhNpgLM"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.wYP0vpr"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="Psr\Log\LoggerInterface" alias="logger"/>
     <service id=".service_locator.o.uf2zi" alias=".service_locator.7nzbL4K"/>
     <service id=".service_locator.c1lbGYr" alias=".service_locator.QaaDzHL"/>
-    <service id=".service_locator.VAJ28Pl" alias=".service_locator.OhNpgLM"/>
+    <service id=".service_locator.T4CagCn" alias=".service_locator.wYP0vpr"/>
     <service id=".service_locator.BFrsqsn" alias=".service_locator.F9PKc.7"/>
     <service id=".service_locator.zlSLvV1" alias=".service_locator.fAk1wpU"/>
     <service id=".service_locator.LMuqDDe" alias=".service_locator.VHsrTPK"/>
@@ -5792,7 +5802,8 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id="security.event_dispatcher.main" alias="debug.security.event_dispatcher.main"/>
     <service id=".service_locator.gFlme_s" alias=".service_locator.y4_Zrx."/>
-    <service id=".service_locator.i5SElNX" alias=".service_locator._o4GgsH"/>
+    <service id=".service_locator.hvEpNty" alias=".service_locator..o5gGWe"/>
+    <service id=".service_locator.eQ296SW" alias=".service_locator.o6sN0hZ"/>
     <service id=".service_locator.EUYXuS0" alias=".service_locator.QaaDzHL"/>
     <service id=".service_locator.7NIAq8D" alias=".service_locator.rSTd.nA"/>
     <service id=".service_locator.GDg2hr7" alias=".service_locator.O2p6Lk7"/>

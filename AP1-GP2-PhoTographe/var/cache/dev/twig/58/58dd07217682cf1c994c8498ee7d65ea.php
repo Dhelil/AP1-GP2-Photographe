@@ -56,7 +56,7 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello PageAvisController!
+        echo "Avis
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -259,19 +259,15 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
             // line 91
             echo "
 
-\t\t\t\t\t\t";
-            // line 98
-            echo "
-
 \t\t\t\t\t</div>
 \t\t\t\t\t<p class=\"description\">";
-            // line 101
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDescriptionAvis", [], "method", false, false, false, 101), "html", null, true);
+            // line 94
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDescriptionAvis", [], "method", false, false, false, 94), "html", null, true);
             echo "</p>
 \t\t\t\t\t<p class=\"date\">date du
 \t\t\t\t\t\t";
-            // line 103
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDateAvis", [], "method", false, false, false, 103), "d-m-Y"), "html", null, true);
+            // line 96
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["avis"], "getDateAvis", [], "method", false, false, false, 96), "d-m-Y"), "html", null, true);
             echo "</p>
 \t\t\t\t\t<br>
 \t\t\t\t</div>
@@ -280,24 +276,44 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['avis'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 107
+        // line 100
         echo "\t\t</div>
 \t\t<div class=\"\" contact-barre>
 \t\t\t<hr>
 \t\t</div>
 
 \t\t";
-        // line 112
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 112, $this->source); })()), 'form_start');
-        echo "
+        // line 105
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 105, $this->source); })()), "user", [], "any", false, false, false, 105)) {
+            // line 106
+            echo "\t\t";
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 106, $this->source); })()), 'form_start');
+            echo "
+\t\t<p>";
+            // line 107
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 107, $this->source); })()), "getNomUser", [], "method", false, false, false, 107), "html", null, true);
+            echo " ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 107, $this->source); })()), "getPrenomUser", [], "method", false, false, false, 107), "html", null, true);
+            echo "</p>
 \t\t<div class=\"contact-bouton\">
-\t\t\t<button type=\"submit\">Submit</button>
+\t\t\t<input type=\"submit\" class=\"submit-button\">
 \t\t</div>
 \t\t";
+            // line 111
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 111, $this->source); })()), 'form_end');
+            echo "
+\t\t";
+        } else {
+            // line 113
+            echo "\t\t<div class=\"contact-bouton\">
+\t\t\t<a href=\"";
+            // line 114
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\" class=\"submit-button\">Connectez-vous pour laisser un avis</a>
+\t\t";
+        }
         // line 116
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 116, $this->source); })()), 'form_end');
         echo "
-
 \t</div>
 ";
         
@@ -317,14 +333,14 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 
     public function getDebugInfo()
     {
-        return array (  298 => 116,  291 => 112,  284 => 107,  274 => 103,  269 => 101,  264 => 98,  260 => 91,  257 => 90,  254 => 89,  247 => 87,  242 => 86,  239 => 85,  235 => 83,  232 => 82,  225 => 80,  220 => 79,  218 => 78,  215 => 77,  213 => 76,  210 => 75,  203 => 73,  199 => 72,  193 => 69,  189 => 67,  185 => 66,  165 => 49,  161 => 47,  158 => 46,  155 => 45,  148 => 43,  143 => 42,  140 => 41,  136 => 39,  133 => 38,  126 => 36,  121 => 35,  119 => 34,  116 => 33,  114 => 32,  111 => 31,  104 => 29,  100 => 28,  93 => 24,  74 => 7,  67 => 6,  53 => 3,  36 => 1,);
+        return array (  316 => 116,  311 => 114,  308 => 113,  303 => 111,  294 => 107,  289 => 106,  287 => 105,  280 => 100,  270 => 96,  265 => 94,  260 => 91,  257 => 90,  254 => 89,  247 => 87,  242 => 86,  239 => 85,  235 => 83,  232 => 82,  225 => 80,  220 => 79,  218 => 78,  215 => 77,  213 => 76,  210 => 75,  203 => 73,  199 => 72,  193 => 69,  189 => 67,  185 => 66,  165 => 49,  161 => 47,  158 => 46,  155 => 45,  148 => 43,  143 => 42,  140 => 41,  136 => 39,  133 => 38,  126 => 36,  121 => 35,  119 => 34,  116 => 33,  114 => 32,  111 => 31,  104 => 29,  100 => 28,  93 => 24,  74 => 7,  67 => 6,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello PageAvisController!
+{% block title %}Avis
 {% endblock %}
 
 {% block body %}
@@ -414,13 +430,6 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 \t\t\t\t\t\t{% endif %}
 
 
-\t\t\t\t\t\t{# {% for i in range(1, 3) %}
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_pleine.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_semi.png\" width=\"50px\" height=\"50px\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets\\images/etoile_vide.png\" width=\"50px\" height=\"50px\"> #}
-
-
 \t\t\t\t\t</div>
 \t\t\t\t\t<p class=\"description\">{{ avis.getDescriptionAvis() }}</p>
 \t\t\t\t\t<p class=\"date\">date du
@@ -433,14 +442,20 @@ class __TwigTemplate_55817cfd3cb3af867ed77e81bd7bf914 extends Template
 \t\t\t<hr>
 \t\t</div>
 
+\t\t{% if app.user %}
 \t\t{{ form_start(form) }}
+\t\t<p>{{ user.getNomUser() }} {{ user.getPrenomUser() }}</p>
 \t\t<div class=\"contact-bouton\">
-\t\t\t<button type=\"submit\">Submit</button>
+\t\t\t<input type=\"submit\" class=\"submit-button\">
 \t\t</div>
 \t\t{{ form_end(form) }}
+\t\t{% else %}
+\t\t<div class=\"contact-bouton\">
+\t\t\t<a href=\"{{ path('app_login') }}\" class=\"submit-button\">Connectez-vous pour laisser un avis</a>
+\t\t{% endif %}
 
 \t</div>
 {% endblock %}
-", "page_avis/index.html.twig", "C:\\Users\\iliesjaaj\\Desktop\\JXTP\\projets\\sio-2\\AP\\AP-1\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_avis\\index.html.twig");
+", "page_avis/index.html.twig", "C:\\Users\\izikkii\\Pictures\\SIO-2\\AP\\AP1-GROUPE2\\projet\\vrai de vrai\\AP1-GP2-Photographe\\AP1-GP2-PhoTographe\\templates\\page_avis\\index.html.twig");
     }
 }

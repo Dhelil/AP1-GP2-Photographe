@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\DemandeContact;
 use App\Form\ContactFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,7 +17,7 @@ class PageContactController extends AbstractController
 {
     private $security;
     #[Route('/contact', name: 'app_page_contact')]
-    public function index(Request $request): Response
+    public function index(Request $request, ManagerRegistry $doctrine): Response
     {
         $DemandeContact = new DemandeContact();
 
@@ -23,7 +25,7 @@ class PageContactController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager = $doctrine->getManager();
             $entityManager->persist($DemandeContact);
             $entityManager->flush();
 

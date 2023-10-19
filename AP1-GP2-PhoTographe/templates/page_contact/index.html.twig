@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PageAvisController!
+{% block title %}Contact
 {% endblock %}
 
 {% block body %}
@@ -29,7 +29,7 @@
 				{{ form_start(form) }}
 				<div class="contact-infosa">
 					<input class="input-email" {#name="{{ field_name(form.dateDemande) }}"#} type="text" placeholder="E-mail..." required>
-					<input class="input-objet" {#name="{{ field_name(form.objetDemande) }}"#} type="text" placeholder="Objet..." required>
+					<input class="input-objet" name="{{ field_name(form.objetDemande) }}" type="text" placeholder="Objet..." required>
 				</div>
 				<div class="contact-infosb">
 					<input class="input-telephone" {#name="{{ field_name(form.enfant) }}"#} type="text" placeholder="Telephone..." required>
@@ -39,14 +39,18 @@
 					<p>Commentaire</P>
 				</div>
 				<div class="contact-infosc">
-					<textarea class="textarea-commentaire" {#name="{{ field_name(form.descriptionDemande) }}"#} id="commentaire" name="commentaire" placeholder="Entrez du texte ici..." required></textarea>
+					<textarea class="textarea-commentaire" name="{{ field_name(form.descriptionDemande) }}" id="commentaire" name="commentaire" placeholder="Votre raison de contact ici..." required></textarea>
 				</div>
 				<div class="contact-bouton">
 					<button class="submit-button" type="submit">Submit</button>
 				</div>
 				{{ form_end(form) }}
 			{% else %}
-				<p>Vous devez vous connecter pour faire une demande de contact</p>
+				<div class="alert alert-danger">
+					<p>Vous devez être connecté pour pouvoir contacter un administrateur</p>
+				</div>
+			<div class="contact-bouton">
+			<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous ici</a></div>
 			{% endif %}
 		</div>
 
