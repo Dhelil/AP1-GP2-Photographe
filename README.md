@@ -1,16 +1,43 @@
 # AP1-GP2-Photographe
 
-[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDIuNjMyODI3NzU4Nzg5MDYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDIuNjMyODI3NzU4Nzg5MDYgMzUiPjxyZWN0IHdpZHRoPSIxMDkuMzEyNTA3NjI5Mzk0NTMiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCB4PSIxMDkuMzEyNTA3NjI5Mzk0NTMiIHdpZHRoPSI5My4zMjAzMjAxMjkzOTQ1MyIgaGVpZ2h0PSIzNSIgZmlsbD0iIzM4OUFENSIvPjx0ZXh0IHg9IjU0LjY1NjI1MzgxNDY5NzI2NiIgeT0iMTcuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidSb2JvdG8nLCBzYW5zLXNlcmlmIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPkJVSUxEIFdJVEg8L3RleHQ+PHRleHQgeD0iMTU1Ljk3MjY2NzY5NDA5MTgiIHk9IjE3LjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInTW9udHNlcnJhdCcsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI5MDAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+U1lNRk9OWTwvdGV4dD48L3N2Zz4=)](https://forthebadge.com)
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQuMDIzNDM3NSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDE0NC4wMjM0Mzc1IDM1Ij48cmVjdCB3aWR0aD0iOTMuMzQzNzUiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCB4PSI5My4zNDM3NSIgd2lkdGg9IjUwLjY3OTY4NzUiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48dGV4dCB4PSI0Ni42NzE4NzUiIHk9IjE3LjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInUm9ib3RvJywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5TWU1GT05ZPC90ZXh0Pjx0ZXh0IHg9IjExOC42ODM1OTM3NSIgeT0iMTcuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidNb250c2VycmF0Jywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjkwMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5QSFA8L3RleHQ+PC9zdmc+)](https://forthebadge.com)
 
 AlexCaptures : L'art de la photographie, figé en un instant. Explorez des moments magiques et des histoires visuelles captivantes.
 
 ## Pour commencer
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+Alex, jeune photographe, désire augmenter sa visibilité sur internet pour booster son business. Cela devient impossible pour un entrepreneur de ne pas avoir de site en ligne.
+Il désire avoir un site moderne avec un style qui correspond à son activité.
+
+![image](https://github.com/Dhelil/AP1-GP2-Photographe/assets/136342052/6c01355c-aa93-42f6-a086-43ad18e251af)
+
+
+### Objectif du projet
+- Se former au Framework Symfony à l’aide de la documentation technique.
+- Réaliser une maquette du site.
+- Créer un site avec Symfony.
+- Créer une base de données connectée au site.
+- Réaliser un planning des tâches.
+- Utiliser Git Kraken pour gérer les versions du projet :
+    - Une branche master / dev / release / feature / hotfix
+    - Respecter la norme de nommage des commits
+- Utilisé Trello pour suivre l’avancement du projet.
+- Utilisé l’outil de GANTT disponible sur teams.
+- Développer les différentes pages demandées.
+
+
+  ## Pages que le site doit contenir
+  - Acceuil
+  - Connexion et Inscription
+  - Présentation
+  - Prestations
+  - Avis
+  - Contact
+
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
+Aucun prérequis n'était nécessaire pour ce projet, à part avoir des connaissances en programmation orientée objet et en PHP, HTML/CSS
 
 - Programme 1
 - Programme 2
@@ -30,7 +57,7 @@ Ensuite vous pouvez montrer ce que vous obtenez au final...
 
 Dites comment faire pour lancer votre projet
 
-## Fabriqué avec
+## Langages utilisés
 
 Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
 
@@ -52,9 +79,11 @@ _exemple :_
 Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
 _(pour le lien mettez simplement l'URL de votre projets suivi de `/tags`)_
 
-## Auteurs
+## Développeurs
 
-Listez le(s) auteur(s) du projet ici !
+- MEDJENI Dhelil (Chef de projet)
+- EZ-ZAOUI Tayeb
+- IZZIKI Ilies
 
 - **Jhon doe** _alias_ [@outout14](https://github.com/outout14)
 
