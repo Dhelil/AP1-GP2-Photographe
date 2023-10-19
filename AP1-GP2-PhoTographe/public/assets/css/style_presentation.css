@@ -1,0 +1,18 @@
+body{
+    background-color: #fff;
+}
+
+.Paragraphe_Expertise {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8fr 8fr 8fr;
+}
+
+.image_expertise {
+    width: 100px;
+    height: 100px;
+}
+
+.Texte_Expertise {
+    margin-left: 20%;
+}
