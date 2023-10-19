@@ -8,156 +8,160 @@
 {% endblock %}
 
 {% block body %}
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-<body>
-	<div class="wrapper_page_creation_compte">
-		<h1 class="H1_creer_compte">Créer un compte</h1>
-
-		{{ form_start(registrationForm) }}
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
-		<!-- NOM/PRENOM<!-->
+	{% if not app.user %}
 
-		<div class="input-box">
-			<div class="input-field classNom">
-				{{ form_row(registrationForm.nom_user) }}
-				<i class='bx bxs-user'></i>
-				<span id="nom"></span>
+		<body>
+			<div class="wrapper_page_creation_compte">
+				<h1 class="H1_creer_compte">Créer un compte</h1>
+
+				{{ form_start(registrationForm) }}
+
+
+				<!-- NOM/PRENOM<!-->
+
+				<div class="input-box">
+					<div class="input-field classNom">
+						{{ form_row(registrationForm.nom_user) }}
+						<i class='bx bxs-user'></i>
+						<span id="nom"></span>
+					</div>
+
+					<div class="input-field">
+						{{ form_row(registrationForm.prenom_user) }}
+						<i class='bx bxs-user'></i>
+						<span id="prenom"></span>
+
+					</div>
+				</div>
+
+
+				<!-- MAIL/NUM TEL<!-->
+
+				<div class="input-box">
+					<div class="input-field" id="registration_form_email">
+						{{ form_row(registrationForm.email) }}
+						<i class='bx bxs-envelope'></i>
+						<span id="mail"></span>
+
+					</div>
+					<div class="input-field">
+						{{ form_row(registrationForm.telephone_user) }}
+						<i class='bx bxs-phone'></i>
+						<span id="telephone"></span>
+
+					</div>
+				</div>
+
+
+				<!-- ADRESSE/VILLE/CP/GENRE<!-->
+
+				<div class="input-box">
+					<div class="input-field">
+						{{ form_row(registrationForm.adresse_user) }}
+						<i class='bx bx-street-view'></i>
+						<span id="adresse"></span>
+
+					</div>
+					<div class="input-field">
+						{{ form_row(registrationForm.ville_user) }}
+						<i class='bx bx-street-view'></i>
+						<span id="ville"></span>
+
+					</div>
+					<div class="input-field">
+						{{ form_row(registrationForm.cpUser) }}
+						<i class='bx bx-street-view'></i>
+						<span id="codePostal"></span>
+
+					</div>
+					<div class="input-field">
+						{{ form_row(registrationForm.genre_user) }}
+						<i class='bx bx-street-view'></i>
+						<span id="genre"></span>
+
+					</div>
+				</div>
+
+
+				<!-- MDP<!-->
+
+				<div class="input-box">
+					<div class="input-field" minlength="12">
+						{{ form_row(registrationForm.plainPassword.first) }}
+						<i class='bx bxs-lock-alt'></i>
+						<span id="mdp1"></span>
+
+					</div>
+					<div class="input-field" minlength="12">
+						{{ form_row(registrationForm.plainPassword.second) }}
+						<i class='bx bxs-lock-alt'></i>
+						<span id="mdp2"></span>
+
+					</div>
+				</div>
+
+
+				<div style="margin-top: 20px">
+					{{ form_row(registrationForm.RGPDConsent) }}
+				</div>
+
+				<button type="submit" class="btn_crer_compte">Créer un compte</button>
+
+
+				<div class="btn_retour">
+					<p style="display: inline-block;">Vous avez déjà un compte ?</p>
+					<a href="{{ path('app_login') }}">Connexion</a>
+				</div>
+
+
+				{% if app.user %}
+					<div class="btn_retour">
+						Vous êtes connecté(e) comme
+						{{ app.user.userIdentifier }},
+						<a href="{{ path('app_logout') }}">Déconnexion</a>
+					</div>
+				{% endif %}
+
+
+				<!-- ERREURS<!-->
+
+
+				<!-- MDP<!-->
+				{% if registrationForm.plainPassword.vars.errors | length > 0 %}
+					<div class="ERROR">
+						{{ form_errors(registrationForm.plainPassword) }}
+					</div>
+				{% endif %}
+
+
+				<!-- MAIL<!-->
+				{% if registrationForm.email.vars.errors | length > 0 %}
+					<div class="ERROR">
+						{{ form_errors(registrationForm.email) }}
+					</div>
+				{% endif %}
+
+				<!-- NUMERO TELEPHONE<!-->
+				{% if registrationForm.telephone_user.vars.errors | length > 0 %}
+					<div class="ERROR">
+						{{ form_errors(registrationForm.telephone_user) }}
+					</div>
+				{% endif %}
+
+				<!-- CP<!-->
+				{% if registrationForm.cpUser.vars.errors | length > 0 %}
+					<div class="ERROR">
+						{{ form_errors(registrationForm.cpUser) }}
+					</div>
+				{% endif %}
+
+
 			</div>
+		</body>
+		{{ form_end(registrationForm) }}
+	{% endif %}
 
-			<div class="input-field">
-				{{ form_row(registrationForm.prenom_user) }}
-				<i class='bx bxs-user'></i>
-				<span id="prenom"></span>
-
-			</div>
-		</div>
-
-
-		<!-- MAIL/NUM TEL<!-->
-
-		<div class="input-box">
-			<div class="input-field" id="registration_form_email">
-				{{ form_row(registrationForm.email) }}
-				<i class='bx bxs-envelope'></i>
-				<span id="mail"></span>
-
-			</div>
-			<div class="input-field">
-				{{ form_row(registrationForm.telephone_user) }}
-				<i class='bx bxs-phone'></i>
-				<span id="telephone"></span>
-
-			</div>
-		</div>
-
-
-		<!-- ADRESSE/VILLE/CP/GENRE<!-->
-
-		<div class="input-box">
-			<div class="input-field">
-				{{ form_row(registrationForm.adresse_user) }}
-				<i class='bx bx-street-view'></i>
-				<span id="adresse"></span>
-
-			</div>
-			<div class="input-field">
-				{{ form_row(registrationForm.ville_user) }}
-				<i class='bx bx-street-view'></i>
-				<span id="ville"></span>
-
-			</div>
-			<div class="input-field">
-				{{ form_row(registrationForm.cpUser) }}
-				<i class='bx bx-street-view'></i>
-				<span id="codePostal"></span>
-
-			</div>
-			<div class="input-field">
-				{{ form_row(registrationForm.genre_user) }}
-				<i class='bx bx-street-view'></i>
-				<span id="genre"></span>
-
-			</div>
-		</div>
-
-
-		<!-- MDP<!-->
-
-		<div class="input-box">
-			<div class="input-field" minlength="12">
-				{{ form_row(registrationForm.plainPassword.first) }}
-				<i class='bx bxs-lock-alt'></i>
-				<span id="mdp1"></span>
-
-			</div>
-			<div class="input-field" minlength="12">
-				{{ form_row(registrationForm.plainPassword.second) }}
-				<i class='bx bxs-lock-alt'></i>
-				<span id="mdp2"></span>
-
-			</div>
-		</div>
-
-
-		<div style="margin-top: 20px">
-			{{ form_row(registrationForm.RGPDConsent) }}
-		</div>
-
-		<button type="submit" class="btn_crer_compte">Créer un compte</button>
-
-
-		<div class="btn_retour">
-			<p style="display: inline-block;">Vous avez déjà un compte ?</p>
-			<a href="{{ path('app_login') }}">Connexion</a>
-		</div>
-
-
-		{% if app.user %}
-			<div class="btn_retour">
-				Vous êtes connecté(e) comme
-				{{ app.user.userIdentifier }},
-				<a href="{{ path('app_logout') }}">Déconnexion</a>
-			</div>
-		{% endif %}
-
-
-		<!-- ERREURS<!-->
-
-
-		<!-- MDP<!-->
-		{% if registrationForm.plainPassword.vars.errors | length > 0 %}
-			<div class="ERROR">
-				{{ form_errors(registrationForm.plainPassword) }}
-			</div>
-		{% endif %}
-
-
-		<!-- MAIL<!-->
-		{% if registrationForm.vars.errors | length > 0 %}
-			<div class="ERROR">
-				{{ form_errors(registrationForm.email) }}
-			</div>
-		{% endif %}
-
-		<!-- NUMERO TELEPHONE<!-->
-		{% if registrationForm.telephone_user.vars.errors | length > 0 %}
-			<div class="ERROR">
-				{{ form_errors(registrationForm.telephone_user) }}
-			</div>
-		{% endif %}
-
-		<!-- CP<!-->
-		{% if registrationForm.cpUser.vars.errors | length > 0 %}
-			<div class="ERROR">
-				{{ form_errors(registrationForm.cpUser) }}
-			</div>
-		{% endif %}
-
-
-	</div>
-	<script src="assets/JS/main.js"></script>
-</body>
-{{ form_end(registrationForm) }}
-{%endblock%}
+{% endblock %}

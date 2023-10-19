@@ -9,21 +9,21 @@ class RegexPasswordValidator extends ConstraintValidator
 {
     public function validate($value, Constraint $constraint)
     {
-        // Check if the value matches the specified regex pattern
+        // si le MDP fournit correspond bien à la regex
         if (!preg_match($constraint->pattern, $value)) {
             $this->context->buildViolation($constraint->regexMessage)
                 ->setParameter('{{ value }}', $value)
                 ->addViolation();
         }
 
-        // Check the minimum length
+        // Check la valeur minimum du MDP
         if (strlen($value) < $constraint->minLength) {
             $this->context->buildViolation($constraint->minLengthMessage)
                 ->setParameter('{{ minLength }}', $constraint->minLength)
                 ->addViolation();
         }
 
-        // Check the password match if specified
+        // Check si les MDP correspondent
         if ($constraint->matchField) {
             $field = $constraint->matchField;
             $matchValue = $this->context->getRoot()->get($field)->getData();

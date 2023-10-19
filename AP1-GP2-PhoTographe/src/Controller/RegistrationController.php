@@ -19,11 +19,17 @@ class RegistrationController extends AbstractController
     #[Route('/inscription', name: 'app_register')]
 
     // Fonction Register
-    // Prend en paramètre : le $request pour les données de la requête HTTP
+    // Prend en paramètre : le $request récupère les données soumises par le formulaire d'inscription
+
                         //  le $userPasswordHasher pour le hachage des mots de passe
+
                         //  le $userAuthenticator pour l'authentification des utilisateurs
+                        // Il est utilisé pour co directement l'utilisateur après son inscription
+
                         //  le $authenticator qui est une instance de UserAuthenticator
-                        //  le $entityManager pour la gestion de l'entité utilisateur dans la BDD
+                        // il gère le processus d'authentification
+
+                        //  le $entityManager permet d'intéragir avec la base pour notamment insérer des données 
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, 
     UserAuthenticatorInterface $userAuthenticator, UsersAuthenticator $authenticator, 
     EntityManagerInterface $entityManager): Response
@@ -31,11 +37,12 @@ class RegistrationController extends AbstractController
         // Un nouvel objet User est créé pour représenter l'utilisateur à enregistrer
         $user = new User();
 
-        // Un formulaire de type RegistrationFormType est créé en utilisant 'createForm'
+        // Un formulaire de type RegistrationFormType est créé en utilisant 'createForm' 
         // Ce formulaire sera utilisé pour collecter les informations de l'utilisateur.
         $form = $this->createForm(RegistrationFormType::class, $user);
 
-        // Traitement du formulaire avec 'handleRequest'
+        // Récupère les données soumises par l'utilisateur
+        // et de les valider par rapport aux contraintes définies dans "RegistrationFormType"
         $form->handleRequest($request);
 
         // Condition permettant de vérifier si le formulaire est soumis et s'il est valide
@@ -53,12 +60,16 @@ class RegistrationController extends AbstractController
 
             // Indique à Doctrine de prendre en compte l'objet 'user' en vue d'un éventuelle insertion en BDD
             $entityManager->persist($user);
+
+            // Insére en BDD l'utilisateur
             $entityManager->flush();
             // do anything else you need here, like send an email
 
             // Message de confirmation de création de compte
             $this->addFlash('success', 'Votre compte a été créé avec succès !');
 
+            // Authentifie l'utilisateur nouvellement inscrit
+            // L'utilisateur est connecté automatiquement après son inscription
             return $userAuthenticator->authenticateUser(
                 $user,
                 $authenticator,
@@ -66,6 +77,7 @@ class RegistrationController extends AbstractController
             );
         }
 
+        // Affichage de la vue, en cas d'erreur
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
         ]);

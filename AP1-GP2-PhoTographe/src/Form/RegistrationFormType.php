@@ -28,6 +28,7 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+        // Chaque 'add' correspond au colonnes de l'entité User
             ->add('email', EmailType::class, [
                 'attr' => [
                     'class' => 'form-control',
@@ -119,20 +120,19 @@ class RegistrationFormType extends AbstractType
             ])
 
             ->add('telephone_user', TextType::class, [
+                'error_bubbling' => false, // Désactive l'affichage automatique des erreurs
                 'attr' => [
                     'class' => 'form-control',
                     'placeholder' => 'Numéro de téléphone',
-                    'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
-
                 ],
                 'constraints' => [
                     new RegexNumeroConstraint(),
-                    // Regex du num de tel
-                    //new Regex('/^(01|06|07)\d{8}$)/', 
-                    //"Veuillez entrer un numéro de téléphone valide. Le numéro de téléphone doit commencer par '01', '06' ou '07' et doit comporter exactement 10 chiffres.")
+                    // Regex du numéro de téléphone
+                    // ...
                 ],
                 'label' => false
             ])
+            
             
             ->add('RGPDConsent', CheckboxType::class, [
                 'mapped' => false,
@@ -148,7 +148,7 @@ class RegistrationFormType extends AbstractType
                 'type' => PasswordType::class,
                 'options' => [ 'attr' => ['class' => 'password-field']],
                 'required' => true,
-                'error_bubbling' => true, // Désactive l'affichage automatique des erreurs
+                'error_bubbling' => false, // Désactive l'affichage automatique des erreurs
                 'first_options' => ['label' => false, 
                                     'attr' => ['placeholder' => 'Mot de passe',
                                                 'class' => 'register-password-input',
@@ -168,6 +168,7 @@ class RegistrationFormType extends AbstractType
         ;
     }
 
+    // Pour voir les données de l'entité User
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
