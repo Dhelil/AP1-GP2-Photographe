@@ -10,9 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/assets/images/Image_photo_redimensionne.png) no-repeat;
+    background-image: url("/assets/images/back-ground-image.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -124,3 +124,10 @@ body {
 }
 
 
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

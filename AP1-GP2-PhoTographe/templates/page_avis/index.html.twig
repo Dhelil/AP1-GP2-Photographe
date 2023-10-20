@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Avis
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<div class="example-wrapper">
+		<div class"avis-global">
+			<div class="avis-note-gen">
+				<h2>Note Générale sur
+					{{ ttlesavis|length }}
+					avis</h2>
+				<div class"note-globale">
+					<div class="etoiles-moyenne">
+						{% for i in range(1, moyenne) %}
+							<img src="assets\images/etoile_pleine.png" width="30px" height="30px">
+						{% endfor %}
+
+						{% if etoilesemi == 1 %}
+							<img src="assets\images/etoile_semi.png" width="30px" height="30px">
+							{% if moyenne < 4.5 %}
+								{% for i in range(1, quantsemi) %}
+									<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+								{% endfor %}
+							{% endif %}
+
+						{% else %}
+							{% if moyenne < 4.5 %}
+								{% for i in range(1, quant) %}
+									<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+								{% endfor %}
+							{% endif %}
+						{% endif %}
+					</div>
+					<div class="texte-moyenne">
+						<p>{{ moyenne }}
+							sur 5</p>
+					</div>
+				</div>
+			</div>
+			<div class="avis-note-prc">
+				<div class="1etoile"></div>
+				<div class="2etoile"></div>
+				<div class="3etoile"></div>
+				<div class="4etoile"></div>
+				<div class="5etoile"></div>
+			</div>
+		</div>
+		<div class="" contact-barre>
+			<hr>
+		</div>
+		<div class="avis-commentaires">
+			{% for avis in ttlesavis %}
+				<div class="avis">
+					<div class="headerdavis">
+						<p class="nom">{{ avis.getIdAvisUser().getNomUser() ~ ' ' ~ avis.getIdAvisUser().getPrenomUser() }}</p>
+
+
+						{% for i in range(1, avis.getNiveauAvis()) %}
+							<img src="assets\images/etoile_pleine.png" width="30px" height="30px">
+						{% endfor %}
+
+						{% if avis.getNiveauAvis() is defined and avis.getNiveauAvis()|length >= 2 %}
+							<img src="assets\images/etoile_semi.png" width="30px" height="30px">
+							{% if avis.getNiveauAvis() < 4.5 %}
+								{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+									<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+								{% endfor %}
+							{% endif %}
+
+						{% else %}
+							{% if avis.getNiveauAvis() < 4.5 %}
+								{% for i in range(1, (5 - avis.getNiveauAvis())) %}
+									<img src="assets\images/etoile_vide.png" width="30px" height="30px">
+								{% endfor %}
+							{% endif %}
+						{% endif %}
+
+
+					</div>
+					<p class="description">{{ avis.getDescriptionAvis() }}</p>
+					<p class="date">date du
+						{{ avis.getDateAvis()|date('d-m-Y') }}</p>
+					<br>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="" contact-barre>
+			<hr>
+		</div>
+
+		{% if app.user %}
+			{{ form_start(form) }}
+			<p>{{ user.getNomUser() }}
+				{{ user.getPrenomUser() }}</p>
+			<div class="contact-bouton">
+				<input type="submit" class="submit-button">
+			</div>
+			{{ form_end(form) }}
+		{% else %}
+			<div class="contact-bouton">
+				<a href="{{ path('app_login') }}" class="submit-button">Connectez-vous pour laisser un avis</a>
+			{% endif %}
+
+		</div>
+	{% endblock %}
+
+	{# bug avec les nombres impairs a virgule #}

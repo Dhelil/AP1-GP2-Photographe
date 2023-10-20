@@ -3,7 +3,11 @@
         'name' => '__root__',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
+<<<<<<< HEAD
         'reference' => '1100a5681a3d1809df29b88dff5530af13b208c5',
+=======
+        'reference' => 'eaff4721bbe4eb7a8953909aa59ab87ca9c8aac1',
+>>>>>>> dev
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,12 +17,17 @@
         '__root__' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
+<<<<<<< HEAD
             'reference' => '1100a5681a3d1809df29b88dff5530af13b208c5',
+=======
+            'reference' => 'eaff4721bbe4eb7a8953909aa59ab87ca9c8aac1',
+>>>>>>> dev
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
         'doctrine/annotations' => array(
             'pretty_version' => '2.0.1',
             'version' => '2.0.1.0',
@@ -28,6 +37,8 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+=======
+>>>>>>> dev
         'doctrine/cache' => array(
             'pretty_version' => '2.2.0',
             'version' => '2.2.0.0',
@@ -163,6 +174,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'easycorp/easyadmin-bundle' => array(
+            'pretty_version' => 'v4.7.7',
+            'version' => '4.7.7.0',
+            'reference' => '7561f781aa8ac7852a18938711052fffb641005c',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../easycorp/easyadmin-bundle',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> dev
         'nikic/php-parser' => array(
             'pretty_version' => 'v4.17.1',
             'version' => '4.17.1.0',
@@ -253,12 +276,21 @@
                 0 => '1.0|2.0|3.0',
             ),
         ),
+<<<<<<< HEAD
         'sensio/framework-extra-bundle' => array(
             'pretty_version' => 'v6.2.10',
             'version' => '6.2.10.0',
             'reference' => '2f886f4b31f23c76496901acaedfedb6936ba61f',
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../sensio/framework-extra-bundle',
+=======
+        'symfony/asset' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => 'b77a4cc8e266b7e0db688de740f9ee7253aa411c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/asset',
+>>>>>>> dev
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -445,6 +477,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'symfony/intl' => array(
+            'pretty_version' => 'v6.3.2',
+            'version' => '6.3.2.0',
+            'reference' => '1f8cb145c869ed089a8531c51a6a4b31ed0b3c69',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/intl',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> dev
         'symfony/maker-bundle' => array(
             'pretty_version' => 'v1.51.1',
             'version' => '1.51.1.0',
@@ -559,6 +603,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'symfony/polyfill-uuid' => array(
+            'pretty_version' => 'v1.28.0',
+            'version' => '1.28.0.0',
+            'reference' => '9c44518a5aff8da565c8a55dbe85d2769e6f630e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-uuid',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> dev
         'symfony/process' => array(
             'pretty_version' => 'v6.3.4',
             'version' => '6.3.4.0',
@@ -673,6 +729,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'symfony/translation' => array(
+            'pretty_version' => 'v6.3.3',
+            'version' => '6.3.3.0',
+            'reference' => '3ed078c54bc98bbe4414e1e9b2d5e85ed5a5c8bd',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/translation',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> dev
         'symfony/translation-contracts' => array(
             'pretty_version' => 'v3.3.0',
             'version' => '3.3.0.0',
@@ -682,6 +750,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'symfony/translation-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '2.3|3.0',
+            ),
+        ),
+>>>>>>> dev
         'symfony/twig-bridge' => array(
             'pretty_version' => 'v6.3.5',
             'version' => '6.3.5.0',
@@ -700,6 +777,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'symfony/uid' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '01b0f20b1351d997711c56f1638f7a8c3061e384',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/uid',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> dev
         'symfony/validator' => array(
             'pretty_version' => 'v6.3.5',
             'version' => '6.3.5.0',

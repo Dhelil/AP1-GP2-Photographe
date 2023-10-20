@@ -10,8 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/assets/images/Image_photo_redimensionne.png)no-repeat;
-    background : brightness(50%);
+    background-image: url("/assets/images/back-ground-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 
@@ -51,6 +52,7 @@ body {
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 40px;
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 .input_box input::placeholder{
@@ -114,5 +116,10 @@ body {
 .logo_site img {
     width: 250px; /* Largeur souhaitée */
     height: auto; /* Laisser la hauteur s'ajuster automatiquement pour maintenir les proportions */
+}
+.footer {
+    position: absolute ;
+    width: 100% ;
+    bottom: 0;
 }
 
