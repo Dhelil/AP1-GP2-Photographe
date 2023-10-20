@@ -98,3 +98,7 @@ textarea {
     flex: 1;
     padding: 10px;
 }
+
+p, h1 {
+    color: #2f2f2f !important;
+}

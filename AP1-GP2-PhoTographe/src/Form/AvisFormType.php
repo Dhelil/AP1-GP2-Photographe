@@ -16,7 +16,7 @@ class AvisFormType extends AbstractType
     {
         $builder
             ->add('descriptionAvis', null, ['label' => false, 'attr' => ['placeholder' => 'Votre avis...', 'rows' => '5',]])
-            ->add('niveauAvis', null, ['label' => false, 'attr' => ['placeholder' => 'Votre note...',]])
+            ->add('niveauAvis', null, ['label' => false, 'attr' => ['placeholder' => 'Votre note...', 'color[type="text"]: black']])
             ->add('dateAvis', DateType::class, ['data' => new \DateTime(), 'widget' => 'single_text', 'format' => 'yyyy-MM-dd', 'label' => false, 'attr' => ['style' => 'display: none;'],])
             ->add('idAvisUser', EntityType::class, ['class' => User::class, 'choice_label' => 'nomUser', 'multiple' => false, 'expanded' => false, 'label' => false, 'attr' => ['style' => 'display: none;'],])
         ;

@@ -10,7 +10,7 @@
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "*",
-        "easycorp/easyadmin-bundle": "^4.7",
+        "easycorp/easyadmin-bundle": "*",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/error-handler": "6.3.*",

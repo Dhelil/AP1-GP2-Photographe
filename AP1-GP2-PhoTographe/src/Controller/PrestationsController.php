@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\Security\User\UserInterface;
 
 class PrestationsController extends AbstractController
 {
-    #[Route('/prestations', name: 'app_prestations')]
+    #[Route('/prestations', name: 'admin_prestations')]
     public function index(PrestationsRepository $manage): Response
     {
         $prestations = $manage->findAll();

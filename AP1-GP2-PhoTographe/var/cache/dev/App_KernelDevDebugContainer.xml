@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</parameter>
+    <parameter key="kernel.project_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\log</parameter>
+    <parameter key="kernel.build_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
@@ -21,39 +21,39 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/maker-bundle/src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/twig/extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\web-profiler-bundle</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="EasyAdminBundle" type="collection">
-        <parameter key="path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src</parameter>
+        <parameter key="path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src</parameter>
         <parameter key="namespace">EasyCorp\Bundle\EasyAdminBundle</parameter>
       </parameter>
     </parameter>
@@ -94,17 +94,17 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/translations</parameter>
+    <parameter key="translator.default_path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
-    <parameter key="router.cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</parameter>
+    <parameter key="router.cache_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="cache.prefix.seed">_C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe.App_KernelDevDebugContainer</parameter>
+    <parameter key="cache.prefix.seed">_/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -117,15 +117,15 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</parameter>
+    <parameter key="twig.default_path">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</parameter>
     <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
     <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
     <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
@@ -197,7 +197,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -301,6 +301,14 @@
         <argument type="service" id=".service_locator.EjdkWEU.App\Controller\Admin\AdministrationController"/>
       </call>
     </service>
+    <service id="App\Controller\Admin\AvisCrudController" class="App\Controller\Admin\AvisCrudController" public="true" autowire="true" autoconfigure="true">
+      <tag name="ea.crud_controller"/>
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.3YFBJbt.App\Controller\Admin\AvisCrudController"/>
+      </call>
+    </service>
     <service id="App\Controller\Admin\PresentationCrudController" class="App\Controller\Admin\PresentationCrudController" public="true" autowire="true" autoconfigure="true">
       <tag name="ea.crud_controller"/>
       <tag name="controller.service_arguments"/>
@@ -330,6 +338,27 @@
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\CPrincipalController"/>
+      </call>
+    </service>
+    <service id="App\Controller\PageAvisController" class="App\Controller\PageAvisController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\PageAvisController"/>
+      </call>
+    </service>
+    <service id="App\Controller\PageContactController" class="App\Controller\PageContactController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\PageContactController"/>
+      </call>
+    </service>
+    <service id="App\Controller\PresentationController" class="App\Controller\PresentationController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\PresentationController"/>
       </call>
     </service>
     <service id="App\Controller\PresentationsController" class="App\Controller\PresentationsController" public="true" autowire="true" autoconfigure="true">
@@ -367,6 +396,12 @@
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\ZErrorController"/>
       </call>
     </service>
+    <service id="App\Form\AvisFormType" class="App\Form\AvisFormType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\ContactFormType" class="App\Form\ContactFormType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -374,7 +409,19 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Repository\DemandeContactRepository" class="App\Repository\DemandeContactRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\OptionRepository" class="App\Repository\OptionRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\PresentationRepository" class="App\Repository\PresentationRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\PrestationRepository" class="App\Repository\PrestationRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -388,6 +435,22 @@
     </service>
     <service id="App\Security\UsersAuthenticator" class="App\Security\UsersAuthenticator" autowire="true" autoconfigure="true">
       <argument type="service" id="router.default"/>
+    </service>
+    <service id="App\Validator\Constraints\RegexCPConstraint" class="App\Validator\Constraints\RegexCPConstraint" autowire="true" autoconfigure="true"/>
+    <service id="App\Validator\Constraints\RegexCPValidator" class="App\Validator\Constraints\RegexCPValidator" autowire="true" autoconfigure="true">
+      <tag name="validator.constraint_validator"/>
+    </service>
+    <service id="App\Validator\Constraints\RegexMailConstraint" class="App\Validator\Constraints\RegexMailConstraint" autowire="true" autoconfigure="true"/>
+    <service id="App\Validator\Constraints\RegexMailValidator" class="App\Validator\Constraints\RegexMailValidator" autowire="true" autoconfigure="true">
+      <tag name="validator.constraint_validator"/>
+    </service>
+    <service id="App\Validator\Constraints\RegexNumeroConstraint" class="App\Validator\Constraints\RegexNumeroConstraint" autowire="true" autoconfigure="true"/>
+    <service id="App\Validator\Constraints\RegexNumeroValidator" class="App\Validator\Constraints\RegexNumeroValidator" autowire="true" autoconfigure="true">
+      <tag name="validator.constraint_validator"/>
+    </service>
+    <service id="App\Validator\Constraints\RegexPasswordConstraint" class="App\Validator\Constraints\RegexPasswordConstraint" autowire="true" autoconfigure="true"/>
+    <service id="App\Validator\Constraints\RegexPasswordValidator" class="App\Validator\Constraints\RegexPasswordValidator" autowire="true" autoconfigure="true">
+      <tag name="validator.constraint_validator"/>
     </service>
     <service id="argument_metadata_factory" class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory"/>
     <service id="argument_resolver.backed_enum_resolver" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\BackedEnumValueResolver">
@@ -415,7 +478,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.qifWI4f"/>
+      <argument type="service" id=".service_locator.E2q16wL"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -496,7 +559,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/http_cache</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -506,7 +569,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -708,7 +771,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -741,7 +804,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -921,7 +984,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -970,15 +1033,15 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/translations</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/translations</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -995,15 +1058,15 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/translations</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/translations</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1085,6 +1148,8 @@
         <argument>EasyCorp\Bundle\EasyAdminBundle\Form\Type</argument>
       </argument>
       <argument type="collection">
+        <argument>App\Form\AvisFormType</argument>
+        <argument>App\Form\ContactFormType</argument>
         <argument>App\Form\RegistrationFormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
@@ -1233,7 +1298,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1252,7 +1317,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/app</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1458,362 +1523,362 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/translations</argument>
+        <argument key="cache_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.af.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ar.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.ar.php</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.bg.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.bg.php</argument>
           </argument>
           <argument key="bs" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.bs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.bs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.bs.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ca.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.ca.php</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.cs.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.cs.php</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.da.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.da.php</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.de.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.de.php</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.el.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.el.php</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.en.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.en.php</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.es.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.es.php</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.eu.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.eu.php</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fa.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.fa.php</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fi.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.fi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.fi.php</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fr.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.fr.php</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.gl.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.gl.php</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.he.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.he.php</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hr.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.hr.php</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hu.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.hu.php</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hy.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.hy.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.hy.php</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.id.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.id.php</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.it.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.it.php</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lb.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.lb.php</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lt.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.lt.php</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
           </argument>
           <argument key="mk" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.mk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.mk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.mk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.mk.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.mk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.mk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.mk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.mk.php</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.mn.xlf</argument>
           </argument>
           <argument key="my" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.my.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.my.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.my.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.nl.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.nl.php</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.no.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.no.php</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pl.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.pl.php</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.pt.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.pt.php</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt_BR.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.pt_BR.php</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ro.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.ro.php</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ru.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.ru.php</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sk.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.sk.php</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sl.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.sl.php</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sq.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sv.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.sv.php</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.th.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.tr.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.tr.php</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.uk.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.uk.php</argument>
           </argument>
           <argument key="ur" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.ur.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.ur.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.ur.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.ur.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.ur.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.ur.xlf</argument>
           </argument>
           <argument key="uz" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.uz.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.uz.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.uz.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.zh_CN.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.zh_CN.php</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations/security.zh_TW.xlf</argument>
           </argument>
           <argument key="sr_RS" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sr_RS.php</argument>
+            <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations/EasyAdminBundle.sr_RS.php</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\framework-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\maker-bundle\src/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/translations</argument>
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\web-profiler-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/validator/Resources/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-core/Resources/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/framework-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/maker-bundle/src/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/twig/extra-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-bundle/translations</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/web-profiler-bundle/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\validator/Resources/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-core/Resources/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
+            <argument>vendor/symfony/validator/Resources/translations</argument>
+            <argument>vendor/symfony/form/Resources/translations</argument>
+            <argument>vendor/symfony/security-core/Resources/translations</argument>
+            <argument>vendor/easycorp/easyadmin-bundle/src/Resources/translations</argument>
             <argument>translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\framework-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\maker-bundle\src/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\twig\extra-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/translations</argument>
-            <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\web-profiler-bundle/translations</argument>
+            <argument>vendor/symfony/framework-bundle/translations</argument>
+            <argument>vendor/symfony/maker-bundle/src/translations</argument>
+            <argument>vendor/symfony/twig-bundle/translations</argument>
+            <argument>vendor/twig/extra-bundle/translations</argument>
+            <argument>vendor/doctrine/doctrine-bundle/translations</argument>
+            <argument>vendor/doctrine/doctrine-migrations-bundle/translations</argument>
+            <argument>vendor/symfony/security-bundle/translations</argument>
+            <argument>vendor/symfony/web-profiler-bundle/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -1919,6 +1984,10 @@
     <service id="translation.extractor.visitor.constraint" class="Symfony\Component\Translation\Extractor\Visitor\ConstraintVisitor">
       <tag name="translation.extractor.visitor"/>
       <argument type="collection">
+        <argument>RegexCP</argument>
+        <argument>RegexMail</argument>
+        <argument>RegexNumero</argument>
+        <argument>RegexPassword</argument>
         <argument>All</argument>
         <argument>AtLeastOneOf</argument>
         <argument>Bic</argument>
@@ -2142,7 +2211,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>%env(default::SYMFONY_IDE)%</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2565,7 +2634,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.qifWI4f"/>
+      <argument type="service" id=".service_locator.E2q16wL"/>
     </service>
     <service id="routing.resolver" class="Symfony\Component\Config\Loader\LoaderResolver">
       <call method="addLoader">
@@ -2661,7 +2730,7 @@
       <argument type="service" id=".service_locator.PvoQzFT.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</argument>
+        <argument key="cache_dir">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2699,7 +2768,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2727,7 +2796,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString" constructor="fromCallable">
@@ -2735,7 +2804,7 @@
       <argument>base64:default::SYMFONY_DECRYPTION_SECRET</argument>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/.env.dev.local</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/.env.dev.local</argument>
     </service>
     <service id="property_info" class="Symfony\Component\PropertyInfo\PropertyInfoExtractor">
       <argument type="iterator">
@@ -2826,7 +2895,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/sessions</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -2894,7 +2963,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.aF0VNrt"/>
+      <argument type="service" id=".service_locator.qokIGVo"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -3007,7 +3076,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\form/Resources/config/validation.xml</argument>
+          <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -3032,14 +3101,14 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/validation.php</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
-      <argument type="service" id=".service_locator.F9PKc.7"/>
+      <argument type="service" id=".service_locator.FhIfUJE"/>
     </service>
     <service id="Symfony\Component\Validator\Constraints\ExpressionLanguageSyntaxValidator" class="Symfony\Component\Validator\Constraints\ExpressionLanguageSyntaxValidator" abstract="true">
       <tag name="container.excluded" source="in &quot;config/validator.php&quot;"/>
@@ -3383,7 +3452,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/profiler</argument>
+      <argument>file:/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -3430,7 +3499,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -3530,8 +3599,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -3696,7 +3765,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument type="service" id="maker.file_link_formatter"/>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
@@ -3720,7 +3789,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/twig</argument>
+        <argument key="cache">/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -3823,9 +3892,9 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
+        <argument key="/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
       <argument type="collection"/>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
@@ -3837,52 +3906,52 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/views</argument>
         <argument>EasyAdmin</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/easycorp/easyadmin-bundle/src/Resources/views</argument>
         <argument>!EasyAdmin</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/vendor/symfony/twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -3908,7 +3977,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -3996,9 +4065,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/templates</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -4199,7 +4268,7 @@
       <argument type="service" id="doctrine.debug_data_holder"/>
       <argument type="service" id="debug.stopwatch" on-invalid="null"/>
     </service>
-    <service id=".1_ServiceLocator~oiefpEr" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~zv5gNGT" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -4218,7 +4287,7 @@
     <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" abstract="true"/>
     <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true"/>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.4gVr6yd"/>
+      <argument type="service" id=".service_locator.DN9Z5UP"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4417,7 +4486,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4452,7 +4521,7 @@
     </service>
     <service id="doctrine.orm.default_attribute_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AttributeDriver">
       <argument type="collection">
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\src\Entity</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/src/Entity</argument>
       </argument>
       <argument>true</argument>
     </service>
@@ -4516,7 +4585,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe/migrations</argument>
+        <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -5196,10 +5265,10 @@
       <argument>null</argument>
       <argument type="collection">
         <argument key="path">app_logout</argument>
+        <argument key="target">app_login</argument>
         <argument key="enable_csrf">null</argument>
         <argument key="csrf_token_id">logout</argument>
         <argument key="csrf_parameter">_csrf_token</argument>
-        <argument key="target">/</argument>
         <argument key="invalidate_session">true</argument>
         <argument key="clear_site_data" type="collection"/>
         <argument key="delete_cookies" type="collection"/>
@@ -5245,7 +5314,7 @@
     <service id="security.logout.listener.default.main" class="Symfony\Component\Security\Http\EventListener\DefaultLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="debug.security.event_dispatcher.main"/>
       <argument type="service" id="security.http_utils"/>
-      <argument>/</argument>
+      <argument>app_login</argument>
     </service>
     <service id="security.logout.listener.session.main" class="Symfony\Component\Security\Http\EventListener\SessionLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="debug.security.event_dispatcher.main"/>
@@ -5327,7 +5396,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -5382,7 +5451,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <call method="setName">
         <argument>make:admin:dashboard</argument>
       </call>
@@ -5393,7 +5462,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Command\MakeCrudControllerCommand" class="EasyCorp\Bundle\EasyAdminBundle\Command\MakeCrudControllerCommand" public="true">
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker"/>
       <argument type="service" id="doctrine"/>
       <call method="setName">
@@ -5405,7 +5474,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker" class="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker">
       <argument type="service" id="kernel"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Cache\CacheWarmer" class="EasyCorp\Bundle\EasyAdminBundle\Cache\CacheWarmer">
       <tag name="kernel.cache_warmer"/>
@@ -5469,7 +5538,7 @@
       <argument type="service" id="twig"/>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Factory\AdminContextFactory" class="EasyCorp\Bundle\EasyAdminBundle\Factory\AdminContextFactory">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</argument>
       <argument type="service" id="security.token_storage" on-invalid="null"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Factory\MenuFactory"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry"/>
@@ -5545,7 +5614,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType" class="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType">
       <tag name="form.type"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator">
       <tag name="ea.filter_configurator"/>
@@ -5648,7 +5717,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\ImageConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\ImageConfigurator">
       <tag name="ea.field_configurator"/>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\IntegerConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\IntegerConfigurator">
       <tag name="ea.field_configurator"/>
@@ -5700,6 +5769,10 @@
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdministrationController" class="App\Controller\Admin\AdministrationController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\DashboardControllerInterface.0.App\Controller\Admin\AdministrationController" class="App\Controller\Admin\AdministrationController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Admin\AdministrationController" class="App\Controller\Admin\AdministrationController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AvisCrudController" class="App\Controller\Admin\AvisCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AvisCrudController" class="App\Controller\Admin\AvisCrudController" autowire="true" abstract="true"/>
+    <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\AvisCrudController" class="App\Controller\Admin\AvisCrudController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Admin\AvisCrudController" class="App\Controller\Admin\AvisCrudController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\PresentationCrudController" class="App\Controller\Admin\PresentationCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\PresentationCrudController" class="App\Controller\Admin\PresentationCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\PresentationCrudController" class="App\Controller\Admin\PresentationCrudController" autowire="true" abstract="true"/>
@@ -5715,6 +5788,15 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CPrincipalController" class="App\Controller\CPrincipalController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PageAvisController" class="App\Controller\PageAvisController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PageAvisController" class="App\Controller\PageAvisController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PageAvisController" class="App\Controller\PageAvisController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PageContactController" class="App\Controller\PageContactController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PageContactController" class="App\Controller\PageContactController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PageContactController" class="App\Controller\PageContactController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PresentationController" class="App\Controller\PresentationController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PresentationsController" class="App\Controller\PresentationsController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PresentationsController" class="App\Controller\PresentationsController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PresentationsController" class="App\Controller\PresentationsController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5730,16 +5812,34 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ZErrorController" class="App\Controller\ZErrorController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ZErrorController" class="App\Controller\ZErrorController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ZErrorController" class="App\Controller\ZErrorController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AvisFormType" class="App\Form\AvisFormType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\AvisFormType" class="App\Form\AvisFormType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\ContactFormType" class="App\Form\ContactFormType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\ContactFormType" class="App\Form\ContactFormType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AvisRepository" class="App\Repository\AvisRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\AvisRepository" class="App\Repository\AvisRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\DemandeContactRepository" class="App\Repository\DemandeContactRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\DemandeContactRepository" class="App\Repository\DemandeContactRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\OptionRepository" class="App\Repository\OptionRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\OptionRepository" class="App\Repository\OptionRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PresentationRepository" class="App\Repository\PresentationRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\PresentationRepository" class="App\Repository\PresentationRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PrestationRepository" class="App\Repository\PrestationRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\PrestationRepository" class="App\Repository\PrestationRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PrestationsRepository" class="App\Repository\PrestationsRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\PrestationsRepository" class="App\Repository\PrestationsRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Validator\ConstraintValidatorInterface.0.App\Validator\Constraints\RegexCPValidator" class="App\Validator\Constraints\RegexCPValidator" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Validator\Constraints\RegexCPValidator" class="App\Validator\Constraints\RegexCPValidator" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Validator\ConstraintValidatorInterface.0.App\Validator\Constraints\RegexMailValidator" class="App\Validator\Constraints\RegexMailValidator" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Validator\Constraints\RegexMailValidator" class="App\Validator\Constraints\RegexMailValidator" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Validator\ConstraintValidatorInterface.0.App\Validator\Constraints\RegexNumeroValidator" class="App\Validator\Constraints\RegexNumeroValidator" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Validator\Constraints\RegexNumeroValidator" class="App\Validator\Constraints\RegexNumeroValidator" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Validator\ConstraintValidatorInterface.0.App\Validator\Constraints\RegexPasswordValidator" class="App\Validator\Constraints\RegexPasswordValidator" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Validator\Constraints\RegexPasswordValidator" class="App\Validator\Constraints\RegexPasswordValidator" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Filter\FilterConfiguratorInterface.0.EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" abstract="true"/>
     <service id=".abstract.instanceof.EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Filter\FilterConfiguratorInterface.0.EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\CommonConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\CommonConfigurator" abstract="true"/>
@@ -6258,6 +6358,20 @@
         <argument key="responseParameters" type="service_closure" id=".errored..service_locator.vMUOjiq.EasyCorp\Bundle\EasyAdminBundle\Config\KeyValueStore"/>
       </argument>
     </service>
+    <service id=".service_locator..o5gGWe" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="avis" type="service_closure" id="App\Repository\AvisRepository"/>
+        <argument key="doctrine" type="service_closure" id="doctrine"/>
+        <argument key="security" type="service_closure" id="security.helper"/>
+      </argument>
+    </service>
+    <service id=".service_locator.o6sN0hZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="doctrine" type="service_closure" id="doctrine"/>
+      </argument>
+    </service>
     <service id=".service_locator..lXNT0X" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6285,10 +6399,31 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.qifWI4f" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.E2q16wL" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\AdministrationController::configureUserMenu" type="service_closure" id=".service_locator.t7nLwyX"/>
+        <argument key="App\Controller\Admin\AvisCrudController::autocomplete" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::batchDelete" type="service_closure" id=".service_locator.jwjltq_"/>
+        <argument key="App\Controller\Admin\AvisCrudController::configureActions" type="service_closure" id=".service_locator.UrOEf8r"/>
+        <argument key="App\Controller\Admin\AvisCrudController::configureAssets" type="service_closure" id=".service_locator.wvbCcwL"/>
+        <argument key="App\Controller\Admin\AvisCrudController::configureCrud" type="service_closure" id=".service_locator.Nb584vp"/>
+        <argument key="App\Controller\Admin\AvisCrudController::configureFilters" type="service_closure" id=".service_locator.kud45L1"/>
+        <argument key="App\Controller\Admin\AvisCrudController::configureResponseParameters" type="service_closure" id=".service_locator.vMUOjiq"/>
+        <argument key="App\Controller\Admin\AvisCrudController::createEditForm" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController::createEditFormBuilder" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController::createIndexQueryBuilder" type="service_closure" id=".service_locator.yR6jqeD"/>
+        <argument key="App\Controller\Admin\AvisCrudController::createNewForm" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController::createNewFormBuilder" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController::delete" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::deleteEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\Admin\AvisCrudController::detail" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::edit" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::index" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::new" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\Admin\AvisCrudController::renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController::updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\PresentationCrudController::autocomplete" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\PresentationCrudController::batchDelete" type="service_closure" id=".service_locator.jwjltq_"/>
         <argument key="App\Controller\Admin\PresentationCrudController::configureActions" type="service_closure" id=".service_locator.UrOEf8r"/>
@@ -6352,6 +6487,8 @@
         <argument key="App\Controller\Admin\UserCrudController::persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\UserCrudController::renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\UserCrudController::updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\PageAvisController::index" type="service_closure" id=".service_locator..o5gGWe"/>
+        <argument key="App\Controller\PageContactController::index" type="service_closure" id=".service_locator.o6sN0hZ"/>
         <argument key="App\Controller\PresentationsController::index" type="service_closure" id=".service_locator..lXNT0X"/>
         <argument key="App\Controller\PrestationsController::index" type="service_closure" id=".service_locator.qrx1RH3"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.QaaDzHL"/>
@@ -6361,6 +6498,27 @@
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="App\Controller\Admin\AdministrationController:configureUserMenu" type="service_closure" id=".service_locator.t7nLwyX"/>
+        <argument key="App\Controller\Admin\AvisCrudController:autocomplete" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:batchDelete" type="service_closure" id=".service_locator.jwjltq_"/>
+        <argument key="App\Controller\Admin\AvisCrudController:configureActions" type="service_closure" id=".service_locator.UrOEf8r"/>
+        <argument key="App\Controller\Admin\AvisCrudController:configureAssets" type="service_closure" id=".service_locator.wvbCcwL"/>
+        <argument key="App\Controller\Admin\AvisCrudController:configureCrud" type="service_closure" id=".service_locator.Nb584vp"/>
+        <argument key="App\Controller\Admin\AvisCrudController:configureFilters" type="service_closure" id=".service_locator.kud45L1"/>
+        <argument key="App\Controller\Admin\AvisCrudController:configureResponseParameters" type="service_closure" id=".service_locator.vMUOjiq"/>
+        <argument key="App\Controller\Admin\AvisCrudController:createEditForm" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController:createEditFormBuilder" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController:createIndexQueryBuilder" type="service_closure" id=".service_locator.yR6jqeD"/>
+        <argument key="App\Controller\Admin\AvisCrudController:createNewForm" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController:createNewFormBuilder" type="service_closure" id=".service_locator.jG5xrFj"/>
+        <argument key="App\Controller\Admin\AvisCrudController:delete" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:deleteEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\Admin\AvisCrudController:detail" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:edit" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:index" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:new" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\Admin\AvisCrudController:renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
+        <argument key="App\Controller\Admin\AvisCrudController:updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\PresentationCrudController:autocomplete" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\PresentationCrudController:batchDelete" type="service_closure" id=".service_locator.jwjltq_"/>
         <argument key="App\Controller\Admin\PresentationCrudController:configureActions" type="service_closure" id=".service_locator.UrOEf8r"/>
@@ -6424,6 +6582,8 @@
         <argument key="App\Controller\Admin\UserCrudController:persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\UserCrudController:renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\UserCrudController:updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\PageAvisController:index" type="service_closure" id=".service_locator..o5gGWe"/>
+        <argument key="App\Controller\PageContactController:index" type="service_closure" id=".service_locator.o6sN0hZ"/>
         <argument key="App\Controller\PresentationsController:index" type="service_closure" id=".service_locator..lXNT0X"/>
         <argument key="App\Controller\PrestationsController:index" type="service_closure" id=".service_locator.qrx1RH3"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.QaaDzHL"/>
@@ -6432,9 +6592,13 @@
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
       </argument>
     </service>
-    <service id=".service_locator.F9PKc.7" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.FhIfUJE" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Validator\Constraints\RegexCPValidator" type="service_closure" id="App\Validator\Constraints\RegexCPValidator"/>
+        <argument key="App\Validator\Constraints\RegexMailValidator" type="service_closure" id="App\Validator\Constraints\RegexMailValidator"/>
+        <argument key="App\Validator\Constraints\RegexNumeroValidator" type="service_closure" id="App\Validator\Constraints\RegexNumeroValidator"/>
+        <argument key="App\Validator\Constraints\RegexPasswordValidator" type="service_closure" id="App\Validator\Constraints\RegexPasswordValidator"/>
         <argument key="Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator" type="service_closure" id="doctrine.orm.validator.unique"/>
         <argument key="Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator" type="service_closure" id="security.validator.user_password"/>
         <argument key="Symfony\Component\Validator\Constraints\EmailValidator" type="service_closure" id="validator.email"/>
@@ -6521,9 +6685,11 @@
       <argument type="service" id="argument_resolver.query_parameter_value_resolver"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.aF0VNrt" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.qokIGVo" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Form\AvisFormType" type="service_closure" id="App\Form\AvisFormType"/>
+        <argument key="App\Form\ContactFormType" type="service_closure" id="App\Form\ContactFormType"/>
         <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\CrudFormType" type="service_closure" id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\CrudFormType"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType" type="service_closure" id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType"/>
@@ -6545,11 +6711,14 @@
         <argument key="doctrine.orm.listeners.pdo_session_handler_schema_listener" type="service_closure" id="doctrine.orm.listeners.pdo_session_handler_schema_listener"/>
       </argument>
     </service>
-    <service id=".service_locator.4gVr6yd" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.DN9Z5UP" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\AvisRepository" type="service_closure" id="App\Repository\AvisRepository"/>
+        <argument key="App\Repository\DemandeContactRepository" type="service_closure" id="App\Repository\DemandeContactRepository"/>
+        <argument key="App\Repository\OptionRepository" type="service_closure" id="App\Repository\OptionRepository"/>
         <argument key="App\Repository\PresentationRepository" type="service_closure" id="App\Repository\PresentationRepository"/>
+        <argument key="App\Repository\PrestationRepository" type="service_closure" id="App\Repository\PrestationRepository"/>
         <argument key="App\Repository\PrestationsRepository" type="service_closure" id="App\Repository\PrestationsRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
@@ -6597,7 +6766,7 @@
       <argument type="collection"/>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry" class="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry">
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev</argument>
       <argument type="collection">
         <argument key="App\Controller\Admin\AdministrationController">d271194</argument>
       </argument>
@@ -6607,21 +6776,25 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry" class="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry">
       <argument type="collection">
+        <argument key="App\Controller\Admin\AvisCrudController">App\Entity\Avis</argument>
         <argument key="App\Controller\Admin\PresentationCrudController">App\Entity\Presentation</argument>
         <argument key="App\Controller\Admin\PrestationsCrudController">App\Entity\Prestations</argument>
         <argument key="App\Controller\Admin\UserCrudController">App\Entity\User</argument>
       </argument>
       <argument type="collection">
+        <argument key="App\Controller\Admin\AvisCrudController">0145c89</argument>
         <argument key="App\Controller\Admin\PresentationCrudController">e6d2da8</argument>
         <argument key="App\Controller\Admin\PrestationsCrudController">87ac858</argument>
         <argument key="App\Controller\Admin\UserCrudController">b2ccedc</argument>
       </argument>
       <argument type="collection">
+        <argument key="App\Entity\Avis">App\Controller\Admin\AvisCrudController</argument>
         <argument key="App\Entity\Presentation">App\Controller\Admin\PresentationCrudController</argument>
         <argument key="App\Entity\Prestations">App\Controller\Admin\PrestationsCrudController</argument>
         <argument key="App\Entity\User">App\Controller\Admin\UserCrudController</argument>
       </argument>
       <argument type="collection">
+        <argument key="0145c89">App\Controller\Admin\AvisCrudController</argument>
         <argument key="e6d2da8">App\Controller\Admin\PresentationCrudController</argument>
         <argument key="87ac858">App\Controller\Admin\PrestationsCrudController</argument>
         <argument key="b2ccedc">App\Controller\Admin\UserCrudController</argument>
@@ -6794,6 +6967,12 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.3YFBJbt.App\Controller\Admin\AvisCrudController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\Admin\AvisCrudController"/>
+      <argument>App\Controller\Admin\AvisCrudController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.3YFBJbt" method="withContext"/>
+    </service>
     <service id=".service_locator.3YFBJbt.App\Controller\Admin\PresentationCrudController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\Admin\PresentationCrudController"/>
       <argument>App\Controller\Admin\PresentationCrudController</argument>
@@ -6829,6 +7008,24 @@
     <service id=".service_locator.O2p6Lk7.App\Controller\CPrincipalController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\CPrincipalController"/>
       <argument>App\Controller\CPrincipalController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\PageAvisController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PageAvisController"/>
+      <argument>App\Controller\PageAvisController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\PageContactController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PageContactController"/>
+      <argument>App\Controller\PageContactController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\PresentationController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PresentationController"/>
+      <argument>App\Controller\PresentationController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.O2p6Lk7" method="withContext"/>
     </service>
@@ -7732,77 +7929,77 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>JJUCN-xb9d</argument>
+      <argument>WSX4bLBtgu</argument>
       <argument>0</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/app</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>xsqtN59nIs</argument>
+      <argument>1f4qDuOo1L</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>XPjucCrqlK</argument>
+      <argument>gG7ZAjpqsP</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>8GFthQyyki</argument>
+      <argument>TWe+A+5oBC</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>koxsKd2dVB</argument>
+      <argument>X8zUqDBfzk</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>dCmthHk4qC</argument>
+      <argument>iAMl6sXEfB</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>QapKXHy+EZ</argument>
+      <argument>QvTX76cqzU</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>UwdO-YwAVO</argument>
+      <argument>4rSYmr4fYq</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.security_is_granted_attribute_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>geMZ2k1ij+</argument>
+      <argument>USjfBEO+m5</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ezzaouit\Desktop\Atteliers\AP1-GP2-Photographe\AP1-GP2-PhoTographe\var\cache\dev/pools/system</argument>
+      <argument>/Users/dhelil/Documents/AP/AP-1-GP2-Photographe/AP1-GP2-Photographe/AP1-GP2-PhoTographe/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7932,7 +8129,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Menu\MenuItemMatcherInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Menu\MenuItemMatcher"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.7nzbL4K" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.qifWI4f"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.E2q16wL"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="Psr\Log\LoggerInterface" alias="logger"/>
@@ -7942,9 +8139,9 @@
     <service id=".service_locator.lng3o3t" alias=".service_locator.yR6jqeD"/>
     <service id=".service_locator.Lazlz4J" alias=".service_locator.jG5xrFj"/>
     <service id=".service_locator.c1lbGYr" alias=".service_locator.QaaDzHL"/>
-    <service id=".service_locator.uTDFQbm" alias=".service_locator.qifWI4f"/>
-    <service id=".service_locator.BFrsqsn" alias=".service_locator.F9PKc.7"/>
-    <service id=".service_locator.zOEDDkY" alias=".service_locator.aF0VNrt"/>
+    <service id=".service_locator.bfAYezL" alias=".service_locator.E2q16wL"/>
+    <service id=".service_locator.qGrY0fC" alias=".service_locator.FhIfUJE"/>
+    <service id=".service_locator.jd64z98" alias=".service_locator.qokIGVo"/>
     <service id=".service_locator.LMuqDDe" alias=".service_locator.VHsrTPK"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.yTMp7CA" alias=".service_locator.EjdkWEU"/>
@@ -7973,6 +8170,8 @@
     <service id=".service_locator.9e2t_lq" alias=".service_locator.CsMkqUa"/>
     <service id=".service_locator.dMQbl2t" alias=".service_locator.jG5xrFj"/>
     <service id=".service_locator.z_typH5" alias=".service_locator.vMUOjiq"/>
+    <service id=".service_locator.hvEpNty" alias=".service_locator..o5gGWe"/>
+    <service id=".service_locator.eQ296SW" alias=".service_locator.o6sN0hZ"/>
     <service id=".service_locator.nMWBJ9r" alias=".service_locator..lXNT0X"/>
     <service id=".service_locator.yRpV4Jl" alias=".service_locator.qrx1RH3"/>
     <service id=".service_locator.EUYXuS0" alias=".service_locator.QaaDzHL"/>

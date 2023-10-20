@@ -6,55 +6,52 @@
 {% block stylesheets %}
 	<link href="assets/css/style_login.css" rel="stylesheet">
 {% endblock %}
-{% block header %}
-{% endblock %}
+{% block header %}{% endblock %}
 {% block body %}
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-		<div class="wrapper">
-			<form method="post">
+	<div class="wrapper">
+		<form method="post">
 
-				<h1 class="Connexion">Connexion</h1>
+			<h1 class="Connexion">Connexion</h1>
 
-				<div class="input_box">
-					<input type="email" value="{{ last_username }}" id="inputEmail" name="email" minlength="6" size="15" class="form-control" placeholder="Email" autocomplete="email" required autofocus/>
-					<i class='bx bxs-user'></i>
-				</div>
-
-
-				<div class="input_box">
-					<input type="password" id="inputPassword" name="password" class="form-control" autocomplete="current-password" minlength="1" size="15" placeholder="************" required/>
-					<i class='bx bxs-lock-alt'></i>
-				</div>
+			<div class="input_box">
+				<input type="email" value="{{ last_username }}" id="inputEmail" name="email" minlength="6" size="15" class="form-control" placeholder="Email" autocomplete="email" required autofocus/>
+				<i class='bx bxs-user'></i>
+			</div>
 
 
-				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+			<div class="input_box">
+				<input type="password" id="inputPassword" name="password" class="form-control" autocomplete="current-password" minlength="1" size="15" placeholder="************" required/>
+				<i class='bx bxs-lock-alt'></i>
+			</div>
 
-				<button class="btn_connexion" type="submit">
-					Connexion
-				</button>
 
+			<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+			<button class="btn_connexion" type="submit">
+				Connexion
+			</button>
+
+			<div class="create_account">
+				<p>Vous n'avez pas de compte ?
+					<a href="/inscription">Nouveau Client
+					</a>
+				</p>
+			</div>
+
+			{% if app.user %}
 				<div class="create_account">
-					<p>Vous n'avez pas de compte ?
-						<a href="/inscription">Nouveau Client
-						</a>
-					</p>
+					Vous êtes connecté(e) comme
+					{{ app.user.userIdentifier }},
+					<a href="{{ path('app_logout') }}">Déconnexion</a>
 				</div>
-
-				{% if app.user %}
-					<div class="create_account">
-						Vous êtes connecté(e) comme
-						{{ app.user.userIdentifier }},
-						<a href="{{ path('app_logout') }}">Déconnexion</a>
-					</div>
-				{% endif %}
+			{% endif %}
 
 
-				{% if error %}
-					<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-				{% endif %}
-			</form>
-		</div>
+			{% if error %}
+				<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+			{% endif %}
+		</form>
+	</div>
 {% endblock %}
-
-

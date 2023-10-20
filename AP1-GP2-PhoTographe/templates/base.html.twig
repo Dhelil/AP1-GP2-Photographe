@@ -3,8 +3,7 @@
 <html>
 	<head>
 		{# Partie en-tête des templates #}
-		<link href="assets/css/style_avis.css" rel="stylesheet">
-		<link href="assets/css/style_contact.css" rel="stylesheet">
+
 		<meta charset="UTF-8">
 		<title>
 			{% block title %}AlexCaptures #1 | photographe
@@ -21,8 +20,9 @@
 			<link rel="stylesheet" href="/assets/css/style_header.css">
 			<link rel="stylesheet" href="/assets/css/style_footer.css">
 		{% endblock %}
-		{% block icon %}{# icon de tout les templates #}
-			{# <link rel="icon" href="assets/images/cameraicon.png">  #}
+		{% block icon %}
+			{# icon de tout les templates #}
+			<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		{% endblock %}
 		{% block javascripts %}
 			{# Script JavaScript #}

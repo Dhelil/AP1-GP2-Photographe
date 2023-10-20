@@ -5,11 +5,12 @@
 
 {% block stylesheets %}
 	<link href="assets/css/style_register.css" rel="stylesheet">
+
 {% endblock %}
 {% block header %}
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
 {% endblock %}
 {% block body %}
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 	{% if not app.user %}
@@ -166,5 +167,4 @@
 	{% endif %}
 
 {% endblock %}
-{% block footer %}
-{% endblock %}
+{% block footer %}{% endblock %}
