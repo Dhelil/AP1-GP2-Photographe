@@ -3,9 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome!
+			{% block title %}AlexCaptures #1 | photographe
 			{% endblock %}
 		</title>
+		{% block headerFooter %}
+			{#  Styles du Header et du pieds de page de tout nos templates #}
+			<link rel="stylesheet" href="/assets/css/style_header.css">
+			<link rel="stylesheet" href="/assets/css/style_footer.css">
+		{% endblock %}
+		{% block icon %}
+			{# icon de tout les templates #}
+			<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		{% endblock %}
 		<link rel="icon" href="assets/images/cameraicon.png"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
 		<link href="assets/css/style_avis.css" rel="stylesheet">
 		<link href="assets/css/style_nav.css" rel="stylesheet">
@@ -13,31 +22,23 @@
 
 	</head>
 	<body>
+		{# -- Corps de page des templates -- #}
+		<header>
+			{# header relatif a tout nos templates #}
+			{% block header %}
+				{# inclusion du Header #}
+				{% include 'partials/_header.html.twig' %}
+			{% endblock %}
+		</header>
+		{% block body %}{# contenu de la page #}{% endblock %}
+		<footer
+			class="footer">
+			{# footer relatif a tout nos templates #}
+			{% block footer %}
+				{# inclusion du pieds de page #}
+				{% include 'partials/_footer.html.twig' %}
+			{% endblock %}
+		</footer>
 
-		<div class="navbar-div">
-			<nav class="navbar">
-				<div></div>
-				<ul class="bouttons-nav">
-					<li class="boutton-nav">
-						<a class="boutton-text-nav" href="/">Accueil</a>
-					</li>
-					<li class="boutton-nav">
-						<a class="boutton-text-nav" href="#">Présentation</a>
-					</li>
-					<li class="boutton-nav">
-						<a class="boutton-text-nav" href="#">Prestations</a>
-					</li>
-					<li class="boutton-nav">
-						<a class="boutton-text-nav" href="/avis">Avis</a>
-					</li>
-					<li class="boutton-nav">
-						<a class="boutton-text-nav" href="/contact">Contact</a>
-					</li>
-				</ul>
-				<img class="logo-nav" src="assets/images/Logo.png" alt="logo navbar" width="120px" height="50px">
-			</nav>
-		</div>
-
-		{% block body %}{% endblock %}
 	</body>
 </html>
