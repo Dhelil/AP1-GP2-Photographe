@@ -24,6 +24,9 @@ class Contact
     #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $Description = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -61,6 +64,18 @@ class Contact
     public function setUser(?User $user): static
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->Description;
+    }
+
+    public function setDescription(string $Description): static
+    {
+        $this->Description = $Description;
 
         return $this;
     }
